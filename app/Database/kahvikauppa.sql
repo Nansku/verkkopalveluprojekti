@@ -1,6 +1,5 @@
 
 
-
 CREATE TABLE customer (
 customerID int AUTO_INCREMENT PRIMARY KEY,
 name varchar(100) not null,
@@ -33,7 +32,7 @@ ordernum int(10),
 productID int UNSIGNED,
 rownum int(3),
 amount int(3)
-)
+);
 
 CREATE TABLE product (
 productID INT AUTO_INCREMENT PRIMARY KEY,
