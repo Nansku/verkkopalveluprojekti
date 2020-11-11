@@ -20,12 +20,12 @@ body, html {
   }
   
   #kissa {
-    background-image: url("public/img/9_kissa.jpg");
+    background-image: url("../img/9_kissa.jpg");
     height: 100%;
   }
   
   #kettu {
-    background-image: url("public/img/kettu.png");
+    background-image: url("/public/img/kettu.png");
     height: 100%;
   }
   
