@@ -19,6 +19,7 @@
 
     <link rel = "stylesheet" type = "text/css" 
     href = "<?php echo base_url(); ?>css/parallax.css">
+    <link rel = "stylesheet" type = "text/css" href = "<?php echo base_url('css/parallax.css'); ?>">
     <title>Vienon Kahvikauppa</title>
 </head>
 <body>
