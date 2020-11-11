@@ -1,37 +1,36 @@
 <!-- ETUSIVU -->
-<h3><?= $title ?></h3>
 <form action="">
-<div id="bgimg-1" class="parallax">
+<div id="kissa" class="parallax">
                     <div class="caption">
                         <span class="border">Parallax</span>
                     </div>
                 </div>
                 
                 <div class="text">
-                    <h3>Alpolla on existentiaalinen kriisi</h3>
+                    <h3>Testi</h3>
                 </div>
                 
-                <div id="bgimg-2" class="parallax">
+                <div id="kettu" class="parallax">
                    
                 </div>
                 
                 <div class="text">
-                    <h3>Klonkku löysi sormuksen</h3>
+                    <h3>juupajuu</h3>
                 </div>
                 
-                <div id="bgimg-3" class="parallax">
+                <div id="Sauli" class="parallax">
                    
                 </div>
                 
                 <div class="text">
-                    <h3>Kolin huipulla</h3>
+                    <h3>hölökyn</h3>
                 </div>
                 
-                <div id="bgimg-4" class="parallax">
+                <div id="spirit" class="parallax">
                     
                 </div>
                 
                 <div class="text">
-                    <h3>Testi</h3>
+                    <h3>kölökyn</h3>
                 </div>
 </form>

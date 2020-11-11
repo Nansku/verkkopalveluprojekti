@@ -1,0 +1,79 @@
+/*
+https://www.w3schools.com/howto/howto_css_parallax.asp
+*/
+
+body, html {
+    height: 100%; /* this is a must for parallax. */
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 100%;
+  }
+  
+  .parallax {
+    position: relative;
+    opacity: 0.8;
+    
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  #kissa {
+    background-image: url("public/img/9_kissa.jpg");
+    height: 100%;
+  }
+  
+  #kettu {
+    background-image: url("public/img/kettu.png");
+    height: 100%;
+  }
+  
+  #Sauli {
+    background-image: url("public/img/Sauli.JPG");
+    height: 60%;
+  }
+  
+  #spirit {
+    background-image: url("public/img/spirit.jpg");
+    height: 100%;
+  }
+  
+  .caption {
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    width: 100%;
+    text-align: center;  
+  }
+  
+  .caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 1.5em;
+    letter-spacing: 10px;
+    line-height: 2em;
+  }
+  
+  .text {
+      padding: 30px 100px 30px 100px;
+      position: relative;
+  }
+  
+  .text h3 {
+      text-align: center;
+  }
+  
+  /* Turn off parallax scrolling for all tablets and phones. 
+  Increase/decrease the pixels if needed */
+  @media screen and (max-width: 1366px) {
+      .parallax {
+          background-attachment: scroll;
+      }
+      
+      .text {
+          padding: 30px 10px 30px 10px;
+          position: relative;
+      }     
+  }
