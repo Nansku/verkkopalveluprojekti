@@ -83,7 +83,7 @@ body, html {
                 </div>
                 
                 <div class="text">
-                    <h3>Alpolla on existentiaalinen kriisi</h3>
+                    <h3>Upea kissa</h3>
                 </div>
                 
                 <div id="kettu" class="parallax">
@@ -91,7 +91,7 @@ body, html {
                 </div>
                 
                 <div class="text">
-                    <h3>Klonkku löysi sormuksen</h3>
+                    <h3>Kettu my friend</h3>
                 </div>
                 
                 <div id="Sauli" class="parallax">
@@ -99,7 +99,7 @@ body, html {
                 </div>
                 
                 <div class="text">
-                    <h3>Kolin huipulla</h3>
+                    <h3>Sauli for president! Oh wait...</h3>
                 </div>
                 
                 <div id="spirit" class="parallax">
