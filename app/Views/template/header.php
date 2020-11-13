@@ -77,13 +77,13 @@
             <ul class="navbar-nav mr-5">
                 <!-- My page tab -->
                 <li class="nav-item ml-5 mt-2 nav-gr">
-                    <a class="nav-link nav-txt"  href="#">
+                    <a class="nav-link nav-txt"  href="<?= site_url('Coffee/my_page')?>">
                     <i class="fas fa-user mr-2"></i>My Page</a>
                 </li>
 
                 <!-- Shopping cart -->
                 <li class="nav-item ml-5 mt-2 nav-gr">
-                    <a class="nav-link nav-txt" href="#">
+                    <a class="nav-link nav-txt" href="<?= site_url('Coffee/cart')?>">
                         <span class="badge badge-pill bg-danger" id="cart"></span>
 
                     <i class="fas fa-shopping-cart mr-2">
