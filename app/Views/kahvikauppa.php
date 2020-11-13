@@ -1,7 +1,8 @@
 <div id="kissa" class="parallax">
-                    <div class="caption">
+                    <!-- Parallax otsikko
+                      <div class="caption">
                         <span class="border">Kahvia rölöm</span>
-                    </div>
+                    </div> -->
                 </div>
                 
                 <div id="design" class="text">

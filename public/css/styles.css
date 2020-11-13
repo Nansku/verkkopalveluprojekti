@@ -40,7 +40,7 @@
 
 /*Navigation color*/
 .navbar {
-  background-color: #fffff0;
+  background-color: #BF9E87;
 }
 
 /* Animations for dropdowns and links*/
@@ -72,7 +72,7 @@ dropdown-toggle::after {
 
 /*Parallax h3 design*/
 #design{
-  background-color: #fffff0;
+  background-color: #BF9E87;
   font-family: 'Oswald', sans-serif;
 }
 
