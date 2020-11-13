@@ -33,7 +33,7 @@
 <div class="container-fluid">
     <nav class="navbar navbar-expand-lg navbar-light pr-5 pl-5">
         <!-- Logo -->
-        <a class="navbar-brand " href="kahvikauppa.php">
+        <a class="navbar-brand " href="<?= site_url('Coffee/index')?>">
             <img class="img-fluid site-logo" src="<?= base_url('img/logo_mk1_3.png')?>" ></img>
         </a>
         <!-- Burger -->
@@ -43,6 +43,11 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
+                <!-- Front page button -->
+                <li class="nav-item ml-5 mt-2 nav-og">
+                    <a class="nav-link active nav-txt"  href="<?= site_url('Coffee/index')?>">
+                    <i class="fas fa-home"></i></a>
+                </li>
                 <!-- Products tab -->
                 <li class="nav-item nav-og dropdown ml-5">
                     <a class="nav-link active dropdown-toggle nav-txt mt-2" href="#" id="products" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
