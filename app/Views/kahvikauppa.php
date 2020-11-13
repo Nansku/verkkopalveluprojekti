@@ -1,4 +1,4 @@
-<style>
+<!--<style>
 body, html {
     height: 100%; /* this is a must for parallax. */
     font-family: Tahoma, Arial, sans-serif;
@@ -74,7 +74,7 @@ body, html {
           position: relative;
       }     
   }
-</style>
+</style>-->
 
 <div id="kissa" class="parallax">
                     <div class="caption">

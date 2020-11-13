@@ -10,4 +10,65 @@
 / #ED9908 sinappi */
 /* #1F1300 tumma suklaa */
 
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
+/* Fix for full length container */
+.container-fluid{
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header design */
+.nav-txt {
+  font-family: 'Oswald', sans-serif;
+  font-size: 22px;
+}
+
+.nav-txt-dropdown {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 22px;
+}
+
+.na-txt-dropdown:hover {
+  color: #352208 ;
+}
+
+.site-logo {
+  max-width: 250px;
+}
+
+/* Animations for dropdowns and links*/
+dropdown-toggle::after {
+  transition: transform 0.15s linear; 
+}
+
+.show.dropdown 
+.dropdown-toggle::after {
+  transform: translateY(3px);
+}
+
+.navbar 
+.nav-og:hover 
+.nav-link { 
+  color:#ED9908;  transition: 0.25s;
+}
+
+.navbar 
+.nav-gr:hover 
+.nav-link { 
+  color: #179768;  transition: 0.25s;
+}
+
+.dropdown-item:hover {
+  background-color: #BF9E87;  
+  transition: 0.5s;
+}
+
+
+	
+
+
+
+
 
