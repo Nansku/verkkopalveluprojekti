@@ -84,13 +84,13 @@
             <ul class="navbar-nav mr-5">
                 <!-- My page tab -->
                 <li class="nav-item ml-5 mt-2 nav-gr">
-                    <a class="nav-link nav-txt"  href="<?= site_url('Coffee/my_page')?>">
+                    <a id="nav_txt" class="nav-link nav-txt"  href="<?= site_url('Coffee/my_page')?>">
                     <i class="fas fa-user mr-2"></i>My Page</a>
                 </li>
 
                 <!-- Shopping cart -->
                 <li class="nav-item ml-5 mt-2 nav-gr">
-                    <a class="nav-link nav-txt" href="<?= site_url('Coffee/cart')?>">
+                    <a id="nav_txt" class="nav-link nav-txt" href="<?= site_url('Coffee/cart')?>">
                         <span class="badge badge-pill bg-danger" id="cart"></span>
 
                     <i class="fas fa-shopping-cart mr-2">
@@ -103,7 +103,7 @@
                 <input class="form-control mr-sm-2" type="search" 
                 placeholder="Search from site" aria-label="Go">
 
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Go</button>
+                <button class="btn btn-outline-success my-2 my-sm-0 " type="submit">Go</button>
             </form>
         </div>
     </nav>
