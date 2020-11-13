@@ -22,7 +22,7 @@ phonenumber int(10)
 
 /*  Tuote ryhmät*/ 
 CREATE TABLE category(
-categorynum int(10) PRIMARY KEY,
+categorynum int(10) AUTO_INCREMENT PRIMARY KEY,
 categoryname varchar(255)
 );
 
@@ -60,5 +60,17 @@ categorynum int(10),
 FOREIGN KEY (categorynum)
 REFERENCES category (categorynum)
 );
+
+/* Kategoriat*/
+
+INSERT INTO category (categoryname)
+VALUES ("coffee_beans");
+INSERT INTO category (categoryname)
+VALUES ("filter_papers");
+INSERT INTO category (categoryname)
+VALUES ("machines_presses");
+INSERT INTO category (categoryname)
+VALUES ("acessories");
+
  
  
