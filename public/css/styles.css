@@ -7,7 +7,7 @@
 / #E15B1C oranssi /
 / #179768 vihriä /
 / #69DC9E medium vihreä /
-/ #ED9908 sinappi */
+/ #ED9908 sinappi /
 /* #1F1300 tumma suklaa */
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
@@ -38,6 +38,13 @@
   max-width: 250px;
 }
 
+/*Navigation color*/
+.navbar {
+  background-color: #fffff0;
+}
+
+
+
 /* Animations for dropdowns and links*/
 dropdown-toggle::after {
   transition: transform 0.15s linear; 
@@ -65,10 +72,23 @@ dropdown-toggle::after {
   transition: 0.5s;
 }
 
+/*Parallax h3 design*/
+#design{
+  background-color: #fffff0;
+  font-family: 'Oswald', sans-serif;
+}
 
-	
+/*Footer*/
+footer {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  box-sizing:border-box;
+  background-color: #BF9E87;
+}
 
-
-
-
-
+footer p {
+  color: black;
+}
