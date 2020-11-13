@@ -53,7 +53,7 @@
                     <a class="nav-link active dropdown-toggle nav-txt mt-2" href="#" id="products" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Products <span class="sr-only">(current)</span></a>
                     <div class="dropdown-menu" aria-labelledby="products">
-                    <a class="dropdown-item nav-txt-dropdown" href="#">Show All Products</a>
+                    <a class="dropdown-item nav-txt-dropdown bold" href="#">Show All Products</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item nav-txt-dropdown" href="#">Coffee beans</a>
                     <a class="dropdown-item nav-txt-dropdown" href="#">Filter Papers</a>

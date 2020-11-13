@@ -43,6 +43,10 @@
   background-color: #fffff0;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 /* Animations for dropdowns and links*/
 dropdown-toggle::after {
   transition: transform 0.15s linear; 
