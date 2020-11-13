@@ -53,6 +53,7 @@ amount int(3)
 CREATE TABLE product (
 productID INT AUTO_INCREMENT PRIMARY KEY,
 productname varchar(255),
+description text not null,
 price int UNSIGNED,
 cost int UNSIGNED,
 picture varchar(255),
