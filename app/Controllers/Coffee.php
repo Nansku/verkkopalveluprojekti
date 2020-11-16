@@ -28,8 +28,9 @@ class Coffee extends BaseController
 
     public function contact_us()
 	{
+        $data['categories'] =$this->CategoryModel->getCategory();
         $data['title'] = 'Contact_us';
-        echo view('template/header');
+        echo view('template/header', $data);
         echo view('contact_us');
         echo view('template/footer');
 	}
@@ -37,32 +38,36 @@ class Coffee extends BaseController
 	//--------------------------------------------------------------------
         public function story()
 	{
+        $data['categories'] =$this->CategoryModel->getCategory();
         $data['title'] = 'Story';
-        echo view('template/header');
+        echo view('template/header', $data);
         echo view('story');
         echo view('template/footer');
         }
         
         public function my_page()
 	{
+        $data['categories'] =$this->CategoryModel->getCategory();
         $data['title'] = 'My Page';
-        echo view('template/header');
+        echo view('template/header',$data);
         echo view('my_page');
         echo view('template/footer');
         }
         
         public function cart()
 	{
+        $data['categories'] =$this->CategoryModel->getCategory();
         $data['title'] = 'Shopping Cart';
-        echo view('template/header');
+        echo view('template/header',$data);
         echo view('cart');
         echo view('template/footer');
         }
         
         public function faq()
 	{
+        $data['categories'] =$this->CategoryModel->getCategory();        
         $data['title'] = 'FAQ';
-        echo view('template/header');
+        echo view('template/header',$data);
         echo view('faq');
         echo view('template/footer');
         }

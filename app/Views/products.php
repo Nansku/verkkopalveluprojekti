@@ -1,3 +1,3 @@
 <?php foreach($products as $product): ?>
-    <h4><?=$tuote['productname']?></h4>
+    <h4><?=$product['productname']?></h4>
 <?php endforeach;?>
