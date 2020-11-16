@@ -1,11 +1,26 @@
 <?php namespace App\Controllers;
 
+use App\Models\CategoryModel;
+use App\Models\ProductModel;
+
 class Coffee extends BaseController
 {
+
+        private $CategoryModel = null;
+        private $ProductModel = null;
+
+        function __construct()
+        {
+         $this->CategoryModel = new CategoryModel();
+         $this->ProductModel = new ProductModel();
+        }
+
+
 	public function index()
 	{
+        $data['categories'] =$this->CategoryModel->getCategory();
         $data['title'] = 'Kahvikauppa';
-        echo view('template/header');
+        echo view('template/header', $data);
         echo view('kahvikauppa');
         echo view('template/footer');
 	}
@@ -50,7 +65,16 @@ class Coffee extends BaseController
         echo view('template/header');
         echo view('faq');
         echo view('template/footer');
-	}
+        }
+        
+        public function products($categorynum) {
+        $data['categories'] =$this->CategoryModel->getCategory();
+        $data['products'] =$this->ProductModel->getWithCategory($categorynum);
+        $data['title'] = 'Products';
+        echo view('template/header', $data);
+        echo view('products',$data);
+        echo view('template/footer');
+        }
 }
 
 

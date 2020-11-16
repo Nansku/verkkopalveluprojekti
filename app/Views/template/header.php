@@ -54,11 +54,11 @@
                     Products <span class="sr-only">(current)</span></a>
                     <div class="dropdown-menu" aria-labelledby="products">
                     <a class="dropdown-item nav-txt-dropdown bold" href="#">Show All Products</a>
+                    
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item nav-txt-dropdown" href="#">Coffee beans</a>
-                    <a class="dropdown-item nav-txt-dropdown" href="#">Filter Papers</a>
-                    <a class="dropdown-item nav-txt-dropdown" href="#">Machines & French Presses</a>
-                    <a class="dropdown-item nav-txt-dropdown" href="#">Accessories</a>
+                        <?php foreach($categories as $category):?>
+                        <a class="dropdown-item nav-txt-dropdown" href="<?= site_url('/coffee/products/' . $category['categorynum'])?>"><?=$category['categoryname']?></a>
+                        <?php endforeach; ?>
                     </div>
                 </li>
                 
