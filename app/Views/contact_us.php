@@ -12,6 +12,8 @@
 
 <!-- Google Maps -->
 
+<!-- Kortit ovat toistaiseksi jokainen omalla rivillään, kunnes tiedetään niiden
+oikea järjestys -->
 <!-- Eveliina -->
 <div class="row">
    <div class="col mx-1">
