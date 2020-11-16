@@ -33,7 +33,7 @@
 <div class="container-fluid">
     <nav class="navbar navbar-expand-lg navbar-light pr-5 pl-5">
         <!-- Logo -->
-        <a class="navbar-brand " href="<?= site_url('Coffee/index')?>">
+        <a class="navbar-brand active" href="<?= site_url('Coffee/index')?>">
             <img class="img-fluid site-logo" src="<?= base_url('img/logo_mk1_3.png')?>" ></img>
         </a>
         <!-- Burger -->
@@ -64,7 +64,7 @@
                 
                 <!-- About us tab --> 
                 <li class="nav-item dropdown ml-5 nav-og">
-                <a class="nav-link dropdown-toggle nav-txt mt-2" href="#" id="about_us" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link active dropdown-toggle nav-txt mt-2" href="#" id="about_us" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     About Us<span class="sr-only">(current)</span></a>
 
                     <div class="dropdown-menu" aria-labelledby="about_us">
@@ -84,13 +84,13 @@
             <ul class="navbar-nav mr-5">
                 <!-- My page tab -->
                 <li class="nav-item ml-5 mt-2 nav-gr">
-                    <a id="nav_txt" class="nav-link nav-txt"  href="<?= site_url('Coffee/my_page')?>">
+                    <a class="nav-link active nav-txt"  href="<?= site_url('Coffee/my_page')?>">
                     <i class="fas fa-user mr-2"></i>My Page</a>
                 </li>
 
                 <!-- Shopping cart -->
                 <li class="nav-item ml-5 mt-2 nav-gr">
-                    <a id="nav_txt" class="nav-link nav-txt" href="<?= site_url('Coffee/cart')?>">
+                    <a class="nav-link active nav-txt" href="<?= site_url('Coffee/cart')?>">
                         <span class="badge badge-pill bg-danger" id="cart"></span>
 
                     <i class="fas fa-shopping-cart mr-2">
