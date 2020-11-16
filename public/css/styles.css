@@ -19,6 +19,9 @@
   box-sizing: border-box;
 }
 
+.row {
+  margin: 0;
+}
 /* Header design */
 .nav-txt {
   font-family: 'Oswald', sans-serif;
@@ -122,9 +125,10 @@ footer {
   padding-bottom: 1em;
   padding-left: 1em;
   padding-right: 1em;
-  width: 101%;
+  width: 100%;
   box-sizing:border-box;
   background-color: #BF9E87;
+  margin: 0;
 }
 
 footer p {
