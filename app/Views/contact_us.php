@@ -11,6 +11,13 @@
 </div>
 
 <!-- Google Maps -->
+<div class="row">
+   <div class="col mx-auto">
+      <iframe id="googlemap" 
+      src="https://maps.google.com/maps?q=keskisentie%205%20ylivieska&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+      frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+   </div>
+</div>
 
 <!-- Kortit ovat toistaiseksi jokainen omalla rivillään, kunnes tiedetään niiden
 oikea järjestys -->
