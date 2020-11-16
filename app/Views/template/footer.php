@@ -1,4 +1,3 @@
-    </div>
     
     <footer class="row text-center">
         <div class="col-sm-12 col-md-3">

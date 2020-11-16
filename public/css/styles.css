@@ -19,9 +19,11 @@
   box-sizing: border-box;
 }
 
+/* Fix for full-length footer */
 .row {
   margin: 0;
 }
+
 /* Header design */
 .nav-txt {
   font-family: 'Oswald', sans-serif;
