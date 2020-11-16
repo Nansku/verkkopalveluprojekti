@@ -141,10 +141,7 @@ footer p {
   margin: 0 auto;
   margin-bottom: 5px;
   display: block;
-  border: 5px;
-  border-style: inset;
-  border-color:#BF9E87;
-  border-radius: 15px;
+  
   height:250px;
-  width:500px;
+  width:540px;
 }
