@@ -58,7 +58,7 @@ dropdown-toggle::after {
 }
 
 /*Navbar text colors*/
-#about_us{
+/*#about_us{
   color: black;
 }
 
@@ -77,6 +77,8 @@ dropdown-toggle::after {
 #nav_txt:hover{
   color:#ED9908;
 }
+*/
+
 
 .navbar 
 .nav-og:hover 
@@ -89,15 +91,15 @@ dropdown-toggle::after {
 .nav-link { 
   color: #ED9908;  transition: 0.25s;
 }
-
+/*
 .fas{
   color: black;
 }
 
 .fas:hover{
-  color: #ED9908;
+  color: #ED9908; transition: 0.25s;
 }
-
+*/
 /*Button*/
 .btn{
   color: black;
