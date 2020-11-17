@@ -102,11 +102,6 @@ dropdown-toggle::after {
   color: #ED9908; transition: 0.25s;
 }
 
-/*Button*/
-.btn{
-  color: black;
-}
-
 .dropdown-item:hover {
   background-color: #BF9E87;  
   transition: 0.5s;
@@ -134,11 +129,11 @@ p{
   padding: 10px;
 } 
 
-/* .card{
-  border: none;
-  margin-top: 5px;
-  margin-bottom: 10px;
-} */
+.card{
+  border-color: #ED9908;
+  border-width: 3px;
+}
+
 
 /*Footer*/
 footer {
@@ -173,4 +168,13 @@ footer p {
   
   height:250px;
   width:540px;
+}
+
+.static {
+  position:absolute;
+  background: #fffff0;
+}
+
+.static:hover {
+  opacity:0;
 }
