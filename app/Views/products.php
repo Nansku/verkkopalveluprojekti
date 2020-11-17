@@ -1,4 +1,4 @@
-<div>
+<div class="product_color">
    <?php foreach ($products as $product): ?> 
       <div class=" d-flex justify-content-center">
          <div class="card mt-4 mb-4" style="width: 1200px;">
