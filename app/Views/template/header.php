@@ -34,7 +34,9 @@
     <nav class="navbar navbar-expand-lg navbar-light pr-5 pl-5">
         <!-- Logo -->
         <a class="navbar-brand active" href="<?= site_url('Coffee/index')?>">
-            <img class="img-fluid site-logo" src="<?= base_url('img/logo_mk1_3.png')?>" ></img>
+            <!--<img class="img-fluid site-logo" src="<?= base_url('img/logo_mk1_3.png')?>" ></img>-->
+            <img class="img-fluid site-logo static" src="<?= base_url('img/vienokuva.png')?>" ></img>
+            <img class="img-fluid site-logo active" src="<?= base_url('img/vieno.gif')?>" ></img>
         </a>
         <!-- Burger -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
