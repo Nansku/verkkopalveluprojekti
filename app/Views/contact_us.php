@@ -28,7 +28,7 @@ oikea järjestys -->
          <div class="row no-gutters">
             <div class="col-4 text-center my-auto">
                <!-- Icon is temporary -->
-               <i class="fas fa-user-ninja fa-6x"></i>
+               <i class="fas fa-user-ninja fa-6x user"></i>
                <!-- <img src=<?= base_url("img/eveliina.jpg") ?>
                class="card-img" alt="Eveliina Purontaus"> -->
             </div>
@@ -51,7 +51,7 @@ oikea järjestys -->
          <div class="row no-gutters">
             <div class="col-4 text-center my-auto">
                <!-- Icon is temporary -->
-               <i class="fas fa-user-ninja fa-6x"></i>
+               <i class="user fas fa-user-ninja fa-6x"></i>
                <!-- <img src=<?= base_url("img/henri.jpg") ?>
                class="card-img" alt="Henri Aukee"> -->
             </div>
@@ -74,7 +74,7 @@ oikea järjestys -->
          <div class="row no-gutters">
             <div class="col-4 text-center my-auto">
                <!-- Icon is temporary -->
-               <i class="fas fa-user-ninja fa-6x"></i>
+               <i class="fas fa-user-ninja fa-6x user"></i>
                <!-- <img src=<?= base_url("img/ilari.jpg") ?>
                class="card-img" alt="Ilari Puustinen"> -->
             </div>
@@ -97,7 +97,7 @@ oikea järjestys -->
          <div class="row no-gutters">
             <div class="col-4 text-center my-auto">
                <!-- Icon is temporary -->
-               <i class="fas fa-user-ninja fa-6x"></i>
+               <i class="fas fa-user-ninja fa-6x user"></i>
                <!-- <img src=<?= base_url("img/jami.jpg") ?>
                class="card-img" alt="Jami Salmela"> -->
             </div>
@@ -120,7 +120,7 @@ oikea järjestys -->
          <div class="row no-gutters">
             <div class="col-4 text-center my-auto">
                <!-- Icon is temporary -->
-               <i class="fas fa-user-ninja fa-6x"></i>
+               <i class="fas fa-user-ninja fa-6x user"></i>
                <!-- <img src=<?= base_url("img/jenna.jpg") ?>
                class="card-img" alt="Jenna Pennanen"> -->
             </div>
@@ -143,7 +143,7 @@ oikea järjestys -->
          <div class="row no-gutters">
             <div class="col-4 text-center my-auto">
                <!-- Icon is temporary -->
-               <i class="fas fa-user-ninja fa-6x"></i>
+               <i class="fas fa-user-ninja fa-6x user"></i>
                <!-- <img src=<?= base_url("img/jukka.jpg") ?>
                class="card-img" alt="Jukka Liimatta"> -->
             </div>
@@ -166,7 +166,7 @@ oikea järjestys -->
          <div class="row no-gutters">
             <div class="col-4 text-center my-auto">
                <!-- Icon is temporary -->
-               <i class="fas fa-user-ninja fa-6x"></i>
+               <i class="fas fa-user-ninja fa-6x user"></i>
                <!-- <img src=<?= base_url("img/oskari.jpg") ?>
                class="card-img" alt="Oskari Juntunen"> -->
             </div>
@@ -189,7 +189,7 @@ oikea järjestys -->
          <div class="row no-gutters">
             <div class="col-4 text-center my-auto">
                <!-- Icon is temporary -->
-               <i class="fas fa-user-ninja fa-6x"></i>
+               <i class="fas fa-user-ninja fa-6x user"></i>
                <!-- <img src=<?= base_url("img/ville.jpg") ?>
                class="card-img" alt="Ville Rantanen"> -->
             </div>

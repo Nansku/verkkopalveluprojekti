@@ -96,15 +96,12 @@ dropdown-toggle::after {
 .nav-link { 
   color: #ED9908;  transition: 0.25s;
 }
-/*
-.fas{
-  color: black;
-}
 
-.fas:hover{
+
+.user:hover{
   color: #ED9908; transition: 0.25s;
 }
-*/
+
 /*Button*/
 .btn{
   color: black;

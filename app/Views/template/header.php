@@ -91,7 +91,12 @@
                 <!-- Shopping cart -->
                 <li class="nav-item ml-5 mt-2 nav-gr">
                     <a class="nav-link active nav-txt" href="<?= site_url('Coffee/cart')?>">
-                        <span class="badge badge-pill bg-danger" id="cart"></span>
+                        <span class="badge badge-pill btn-danger" id="cart">
+                            <?php 
+                            // nolla ostoskorin vieressä :)
+                            echo isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
+                            ?>
+                        </span>
 
                     <i class="fas fa-shopping-cart mr-2">
                     </i>Shopping Cart<span class="sr-only">(current)</span></a>
