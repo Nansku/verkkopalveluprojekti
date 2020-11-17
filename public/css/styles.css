@@ -174,3 +174,12 @@ footer p {
   height:250px;
   width:540px;
 }
+
+.static {
+  position:absolute;
+  background: #fffff0;
+}
+
+.static:hover {
+  opacity:0;
+}
