@@ -65,13 +65,13 @@ REFERENCES category (categorynum)
 /* Kategoriat*/
 
 INSERT INTO category (categoryname)
-VALUES ("coffee_beans");
+VALUES ("Coffee Beans");
 INSERT INTO category (categoryname)
-VALUES ("filter_papers");
+VALUES ("Filter Papers");
 INSERT INTO category (categoryname)
-VALUES ("machines_presses");
+VALUES ("Machines & Presses");
 INSERT INTO category (categoryname)
-VALUES ("acessories");
+VALUES ("Accessories");
 
 /* Tuotteiden lisäys lauseita */
 

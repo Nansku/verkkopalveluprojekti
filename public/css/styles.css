@@ -119,6 +119,14 @@ dropdown-toggle::after {
 }
 
 /*Products*/
+h4{
+  font-family: 'Oswald', sans-serif;
+}
+
+p{
+  font-size: x-large;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
 
  .id1{
   text-align: left;
