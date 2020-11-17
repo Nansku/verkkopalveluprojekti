@@ -1,10 +1,17 @@
     
     <footer class="row text-center">
-        <div class="col-sm-12 col-md-3">
-            <p class="text-md-left">Sample text</p>
+        <!-- Left side text -->
+        <div class="col-sm-4 col-md-4">
+            <h5 class="text-md-right">Sample text</h5>
         </div>
-        <div class="col-sm-12 col-md-9">
-            <p class="text-md-right">Sample text<br>Sample text</p>
+        <!-- Middle text -->
+        <div class="col-sm-4 col-md-4">
+            <h5 class="text-md-center">Löydä meidät sosiaalisesta mediasta</h5>
+        </div>
+        <!-- Right side -->
+        <div class="col-sm-4 col-md-4">
+            <h5 class="text-md-left">Sample text</h5>
+            <p class="text-md-left">sample text</p>
         </div> 
     </footer>
     

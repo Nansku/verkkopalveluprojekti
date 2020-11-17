@@ -133,6 +133,10 @@ footer {
   margin: 0;
 }
 
+footer h5{
+  color: black;
+}
+
 footer p {
   color: black;
 }
