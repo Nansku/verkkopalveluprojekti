@@ -34,13 +34,7 @@
     <nav class="navbar navbar-expand-lg navbar-light pr-5 pl-5">
         <!-- Logo -->
         <a class="navbar-brand active" href="<?= site_url('Coffee/index')?>">
-<<<<<<< HEAD
             <img class="img-fluid site-logo" src="<?= base_url('img/logo_mk5.png')?>"></img>
-=======
-            <!--<img class="img-fluid site-logo" src="<?= base_url('img/logo_mk1_3.png')?>" ></img>-->
-            <img class="img-fluid site-logo static" src="<?= base_url('img/vienokuva.png')?>" ></img>
-            <img class="img-fluid site-logo active" src="<?= base_url('img/vieno.gif')?>" ></img>
->>>>>>> 5e3d0e5c3c3371a22d1cc7bc348bd09fcb239f7f
         </a>
         <!-- Burger -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,7 +53,7 @@
                     <a class="nav-link active dropdown-toggle nav-txt mt-2" href="#" id="products" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Products <span class="sr-only">(current)</span></a>
                     <div class="dropdown-menu" aria-labelledby="products">
-                    <a class="dropdown-item nav-txt-dropdown bold" href="#">Show All Products</a>
+                    <a class="dropdown-item nav-txt-dropdown bold" href="<?= site_url('/coffee/products/allProducts')?>">Show All Products</a>
                     
                     <div class="dropdown-divider"></div>
                         <?php foreach($categories as $category):?>

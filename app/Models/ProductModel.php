@@ -8,6 +8,11 @@ class ProductModel extends Model {
     public function getWithCategory($categorynum) {
         return $this->getWhere(['categorynum' => $categorynum])->getResultArray();
     }
+
+    public function getAllProducts() {
+        return $this->findAll();
+    }
+
     // product getteri
     public function getProduct($id) {
         $this->where('productID', $id);

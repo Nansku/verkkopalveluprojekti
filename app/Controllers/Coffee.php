@@ -73,13 +73,24 @@ class Coffee extends BaseController
         }
         
         public function products($categorynum) {
-        $data['categories'] =$this->CategoryModel->getCategory();
-        $data['products'] =$this->ProductModel->getWithCategory($categorynum);
-        $data['title'] = 'Products';
-        echo view('template/header', $data);
-        echo view('products',$data);
-        echo view('template/footer');
+                if($categorynum == 'allProducts') {
+                        $data['products'] =$this->ProductModel->getAllProducts(); 
+                        $data['categories'] =$this->CategoryModel->getCategory();
+                        $data['title'] = 'Products';
+                        echo view('template/header', $data);
+                        echo view('products',$data);
+                        echo view('template/footer');
+                } else {
+                        $data['products'] =$this->ProductModel->getWithCategory($categorynum);
+                        $data['categories'] =$this->CategoryModel->getCategory();
+                        $data['title'] = 'Products';
+                        echo view('template/header', $data);
+                        echo view('products',$data);
+                        echo view('template/footer');    
+                }
+
         }
+
 }
 
 
