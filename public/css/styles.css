@@ -118,6 +118,20 @@ dropdown-toggle::after {
   font-family: 'Oswald', sans-serif;
 }
 
+/*Products*/
+.tuote{
+  margin-left: 5px;
+  padding-left: 15px;
+  text-align: center;
+}
+
+.card{
+  border: none;
+  width: max-content;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
 /*Footer*/
 footer {
   padding-top: 1em;
