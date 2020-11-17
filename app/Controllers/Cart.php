@@ -29,9 +29,9 @@ class Cart extends BaseController{
 
         $data['products'] = $products;
         $data['cart_count'] = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
-        echo view('templates/header',$data );
+        echo view('template/header',$data );
 		echo view('cart',$data);
-		echo view('templates/footer');
+		echo view('template/footer');
     }
     
 
