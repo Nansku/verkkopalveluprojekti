@@ -18,6 +18,8 @@ class Cart extends BaseController{
         $this->categoryModel = new CategoryModel();
         $this->productModel = new ProductModel();
     }
+
+    //kori sessarin luoja
     public function index(){
         $data['categories'] = $this->categoryModel->getCategories();
         if (count($_SESSION['cart']) > 0) {
@@ -36,13 +38,14 @@ class Cart extends BaseController{
     
 
 
-
+// Koriin lisäys
     public function add($productID) {
         array_push($_SESSION['cart'],$productID);
-      //  return redirect()->to(site_url('/kauppa/tuote/' . $tproductID));
+        return redirect()->to(site_url('/kauppa/tuote/' . $productID));
       
       }
 
+// Korista poistaminen
     public function clear(){
         $_SESSION['cart'] = null;
         return redirect()->to(site_url('/'));
