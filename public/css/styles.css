@@ -119,18 +119,18 @@ dropdown-toggle::after {
 }
 
 /*Products*/
-.tuote{
-  margin-left: 5px;
-  padding-left: 15px;
-  text-align: center;
-}
 
-.card{
+ .id1{
+  text-align: left;
+  margin-left: 15px;
+  padding: 10px;
+} 
+
+/* .card{
   border: none;
-  width: max-content;
   margin-top: 5px;
   margin-bottom: 10px;
-}
+} */
 
 /*Footer*/
 footer {
