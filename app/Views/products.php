@@ -3,7 +3,7 @@
 <?php endforeach; ?>
 
 
-<?php /*
+<?php 
 foreach ($products as $product) {
    if ($product['productID'] % 2 === 0) {
    echo '<div class="row">
@@ -42,5 +42,5 @@ foreach ($products as $product) {
       </div>
    </div>';
    }
-} */
+} 
 ?>
