@@ -43,32 +43,9 @@ public function count() {
 /**
  *  @param Array $customer
  */
-/*
-public function order($customer) {
-    $this->db->transStart();
 
-    $this->customerModel->save($customer);
-    $customerID = $this->insertID();
 
-    $this->orderModel->save(['customerID', $customerID]);
-    $orderID = $this->insertID();
-
-    foreach ($_SESSION['cart'] as $product) {
-        $this->order_rowModel->save([
-            'orderID' => $orderID,
-            'productID' => $productID['id'],
-            'amount' => $amount['amount']
-        ]);
-    }
-
-    $this->clear();
-
-    $this->db->transComplete();
-}
-
-*/
-
-public function add($productID) {
+public function modelAdd($productID) {
     $product = $this->productModel->getProduct($productID);
     $cartProduct['productID'] = $product['productID'];
     $cartProduct['productname'] = $product['productname'];
@@ -90,5 +67,13 @@ private function addProductArray($product,&$array) {
     array_push($array, $product);
 }
 
+public function remove($productID) {
+    for ($i = count($_SESSION['cart'])-1; $i >= 0;$i--) {
+        $product = $_SESSION['cart'][$i];
+        if ($product['productID'] === $productID) {
+          array_splice($_SESSION['cart'], $i, 1);
+        }
+      }
+} 
 
 }
