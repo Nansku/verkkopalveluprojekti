@@ -91,6 +91,14 @@ class Coffee extends BaseController
 
         }
 
+        // Opens single products pages
+        public function product($productID){
+                $data['categories'] = $this->CategoryModel->getCategory();
+                $data['products'] = $this->ProductModel->getProduct($productID);
+                echo view('template/header', $data);
+                echo view('product',$data);
+                echo view('template/footer');
+        }
 }
 
 

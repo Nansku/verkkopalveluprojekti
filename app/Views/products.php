@@ -4,9 +4,13 @@
          <div class="card mt-4 mb-4" style="width: 1200px;">
             <div class="row no-gutters id1">
                <div class="col-8 card-body">
+                  <!-- Linkki vie yksittäisen tuotteen sivulle -->
+                  <a href="<?= site_url('/coffee/product/' . $product['productID'])?>">
                   <h4 class="card-title"><?= $product['productname'] ?></h4>
+                  </a>
                      <p class="card-text"><?=$product['description']?></p>
                      <p class="card-text"><?=$product['price']?> €</p>
+                     
                </div>
             
                <div class="col-4">

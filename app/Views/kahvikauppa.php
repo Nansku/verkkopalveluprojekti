@@ -1,34 +1,29 @@
 <div id="kissa" class="parallax">
-                    <!-- Parallax otsikko
-                      <div class="caption">
-                        <span class="border">Kahvia rölöm</span>
-                    </div> -->
-                </div>
-                
-                <div id="design" class="text">
-                    <h3>Upea kissa</h3>
-                </div>
-                
-                <div id="kettu" class="parallax">
-                   
-                </div>
-                
-                <div id="design" class="text">
-                    <h3>Kettu my friend</h3>
-                </div>
-                
-                <div id="Sauli" class="parallax">
-                   
-                </div>
-                
-                <div id="design" class="text">
-                    <h3>Sauli for president! Oh wait...</h3>
-                </div>
-                
-                <div id="spirit" class="parallax">
-                    
-                </div>
-                
-                <div id="design" class="text">
-                    <h3>Spirit of the forest, what is your wisdom?</h3>
-                </div>
+    <!-- Parallax otsikko
+<div class="caption">
+<span class="border">Kahvia rölöm</span>
+</div> -->
+</div>
+
+<div id="design" class="text">
+    <h3>Selling quality coffee since 2020.
+        <br>Our company is founded by people from all corners of Finland and
+         we share a same passion for coffee.
+        <br>We want to spread our shared love towards coffee for the entire world.</h3>
+</div>
+
+<div id="kettu" class="parallax">
+
+</div>
+
+<div id="design" class="text">
+    <h3>Our recommended products:</h3>
+</div>
+
+<div id="Sauli" class="parallax">
+
+</div>
+
+<!-- <div id="design" class="text">
+    <h3></h3>
+</div> -->
