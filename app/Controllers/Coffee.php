@@ -59,7 +59,7 @@ class Coffee extends BaseController
         $data['categories'] =$this->CategoryModel->getCategory();
         $data['title'] = 'Shopping Cart';
         echo view('template/header',$data);
-        echo view('cart');
+        echo view('cart', $data);
         echo view('template/footer');
         }
         

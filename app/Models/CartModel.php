@@ -2,7 +2,7 @@
 
 use CodeIgniter\Model;
 
-class OstoskoriModel extends Model {
+class CartModel extends Model {
 
     private $productModel = null;
     private $customerModel = null;
@@ -37,7 +37,7 @@ class OstoskoriModel extends Model {
  */
 
 public function count() {
-    return count($_SESSION['count']);
+    return count($_SESSION['cart']);
 }
 
 /**

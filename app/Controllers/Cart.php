@@ -24,7 +24,8 @@ class Cart extends BaseController{
 
     //kori sessarin luoja
     public function index(){
-        $data['categories'] = $this->categoryModel->getCategories();
+
+        $data['categories'] = $this->categoryModel->getCategory();
 
         /*if (count($_SESSION['cart']) > 0) {
         $products = $this->productModel->getProducts($_SESSION['cart']);
@@ -65,7 +66,7 @@ class Cart extends BaseController{
             $product = $_SESSION['cart'][$i];
 
             if ($product['productID'] === $productID) {
-                array_splice($_SESSION['kori'], $i, 1);
+                array_splice($_SESSION['cart'], $i, 1);
             }
         }
     }

@@ -2,18 +2,18 @@
     <div class="col">
         <h4>Shopping cart</h4>
         <table class="table">
-            <?php foreach ($products as $product): ?>
+            <?php foreach ($product as $products): ?>
             <tr>
                 <td>
-                    <?= $product['productname'] ?>
+                    <?= $products['productname'] ?>
                 </td>
 
                 <td>
-                    <?= $product['price'] . ' €'?>
+                    <?= $products['price'] . ' €'?>
                 </td>
 
                 <td>
-                    <?= $product['amount'] ?>
+                    <?= $products['amount'] ?>
                 </td>
 
                 <td>
