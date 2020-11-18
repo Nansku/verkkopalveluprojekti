@@ -2,11 +2,13 @@
 
 use App\Models\CategoryModel;
 use App\Models\ProductModel;
+use App\Models\CartModel;
 
 class Cart extends BaseController{
 
     private $categoryModel=null;
     private $productModel=null;
+    private $cartModel=null;
 
     public function __construct(){
         $session = \Config\Services::session();
@@ -17,12 +19,15 @@ class Cart extends BaseController{
 
         $this->categoryModel = new CategoryModel();
         $this->productModel = new ProductModel();
+        $this->cartModel = new CartModel();
     }
 
     //kori sessarin luoja
     public function index(){
-        $data['categories'] = $this->categoryModel->getCategories();
-        if (count($_SESSION['cart']) > 0) {
+
+        $data['categories'] = $this->categoryModel->getCategory();
+
+        /*if (count($_SESSION['cart']) > 0) {
         $products = $this->productModel->getProducts($_SESSION['cart']);
         }
         else{
@@ -30,7 +35,11 @@ class Cart extends BaseController{
         }
 
         $data['products'] = $products;
-        $data['cart_count'] = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
+        $data['cart_count'] = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0; */
+
+        $data['product'] = $this->cartModel->cart();
+        $data['cart_count'] = $this->cartModel->count();
+
         echo view('template/header',$data );
 		echo view('cart',$data);
 		echo view('template/footer');
@@ -40,14 +49,25 @@ class Cart extends BaseController{
 
 // Koriin lisäys
     public function add($productID) {
-        array_push($_SESSION['cart'],$productID);
-        return redirect()->to(site_url('/kauppa/tuote/' . $productID));
+        $this->cartModel->add($productID);
+        //array_push($_SESSION['cart'],$productID);
+        return redirect()->to(site_url('Coffee/product' . $productID));
       
       }
 
-// Korista poistaminen
+// Kaikkien tuotteiden korista poistaminen
     public function clear(){
         $_SESSION['cart'] = null;
         return redirect()->to(site_url('/'));
     }  
+
+    public function remove($productID) {
+        for ($i = count($_SESSION['cart'])-1; $i >= 0; $i--) {
+            $product = $_SESSION['cart'][$i];
+
+            if ($product['productID'] === $productID) {
+                array_splice($_SESSION['cart'], $i, 1);
+            }
+        }
+    }
 }

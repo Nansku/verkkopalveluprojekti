@@ -40,12 +40,18 @@
 }
 
 .site-logo {
-  max-width: 250px;
+  max-width: 230px;
 }
 
 /*Navigation color*/
 .navbar {
-  background-color: #fffff0;
+  background-color: white;
+}
+
+hr{
+ border-width: 1px;
+ border-color: black;
+ margin: 0;
 }
 
 .bold {
@@ -61,29 +67,6 @@ dropdown-toggle::after {
 .dropdown-toggle::after {
   transform: translateY(3px);
 }
-
-/*Navbar text colors*/
-/*#about_us{
-  color: black;
-}
-
-#about_us:hover{
-  color: #ED9908;
-}
-
-.nav-text{
-  color: black;
-}
-
-#nav_txt{
-  color: black;
-}
-
-#nav_txt:hover{
-  color:#ED9908;
-}
-*/
-
 
 .navbar 
 .nav-og:hover 
@@ -102,11 +85,6 @@ dropdown-toggle::after {
   color: #ED9908; transition: 0.25s;
 }
 
-/*Button*/
-.btn{
-  color: black;
-}
-
 .dropdown-item:hover {
   background-color: #BF9E87;  
   transition: 0.5s;
@@ -114,7 +92,7 @@ dropdown-toggle::after {
 
 /*Parallax h3 design*/
 #design{
-  background-color: #fffff0;
+  background-color: white;
   font-family: 'Oswald', sans-serif;
 }
 
@@ -123,9 +101,28 @@ h4{
   font-family: 'Oswald', sans-serif;
 }
 
+a{
+  color: black;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: x-large;
+  /* text-align: left; */
+  display: block;
+  margin-bottom: 2px;
+  margin-top: 2px;
+  padding: 0;
+}
+a:hover{
+  color: #ED9908; transition: 0.25s;
+  text-decoration: none;
+}
+
 p{
   font-size: x-large;
   font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.product_color{
+  background-color: white;
 }
 
  .id1{
@@ -134,15 +131,27 @@ p{
   padding: 10px;
 } 
 
-/* .card{
-  border: none;
-  margin-top: 5px;
-  margin-bottom: 10px;
-} */
+.card{
+  background-color: white;
+  border-color: #BF9E87;
+  border-width: 3px;
+}
+
+.nappula{
+  background-color: #BF9E87;
+  font-family: 'Oswald', sans-serif;
+}
+
+.nappula:hover{
+  
+  color: white;
+  background-color: #ED9908; transition: 0.25s;
+  border-color: #ED9908; transition: 0.25s;
+}
 
 /*Footer*/
 footer {
-  padding-top: 1em;
+  padding-top: 2em;
   padding-bottom: 1em;
   padding-left: 1em;
   padding-right: 1em;
@@ -152,12 +161,33 @@ footer {
   margin: 0;
 }
 
-footer h5{
+footer h4{
   color: black;
+  font-size: xx-large;
 }
 
 footer p {
   color: black;
+  padding: 1px;
+  margin: 0;
+}
+
+footer a{
+  color: black;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: x-large;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 2px;
+  margin-top: 2px;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+}
+
+footer i{
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 
 /* Temporary */
@@ -173,4 +203,13 @@ footer p {
   
   height:250px;
   width:540px;
+}
+
+.static {
+  position:absolute;
+  background: #fffff0;
+}
+
+.static:hover {
+  opacity:0;
 }

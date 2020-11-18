@@ -21,11 +21,30 @@
 
 <!-- Kortit ovat toistaiseksi jokainen omalla rivillään, kunnes tiedetään niiden
 oikea järjestys -->
-<!-- Eveliina -->
+<!-- Jami ja Eveliina -->
 <div class="row">
-   <div class="col mx-1">
-      <div class="card mb-3 mx-auto" style="max-width: 540px;">
-         <div class="row no-gutters">
+   <div class="col-12 col-lg-6">
+      <div class="card my-3 ml-lg-auto" style="max-width: 540px;">
+         <div class="row">
+            <div class="col-4 text-center my-auto">
+               <!-- Icon is temporary -->
+               <i class="fas fa-user-ninja fa-6x user"></i>
+               <!-- <img src=<?= base_url("img/jami.jpg") ?>
+               class="card-img" alt="Jami Salmela"> -->
+            </div>
+            <div class="col-8">
+               <div class="card-body">
+                  <h5 class="card-title">CEO</h5>
+                  <p class="card-text">Jami Salmela<br>
+                  jami@vienoscoffee.com<br>+358 40 123 4567</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="col-12 col-lg-6">
+      <div class="card my-3 mr-lg-auto" style="max-width: 540px;">
+         <div class="row">
             <div class="col-4 text-center my-auto">
                <!-- Icon is temporary -->
                <i class="fas fa-user-ninja fa-6x user"></i>
@@ -34,7 +53,7 @@ oikea järjestys -->
             </div>
             <div class="col-8">
                <div class="card-body">
-                  <h5 class="card-title">Eveliina's title</h5>
+                  <h5 class="card-title">Sales, invoicing</h5>
                   <p class="card-text">Eveliina Purontaus<br>
                   eveliina@vienoscoffee.com<br>+358 40 123 4567</p>
                </div>
@@ -42,35 +61,12 @@ oikea järjestys -->
          </div>
       </div>
    </div>
-</div>
+<!-- </div> -->
 
-<!-- Henri -->
-<div class="row">
-   <div class="col mx-1">
-      <div class="card mb-3 mx-auto" style="max-width: 540px;">
-         <div class="row no-gutters">
-            <div class="col-4 text-center my-auto">
-               <!-- Icon is temporary -->
-               <i class="user fas fa-user-ninja fa-6x"></i>
-               <!-- <img src=<?= base_url("img/henri.jpg") ?>
-               class="card-img" alt="Henri Aukee"> -->
-            </div>
-            <div class="col-8">
-               <div class="card-body">
-                  <h5 class="card-title">Henri's title</h5>
-                  <p class="card-text">Henri Aukee<br>
-                  henri@vienoscoffee.com<br>+358 40 123 4567</p>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-</div>
-
-<!-- Ilari -->
-<div class="row">
-   <div class="col mx-1">
-      <div class="card mb-3 mx-auto" style="max-width: 540px;">
+<!-- Ilari ja Jenna -->
+<!-- <div class="row"> -->
+   <div class="col-12 col-lg-6">
+      <div class="card my-3 ml-lg-auto" style="max-width: 540px;">
          <div class="row no-gutters">
             <div class="col-4 text-center my-auto">
                <!-- Icon is temporary -->
@@ -80,7 +76,7 @@ oikea järjestys -->
             </div>
             <div class="col-8">
                <div class="card-body">
-                  <h5 class="card-title">Ilari's title</h5>
+                  <h5 class="card-title">Orders, customer service</h5>
                   <p class="card-text">Ilari Puustinen<br>
                   ilari@vienoscoffee.com<br>+358 40 123 4567</p>
                </div>
@@ -88,35 +84,8 @@ oikea järjestys -->
          </div>
       </div>
    </div>
-</div>
-
-<!-- Jami -->
-<div class="row">
-   <div class="col mx-1">
-      <div class="card mb-3 mx-auto" style="max-width: 540px;">
-         <div class="row no-gutters">
-            <div class="col-4 text-center my-auto">
-               <!-- Icon is temporary -->
-               <i class="fas fa-user-ninja fa-6x user"></i>
-               <!-- <img src=<?= base_url("img/jami.jpg") ?>
-               class="card-img" alt="Jami Salmela"> -->
-            </div>
-            <div class="col-8">
-               <div class="card-body">
-                  <h5 class="card-title">Jami's title</h5>
-                  <p class="card-text">Jami Salmela<br>
-                  jami@vienoscoffee.com<br>+358 40 123 4567</p>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-</div>
-
-<!-- Jenna -->
-<div class="row">
-   <div class="col mx-1">
-      <div class="card mb-3 mx-auto" style="max-width: 540px;">
+   <div class="col-12 col-lg-6">
+      <div class="card my-3 mr-lg-auto" style="max-width: 540px;">
          <div class="row no-gutters">
             <div class="col-4 text-center my-auto">
                <!-- Icon is temporary -->
@@ -126,7 +95,7 @@ oikea järjestys -->
             </div>
             <div class="col-8">
                <div class="card-body">
-                  <h5 class="card-title">Jenna's title</h5>
+                  <h5 class="card-title">Orders, customer service</h5>
                   <p class="card-text">Jenna Pennanen<br>
                   jenna@vienoscoffee.com<br>+358 40 123 4567</p>
                </div>
@@ -134,12 +103,31 @@ oikea järjestys -->
          </div>
       </div>
    </div>
-</div>
+<!-- </div> -->
 
-<!-- Jukka -->
-<div class="row">
-   <div class="col mx-1">
-      <div class="card mb-3 mx-auto" style="max-width: 540px;">
+<!-- Henri ja Jukka -->
+<!-- <div class="row"> -->
+   <div class="col-12 col-lg-6">
+      <div class="card my-3 ml-lg-auto" style="max-width: 540px;">
+         <div class="row no-gutters">
+            <div class="col-4 text-center my-auto">
+               <!-- Icon is temporary -->
+               <i class="user fas fa-user-ninja fa-6x"></i>
+               <!-- <img src=<?= base_url("img/henri.jpg") ?>
+               class="card-img" alt="Henri Aukee"> -->
+            </div>
+            <div class="col-8">
+               <div class="card-body">
+                  <h5 class="card-title">New products</h5>
+                  <p class="card-text">Henri Aukee<br>
+                  henri@vienoscoffee.com<br>+358 40 123 4567</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="col-12 col-lg-6">
+      <div class="card my-3 mr-lg-auto" style="max-width: 540px;">
          <div class="row no-gutters">
             <div class="col-4 text-center my-auto">
                <!-- Icon is temporary -->
@@ -149,7 +137,7 @@ oikea järjestys -->
             </div>
             <div class="col-8">
                <div class="card-body">
-                  <h5 class="card-title">Jukka's title</h5>
+                  <h5 class="card-title">New customers</h5>
                   <p class="card-text">Jukka Liimatta<br>
                   jukka@vienoscoffee.com<br>+358 40 123 4567</p>
                </div>
@@ -157,35 +145,12 @@ oikea järjestys -->
          </div>
       </div>
    </div>
-</div>
+<!-- </div> -->
 
-<!-- Oskari -->
-<div class="row">
-   <div class="col mx-1">
-      <div class="card mb-3 mx-auto" style="max-width: 540px;">
-         <div class="row no-gutters">
-            <div class="col-4 text-center my-auto">
-               <!-- Icon is temporary -->
-               <i class="fas fa-user-ninja fa-6x user"></i>
-               <!-- <img src=<?= base_url("img/oskari.jpg") ?>
-               class="card-img" alt="Oskari Juntunen"> -->
-            </div>
-            <div class="col-8">
-               <div class="card-body">
-                  <h5 class="card-title">Oskari's title</h5>
-                  <p class="card-text">Oskari Juntunen<br>
-                  oskari@vienoscoffee.com<br>+358 40 123 4567</p>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-</div>
-
-<!-- Ville -->
-<div class="row">
-   <div class="col mx-1">
-      <div class="card mb-3 mx-auto" style="max-width: 540px;">
+<!-- Ville ja Oskari -->
+<!-- <div class="row"> -->
+   <div class="col-12 col-lg-6">
+      <div class="card my-3 ml-lg-auto" style="max-width: 540px;">
          <div class="row no-gutters">
             <div class="col-4 text-center my-auto">
                <!-- Icon is temporary -->
@@ -195,9 +160,28 @@ oikea järjestys -->
             </div>
             <div class="col-8">
                <div class="card-body">
-                  <h5 class="card-title">Ville's title</h5>
+                  <h5 class="card-title">Storage manager</h5>
                   <p class="card-text">Ville Rantanen<br>
                   ville@vienoscoffee.com<br>+358 40 123 4567</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="col-12 col-lg-6">
+      <div class="card my-3 mr-lg-auto" style="max-width: 540px;">
+         <div class="row no-gutters">
+            <div class="col-4 text-center my-auto">
+               <!-- Icon is temporary -->
+               <i class="fas fa-user-ninja fa-6x user"></i>
+               <!-- <img src=<?= base_url("img/oskari.jpg") ?>
+               class="card-img" alt="Oskari Juntunen"> -->
+            </div>
+            <div class="col-8">
+               <div class="card-body">
+                  <h5 class="card-title">IT</h5>
+                  <p class="card-text">Oskari Juntunen<br>
+                  oskari@vienoscoffee.com<br>+358 40 123 4567</p>
                </div>
             </div>
          </div>

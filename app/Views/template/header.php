@@ -34,7 +34,7 @@
     <nav class="navbar navbar-expand-lg navbar-light pr-5 pl-5">
         <!-- Logo -->
         <a class="navbar-brand active" href="<?= site_url('Coffee/index')?>">
-            <img class="img-fluid site-logo" src="<?= base_url('img/logo_mk1_3.png')?>" ></img>
+            <img class="img-fluid site-logo" src="<?= base_url('img/logo_mk5.png')?>"></img>
         </a>
         <!-- Burger -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,7 +53,7 @@
                     <a class="nav-link active dropdown-toggle nav-txt mt-2" href="#" id="products" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Products <span class="sr-only">(current)</span></a>
                     <div class="dropdown-menu" aria-labelledby="products">
-                    <a class="dropdown-item nav-txt-dropdown bold" href="#">Show All Products</a>
+                    <a class="dropdown-item nav-txt-dropdown bold" href="<?= site_url('/coffee/products/allProducts')?>">Show All Products</a>
                     
                     <div class="dropdown-divider"></div>
                         <?php foreach($categories as $category):?>
@@ -90,7 +90,7 @@
 
                 <!-- Shopping cart -->
                 <li class="nav-item ml-5 mt-2 nav-gr">
-                    <a class="nav-link active nav-txt" href="<?= site_url('Coffee/cart')?>">
+                    <a class="nav-link active nav-txt" href="<?= site_url('cart')?>">
                         <span class="badge badge-pill btn-danger" id="cart">
                             <?php 
                             // nolla ostoskorin vieressä :)
@@ -111,5 +111,6 @@
                 <button class="btn btn-outline-success my-2 my-sm-0 " type="submit">Go</button>
             </form>
         </div>
+        
     </nav>
-
+<!-- <hr> -->
