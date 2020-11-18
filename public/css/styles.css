@@ -112,7 +112,8 @@ a{
   padding: 0;
 }
 a:hover{
-  color: #ED9908;
+  color: #ED9908; transition: 0.25s;
+  text-decoration: none;
 }
 
 p{
@@ -132,8 +133,20 @@ p{
 
 .card{
   background-color: white;
-  border-color: #1F1300;
+  border-color: #BF9E87;
   border-width: 3px;
+}
+
+.nappula{
+  background-color: #BF9E87;
+  font-family: 'Oswald', sans-serif;
+}
+
+.nappula:hover{
+  
+  color: white;
+  background-color: #ED9908; transition: 0.25s;
+  border-color: #ED9908; transition: 0.25s;
 }
 
 /*Footer*/
@@ -159,6 +172,18 @@ footer p {
   margin: 0;
 }
 
+footer a{
+  color: black;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: x-large;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 2px;
+  margin-top: 2px;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+}
 
 footer i{
   padding-left: 0.5em;

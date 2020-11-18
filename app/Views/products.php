@@ -10,9 +10,8 @@
                   </a>
                      <p class="card-text"><?=$product['description']?></p>
                      <p class="card-text"><?=$product['price']?> €</p>
-                     
+                     <button class="btn nappula shadow-none"> <i class="fas fa-shopping-cart mr-2"></i>Lisää koriin</button>
                </div>
-            
                <div class="col-4">
                   <div class="float-right">
                      <img class="card-img" src="<?= base_url('img/' . $product['picture'])?>"></img>
