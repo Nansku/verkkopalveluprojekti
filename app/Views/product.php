@@ -6,6 +6,7 @@
                     <h4 class="card-title"><?= $products['productname'] ?></h4>
                     <p class="card-text"><?= $products['description'] ?></p>
                     <p class="card-text"><?= $products['price'] ?> €</p>
+                    <button class="btn nappula shadow-none"> <i class="fas fa-shopping-cart mr-2"></i>Lisää koriin</button>
                 </div>
                 <div class="col-4">
                     <div class="float-right">
