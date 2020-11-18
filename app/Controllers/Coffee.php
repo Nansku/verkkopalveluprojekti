@@ -46,7 +46,10 @@ class Coffee extends BaseController
         }
         
         public function my_page()
-	{
+	{    
+        if (!isset($_SESSION['customer'])) {
+                return redirect('login_page');
+        }
         $data['categories'] =$this->CategoryModel->getCategory();
         $data['title'] = 'My Page';
         echo view('template/header',$data);

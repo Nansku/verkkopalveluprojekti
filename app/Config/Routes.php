@@ -31,6 +31,9 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Coffee::index');
+$routes->get('login_page', 'login::login_page');
+$routes->get('register', 'login::register');
+$routes->get('check', 'Login::check');
 
 /**
  * --------------------------------------------------------------------
