@@ -34,7 +34,7 @@ oikea järjestys -->
             </div>
             <div class="col-8">
                <div class="card-body">
-                  <h5 class="card-title">Toimitusjohtaja</h5>
+                  <h5 class="card-title">CEO</h5>
                   <p class="card-text">Jami Salmela<br>
                   jami@vienoscoffee.com<br>+358 40 123 4567</p>
                </div>
@@ -53,7 +53,7 @@ oikea järjestys -->
             </div>
             <div class="col-8">
                <div class="card-body">
-                  <h5 class="card-title">Myynti, laskutus</h5>
+                  <h5 class="card-title">Sales, invoicing</h5>
                   <p class="card-text">Eveliina Purontaus<br>
                   eveliina@vienoscoffee.com<br>+358 40 123 4567</p>
                </div>
@@ -76,7 +76,7 @@ oikea järjestys -->
             </div>
             <div class="col-8">
                <div class="card-body">
-                  <h5 class="card-title">Tilaukset, asiakaspalvelu</h5>
+                  <h5 class="card-title">Orders, customer service</h5>
                   <p class="card-text">Ilari Puustinen<br>
                   ilari@vienoscoffee.com<br>+358 40 123 4567</p>
                </div>
@@ -95,7 +95,7 @@ oikea järjestys -->
             </div>
             <div class="col-8">
                <div class="card-body">
-                  <h5 class="card-title">Tilaukset, asiakaspalvelu</h5>
+                  <h5 class="card-title">Orders, customer service</h5>
                   <p class="card-text">Jenna Pennanen<br>
                   jenna@vienoscoffee.com<br>+358 40 123 4567</p>
                </div>
@@ -118,7 +118,7 @@ oikea järjestys -->
             </div>
             <div class="col-8">
                <div class="card-body">
-                  <h5 class="card-title">Uudet tuotteet</h5>
+                  <h5 class="card-title">New products</h5>
                   <p class="card-text">Henri Aukee<br>
                   henri@vienoscoffee.com<br>+358 40 123 4567</p>
                </div>
@@ -137,7 +137,7 @@ oikea järjestys -->
             </div>
             <div class="col-8">
                <div class="card-body">
-                  <h5 class="card-title">Uudet asiakkaat</h5>
+                  <h5 class="card-title">New customers</h5>
                   <p class="card-text">Jukka Liimatta<br>
                   jukka@vienoscoffee.com<br>+358 40 123 4567</p>
                </div>
@@ -160,7 +160,7 @@ oikea järjestys -->
             </div>
             <div class="col-8">
                <div class="card-body">
-                  <h5 class="card-title">Varastopäällikkö</h5>
+                  <h5 class="card-title">Storage manager</h5>
                   <p class="card-text">Ville Rantanen<br>
                   ville@vienoscoffee.com<br>+358 40 123 4567</p>
                </div>
