@@ -34,7 +34,9 @@
     <nav class="navbar navbar-expand-lg navbar-light pr-5 pl-5">
         <!-- Logo -->
         <a class="navbar-brand active" href="<?= site_url('Coffee/index')?>">
-            <img class="img-fluid site-logo" src="<?= base_url('img/logo_mk5.png')?>"></img>
+            <!--<img class="img-fluid site-logo" src="<?= base_url('img/logo_mk5.png')?>"></img>-->
+            <img class="img-fluid site-logo static" src="<?= base_url('img/logo.png')?>"></img>
+            <img class="img-fluid site-logo active" src="<?= base_url('img/logo.gif')?>"></img>
         </a>
         <!-- Burger -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -90,12 +92,9 @@
 
                 <!-- Shopping cart -->
                 <li class="nav-item ml-5 mt-2 nav-gr">
-                    <a class="nav-link active nav-txt" href="<?= site_url('cart')?>">
-                        <span class="badge badge-pill btn-danger" id="cart">
-                            <?php 
-                            // nolla ostoskorin vieressä :)
-                            echo isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
-                            ?>
+                    <a class="nav-link active nav-txt" href="<?= site_url('cart/index')?>">
+                        <span class="badge badge-pill btn-danger">
+                        <?= $cart_count ?>
                         </span>
 
                     <i class="fas fa-shopping-cart mr-2">

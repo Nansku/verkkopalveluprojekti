@@ -3,23 +3,30 @@ namespace App\Controllers;
 
 use App\Models\LoginModel;
 use App\Models\CategoryModel;
+use App\Models\ProductModel;
+use App\Models\CartModel;
 
 
-const REGISTER_TITLE = 'Rekisteröidy kahvikauppaan';
-const LOGIN_TITLE = 'Kirjaudu kahvikauppaan';
+const REGISTER_TITLE = 'Register as user';
+const LOGIN_TITLE = 'Login';
 
 class Login extends BaseController {
 
     private $CategoryModel = null;
+    private $ProductModel = null;
+    private $CartModel = null;
 
     public function __construct() {
         $session = \Config\Services::session();
         $session->start();
         $this->CategoryModel = new CategoryModel();
+        $this->ProductModel = new ProductModel();
+        $this->cartModel = new CartModel();
     }
 
 
     public function login_page() {
+        $data['cart_count'] = $this->cartModel->count();
         $data['categories'] =$this->CategoryModel->getCategory();
         $data['title'] = LOGIN_TITLE;
         echo view('template/header', $data);
@@ -28,6 +35,7 @@ class Login extends BaseController {
     }
     
     public function register() {
+        $data['cart_count'] = $this->cartModel->count();
         $data['categories'] =$this->CategoryModel->getCategory();
         $data['title'] = REGISTER_TITLE;
         echo view('template/header', $data);
@@ -36,6 +44,8 @@ class Login extends BaseController {
     }
 
     public function registration() {
+        $data['cart_count'] = $this->cartModel->count();
+        $data['categories'] =$this->CategoryModel->getCategory();
         $model = new LoginModel();
 
         if (!$this->validate([
@@ -43,9 +53,9 @@ class Login extends BaseController {
             'password' => 'required|min_length[8]|max_length[30]',
             'confirmpassword' => 'required|min_length[8]|max_length[30]|matches[password]',
         ])){
-            echo view('template/header' , ['title' => REGISTER_TITLE]);
-            echo view('login/register');
-            echo view('template/footer');
+            echo view('template/header' , ['title' => REGISTER_TITLE], $data);
+            echo view('login/register', $data);
+            echo view('template/footer', $data);
         }
         else {
             $model->save([

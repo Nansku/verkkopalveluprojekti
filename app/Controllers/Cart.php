@@ -26,17 +26,6 @@ class Cart extends BaseController{
     public function index(){
 
         $data['categories'] = $this->categoryModel->getCategory();
-
-        /*if (count($_SESSION['cart']) > 0) {
-        $products = $this->productModel->getProducts($_SESSION['cart']);
-        }
-        else{
-            $products = array();
-        }
-
-        $data['products'] = $products;
-        $data['cart_count'] = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0; */
-
         $data['product'] = $this->cartModel->cart();
         $data['cart_count'] = $this->cartModel->count();
 
@@ -49,25 +38,28 @@ class Cart extends BaseController{
 
 // Koriin lisäys
     public function add($productID) {
-        $this->cartModel->add($productID);
+        $this->cartModel->modelAdd($productID);
         //array_push($_SESSION['cart'],$productID);
-        return redirect()->to(site_url('Coffee/product' . $productID));
+        return redirect()->to(site_url('Coffee/product/' . $productID));
       
       }
 
 // Kaikkien tuotteiden korista poistaminen
     public function clear(){
         $_SESSION['cart'] = null;
-        return redirect()->to(site_url('/'));
+        $_SESSION['cart'] = array();
     }  
 
     public function remove($productID) {
-        for ($i = count($_SESSION['cart'])-1; $i >= 0; $i--) {
+        /*for ($i = count($_SESSION['cart'])-1; $i >= 0; $i--) {
             $product = $_SESSION['cart'][$i];
 
             if ($product['productID'] === $productID) {
                 array_splice($_SESSION['cart'], $i, 1);
             }
-        }
+        }*/
+
+        $this->cartModel->remove($productID);
+        return redirect()->to(site_url('cart/index'));	
     }
 }

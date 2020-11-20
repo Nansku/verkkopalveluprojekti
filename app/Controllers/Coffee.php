@@ -2,22 +2,26 @@
 
 use App\Models\CategoryModel;
 use App\Models\ProductModel;
+use App\Models\CartModel;
 
 class Coffee extends BaseController
 {
 
         private $CategoryModel = null;
         private $ProductModel = null;
+        private $CartModel = null;
 
         function __construct()
         {
          $this->CategoryModel = new CategoryModel();
          $this->ProductModel = new ProductModel();
+         $this->cartModel = new CartModel();
         }
 
 
 	public function index()
 	{
+        $data['cart_count'] = $this->cartModel->count();
         $data['categories'] =$this->CategoryModel->getCategory();
         $data['title'] = 'Kahvikauppa';
         echo view('template/header', $data);
@@ -28,6 +32,7 @@ class Coffee extends BaseController
 
     public function contact_us()
 	{
+        $data['cart_count'] = $this->cartModel->count();
         $data['categories'] =$this->CategoryModel->getCategory();
         $data['title'] = 'Contact_us';
         echo view('template/header', $data);
@@ -38,6 +43,7 @@ class Coffee extends BaseController
 	//--------------------------------------------------------------------
         public function story()
 	{
+        $data['cart_count'] = $this->cartModel->count();
         $data['categories'] =$this->CategoryModel->getCategory();
         $data['title'] = 'Story';
         echo view('template/header', $data);
@@ -46,10 +52,11 @@ class Coffee extends BaseController
         }
         
         public function my_page()
-	{    
+	{
         if (!isset($_SESSION['customer'])) {
-                return redirect('login_page');
+        return redirect('login_page');
         }
+        $data['cart_count'] = $this->cartModel->count();
         $data['categories'] =$this->CategoryModel->getCategory();
         $data['title'] = 'My Page';
         echo view('template/header',$data);
@@ -59,6 +66,7 @@ class Coffee extends BaseController
         
         public function cart()
 	{
+        $data['cart_count'] = $this->cartModel->count();
         $data['categories'] =$this->CategoryModel->getCategory();
         $data['title'] = 'Shopping Cart';
         echo view('template/header',$data);
@@ -68,6 +76,7 @@ class Coffee extends BaseController
         
         public function faq()
 	{
+        $data['cart_count'] = $this->cartModel->count();
         $data['categories'] =$this->CategoryModel->getCategory();        
         $data['title'] = 'FAQ';
         echo view('template/header',$data);
@@ -76,7 +85,9 @@ class Coffee extends BaseController
         }
         
         public function products($categorynum) {
+                $data['cart_count'] = $this->cartModel->count();
                 if($categorynum == 'allProducts') {
+                        
                         $data['products'] =$this->ProductModel->getAllProducts(); 
                         $data['categories'] =$this->CategoryModel->getCategory();
                         $data['title'] = 'Products';
@@ -96,6 +107,7 @@ class Coffee extends BaseController
 
         // Opens single products pages
         public function product($productID){
+                $data['cart_count'] = $this->cartModel->count();
                 $data['categories'] = $this->CategoryModel->getCategory();
                 $data['products'] = $this->ProductModel->getProduct($productID);
                 echo view('template/header', $data);

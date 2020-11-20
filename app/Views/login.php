@@ -4,14 +4,14 @@
     <?= \Config\Services::validation()->listErrors(); ?>
     </div>
     <div class="form-group">
-        <label>Sähköposti</label>
-        <input class="form-control" name="email" placeholder="Anna sähköpostiosoite" maxlength="100">
+        <label>Email</label>
+        <input class="form-control" name="email" placeholder="Enter email address" maxlength="100">
     </div>
     <div class="form-group">
-        <label>Salasana</label>
-        <input class="form-control" name="password" type="password" placeholder="Anna salasana" maxlength="255">
+        <label>Password</label>
+        <input class="form-control" name="password" type="password" placeholder="Enter Password" maxlength="255">
     </div>
-    <button class="btn btn-warning">Kirjaudu</button>
-    <p>Uusi asiakas? Rekisteröidy
-    <?= anchor('login/register','Tästä') ?> </p>
+    <button class="btn btn-warning">Login</button>
+    <p>New customer?
+    <?= anchor('login/register','Register here') ?> </p>
 </form>

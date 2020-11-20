@@ -4,36 +4,36 @@
     <?= \Config\Services::validation()->listErrors(); ?>
     </div>
     <div class="form-group">
-        <label>Nimi</label>
-        <input class="form-control" name="name" placeholder="Etunimi ja sukunimi" maxlength="100">
+        <label>Name</label>
+        <input class="form-control" name="name" placeholder="First and last name" maxlength="100">
     </div>
     <div class="form-group">
-        <label>Sähköposti</label>
-        <input class="form-control" name="email" placeholder="esim. kauno.kahvi@gmail.com" maxlength="255">
+        <label>Email</label>
+        <input class="form-control" name="email" placeholder="Enter email address" maxlength="255">
     </div>
     <div class="form-group">
-        <label>Osoite</label>
-        <input class="form-control" name="address" placeholder="Aseta osoite" maxlength="100">
+        <label>Address</label>
+        <input class="form-control" name="address" placeholder="Enter address" maxlength="100">
     </div>
     <div class="form-group">
-        <label>Postinumero</label>
-        <input class="form-control" name="postalnumber" placeholder="Aseta postinumero" maxlength="5">
+        <label>Postal code</label>
+        <input class="form-control" name="postalnumber" placeholder="Enter postal number" maxlength="5">
     </div>
     <div class="form-group">
-        <label>Kaupunki</label>
-        <input class="form-control" name="city" placeholder="Aseta kaupunki" maxlength="50">
+        <label>City</label>
+        <input class="form-control" name="city" placeholder="Enter city" maxlength="50">
     </div>
     <div class="form-group">
-        <label>Puhelin</label>
-        <input class="form-control" name="phonenumber" placeholder="Aseta puhelinnumero" maxlength="10">
+        <label>Phone</label>
+        <input class="form-control" name="phonenumber" placeholder="Enter phonenumber" maxlength="10">
     </div>
     <div class="form-group">
-        <label>Salasana</label>
-        <input class="form-control" name="password" placeholder="Aseta salasana" maxlength="255">
+        <label>Password</label>
+        <input class="form-control" name="password" type="password" placeholder="Set password" maxlength="255">
     </div>
     <div class="form-group">
-        <label>Salasana uudelleen</label>
-        <input class="form-control" name="confirmpassword" placeholder="Aseta salasana uudelleen" maxlength="255">
+        <label>Confirm password</label>
+        <input class="form-control" name="confirmpassword" type="password" placeholder="Enter password again" maxlength="255">
     </div>
     <button class="btn btn-warning">Lähetä</button>
 </form>

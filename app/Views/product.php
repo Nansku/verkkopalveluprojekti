@@ -1,3 +1,4 @@
+<form action="<?= site_url('cart/add/' . $products['productID']);?>" method="post">
 <div class="product_color">
     <div class=" d-flex justify-content-center">
         <div class="card mt-4 mb-4" style="width: 1200px;">
@@ -17,3 +18,4 @@
         </div>
     </div>
 </div>
+</form>
