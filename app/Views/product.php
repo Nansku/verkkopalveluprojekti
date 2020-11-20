@@ -1,18 +1,20 @@
 <form action="<?= site_url('cart/add/' . $products['productID']);?>" method="post">
-<div class="product_color">
+<div class="product_color container">
     <div class=" d-flex justify-content-center">
-        <div class="card mt-4 mb-4" style="width: 1200px;">
-            <div class="row no-gutters id1">
-                <div class="col-8 card-body">
-                    <h4 class="card-title"><?= $products['productname'] ?></h4>
-                    <p class="card-text"><?= $products['description'] ?></p>
-                    <p class="card-text"><?= $products['price'] ?> €</p>
-                    <button class="btn nappula shadow-none"> <i class="fas fa-shopping-cart mr-2"></i>Lisää koriin</button>
-                </div>
-                <div class="col-4">
-                    <div class="float-right">
-                        <img class="card-img" src="<?= base_url('img/' . $products['picture']) ?>"></img>
+        <div class="mt-5 mb-5" style="width: 1200px;">
+            <div class="row no-gutters mt-5 mb-5">
+
+                    <div class="col-6">
+                        <img class="float-right mr-4" id="zoom_05" src="<?= base_url('img/' . $products['picture']) ?>" 
+                        data-zoom-image="<?= base_url('img/large/' . $products['picture']) ?>"/>
                     </div>
+                    <div class="col-6">
+                    <h3><?= $products['productname'] ?></h3>
+                    <p class="description "><?= $products['description'] ?></p>
+                    <h4><?= $products['price'] ?> €</h4>
+                    <button class="btn nappula shadow-none mt-2"> <i class="fas fa-shopping-cart mr-2"></i>Lisää koriin</button>
+                    </div>
+                
                 </div>
             </div>
         </div>
