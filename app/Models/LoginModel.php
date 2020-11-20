@@ -4,7 +4,6 @@ use CodeIgniter\Model;
 
 class LoginModel extends Model {
     protected $table = 'customer';
-
     protected $allowedFields = ['name', 'password', 'address', 'postalnumber', 'city', 'email', 'phonenumber'];
 
     public function getUsers() {

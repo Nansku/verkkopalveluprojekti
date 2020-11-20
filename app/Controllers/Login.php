@@ -31,7 +31,7 @@ class Login extends BaseController {
         $data['title'] = LOGIN_TITLE;
         echo view('template/header', $data);
         echo view('login', $data);
-        echo view('template/footer', $data);
+        echo view('template/footer');
     }
     
     public function register() {
@@ -40,7 +40,7 @@ class Login extends BaseController {
         $data['title'] = REGISTER_TITLE;
         echo view('template/header', $data);
         echo view('register', $data);
-        echo view('template/footer', $data);
+        echo view('template/footer');
     }
 
     public function registration() {
@@ -55,7 +55,7 @@ class Login extends BaseController {
         ])){
             echo view('template/header' , ['title' => REGISTER_TITLE], $data);
             echo view('login/register', $data);
-            echo view('template/footer', $data);
+            echo view('template/footer');
         }
         else {
             $model->save([
@@ -68,19 +68,21 @@ class Login extends BaseController {
                 'phonenumber' => $this->request->getVar('phonenumber')
 
             ]);
-            return redirect('login');
+            return redirect('login_page');
         }
     }
 
     public function check() {
+        $data['cart_count'] = $this->cartModel->count();
+        $data['categories'] =$this->CategoryModel->getCategory();
         $model = new LoginModel();
 
         if (!$this->validate([
             'email' => 'required|min_length[8]|max_length[100]',
             'password' => 'required|min_length[8]|max_length[255]'
         ])){
-            echo view('template/header' , ['title' => LOGIN_TITLE]);
-            echo view('login');
+            echo view('template/header' , ['title' => LOGIN_TITLE], $data);
+            echo view('login', $data);
             echo view('template/footer');
         }
         else {
