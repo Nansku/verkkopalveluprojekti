@@ -1,4 +1,4 @@
-<h3><?= $title ?></h3>
+<h3>Login</h3>
 <form action="/login/check">
     <div class="col-12">
     <?= \Config\Services::validation()->listErrors(); ?>

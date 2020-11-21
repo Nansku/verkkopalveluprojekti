@@ -1,4 +1,4 @@
-<h3><?= $title ?></h3>
+<h3>Register as user</h3>
 <form action="registration">
     <div class="col-12">
     <?= \Config\Services::validation()->listErrors(); ?>
