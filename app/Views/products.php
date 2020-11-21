@@ -14,7 +14,9 @@
                </div>
                <div class="col-4">
                   <div class="float-right">
+                     <a href="<?= site_url('/coffee/product/' . $product['productID'])?>">
                      <img class="card-img" src="<?= base_url('img/' . $product['picture'])?>"></img>
+                     </a>
                   </div>
                </div> 
             </div>      
