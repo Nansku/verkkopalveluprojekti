@@ -10,6 +10,7 @@ class Cart extends BaseController{
     private $productModel=null;
     private $cartModel=null;
 
+    // Creates the session
     public function __construct(){
         $session = \Config\Services::session();
         $session->start();
@@ -22,7 +23,7 @@ class Cart extends BaseController{
         $this->cartModel = new CartModel();
     }
 
-    //kori sessarin luoja
+    // index
     public function index(){
 
         $data['categories'] = $this->categoryModel->getCategory();
@@ -36,7 +37,7 @@ class Cart extends BaseController{
     
 
 
-// Koriin lisäys
+// Add an item to the cart 
     public function add($productID) {
         $this->cartModel->modelAdd($productID);
         //array_push($_SESSION['cart'],$productID);
@@ -44,12 +45,13 @@ class Cart extends BaseController{
       
       }
 
-// Kaikkien tuotteiden korista poistaminen
+// Clears the whjole cart
     public function clear(){
         $_SESSION['cart'] = null;
         $_SESSION['cart'] = array();
     }  
 
+// Removes certain products one at a time 
     public function remove($productID) {
         /*for ($i = count($_SESSION['cart'])-1; $i >= 0; $i--) {
             $product = $_SESSION['cart'][$i];

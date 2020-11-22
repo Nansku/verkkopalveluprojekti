@@ -2,6 +2,8 @@
     <div class="col">
         <h4>Shopping cart</h4>
         <table class="table">
+            <?php $sum = 0; ?>
+            <!-- Products in cart -->
             <?php foreach ($product as $products): ?>
             <tr>
                 <td>
@@ -25,13 +27,18 @@
             </tr>
 
             <!-- Tässä lasketaan summa -->
+            <?php
+            $sum += $products['price']  * $products['amount'];
+            ?>
             <tr>
                 <td></td>
-                <td><!-- Tähän tulostetaan summa --></td>
+                <td><!-- Tähän tulostetaan summa -->
+                <?php printf ("%.2f €", $sum);?>
+                </td>
                 <td></td>
 
                 <td>
-                    <a id="clear" href="#" >
+                    <a id="clear" href="<?= site_url('cart/clear');?>" >
                     <i class="fas fa-trash"></i>
                     </a>
                 </td>
