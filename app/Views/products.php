@@ -1,3 +1,4 @@
+
 <div class="product_color">
    <?php foreach ($products as $product): ?> 
       <div class=" d-flex justify-content-center">
@@ -10,6 +11,8 @@
                   </a>
                      <p class="card-text"><?=$product['description']?></p>
                      <p class="card-text"><?=$product['price']?> €</p>
+               <!-- Form lisää tuotteen ostoskoriin -->
+               <form action="<?= site_url('cart/add2/' . $product['productID']);?>" method="post">
                      <button class="btn nappula shadow-none"> <i class="fas fa-shopping-cart mr-2"></i>Lisää koriin</button>
                </div>
                <div class="col-4">
@@ -23,4 +26,5 @@
          </div>
       </div>
    <?php endforeach; ?>
+</form>
 </div>

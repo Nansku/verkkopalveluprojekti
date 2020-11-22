@@ -35,9 +35,7 @@ class Cart extends BaseController{
 		echo view('template/footer');
     }
     
-
-
-// Add an item to the cart 
+    // Add an item to the cart 
     public function add($productID) {
         $this->cartModel->modelAdd($productID);
         //array_push($_SESSION['cart'],$productID);
@@ -45,22 +43,23 @@ class Cart extends BaseController{
       
       }
 
-// Clears the whjole cart
-    public function clear(){
-        $_SESSION['cart'] = null;
-        $_SESSION['cart'] = array();
+    
+      public function add2($categorynum) {
+        $this->productModel->getWithCategory($categorynum);
+        $this->cartModel->modelAdd($categorynum);
+        //array_push($_SESSION['cart'],$productID);
+        return redirect()->to(site_url('Coffee/products/'. $categorynum));
+      
+      }
+
+    // Clears the whole cart
+    public function clear() {
+        $this->cartModel->clear();
+        return redirect()->to(site_url('cart/index'));		
     }  
 
-// Removes certain products one at a time 
+    // Removes certain products one at a time 
     public function remove($productID) {
-        /*for ($i = count($_SESSION['cart'])-1; $i >= 0; $i--) {
-            $product = $_SESSION['cart'][$i];
-
-            if ($product['productID'] === $productID) {
-                array_splice($_SESSION['cart'], $i, 1);
-            }
-        }*/
-
         $this->cartModel->remove($productID);
         return redirect()->to(site_url('cart/index'));	
     }

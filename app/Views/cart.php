@@ -23,16 +23,17 @@
                         <i class="fas fa-minus-circle"></i>
                     </a>
                 </td>
+                <!-- LASKETAAN OSTOSKORIN SUMMA -->
+                <?php
+                $sum += $products['price']  * $products['amount'];
+                ?>
                 <?php endforeach ?>
             </tr>
-
-            <!-- Tässä lasketaan summa -->
-            <?php
-            $sum += $products['price']  * $products['amount'];
-            ?>
+                       
             <tr>
                 <td></td>
-                <td><!-- Tähän tulostetaan summa -->
+                <td>
+                <!-- Tähän tulostetaan summa -->
                 <?php printf ("%.2f €", $sum);?>
                 </td>
                 <td></td>
