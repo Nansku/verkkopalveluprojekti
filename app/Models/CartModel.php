@@ -52,8 +52,9 @@ class CartModel extends Model
 
 
     public function modelAdd($productID)
-    {
+    {   
         $product = $this->productModel->getProduct($productID);
+
         $cartProduct['productID'] = $product['productID'];
         $cartProduct['productname'] = $product['productname'];
         $cartProduct['price'] = $product['price'];
@@ -61,6 +62,8 @@ class CartModel extends Model
 
         $this->addProductArray($cartProduct, $_SESSION['cart']);
     }
+
+    
 
     private function addProductArray($product, &$array)
     {
@@ -76,20 +79,13 @@ class CartModel extends Model
     }
 
     public function remove($productID)
-    {
-        for ($i = count($_SESSION['cart']) - 1; $i >= 0; $i--) {
+    {   for ($i = count($_SESSION['cart']) - 1; $i >= 0; $i--) {
             $product = $_SESSION['cart'][$i];
             if ($product['productID'] === $productID) {
                 array_splice($_SESSION['cart'], $i, 1);
             }
         }
-        /*
-        for ($i = count($_SESSION['cart']) - 1; $i >= 0; $i--) {
-            $product = $_SESSION['cart'][$i];
-            if ($product[$i]['productID'] === $productID) {
-                $array[$i]['amount'] = $array[$i]['amount'] + 1;
-            }
-        }*/
+        
     }
 
     public function clear()

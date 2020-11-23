@@ -25,7 +25,7 @@
                 </td>
                 <!-- LASKETAAN OSTOSKORIN SUMMA -->
                 <?php
-                $sum += $products['price']  * $products['amount'];
+                $sum += $products['price'] * $products['amount'];
                 ?>
                 <?php endforeach ?>
             </tr>

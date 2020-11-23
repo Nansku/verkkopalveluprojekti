@@ -43,15 +43,6 @@ class Cart extends BaseController{
       
       }
 
-    
-      public function add2($categorynum) {
-        $this->productModel->getWithCategory($categorynum);
-        $this->cartModel->modelAdd($categorynum);
-        //array_push($_SESSION['cart'],$productID);
-        return redirect()->to(site_url('Coffee/products/'. $categorynum));
-      
-      }
-
     // Clears the whole cart
     public function clear() {
         $this->cartModel->clear();

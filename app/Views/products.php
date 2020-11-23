@@ -11,9 +11,10 @@
                   </a>
                      <p class="card-text"><?=$product['description']?></p>
                      <p class="card-text"><?=$product['price']?> €</p>
-               <!-- Form lisää tuotteen ostoskoriin -->
+               <!-- Form lisää tuotteen ostoskoriin 
                <form action="<?= site_url('cart/add2/' . $product['productID']);?>" method="post">
                      <button class="btn nappula shadow-none"> <i class="fas fa-shopping-cart mr-2"></i>Lisää koriin</button>
+               -->
                </div>
                <div class="col-4">
                   <div class="float-right">
@@ -25,6 +26,7 @@
             </div>      
          </div>
       </div>
+   <!-- </form> -->
    <?php endforeach; ?>
-</form>
+
 </div>
