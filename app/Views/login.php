@@ -13,7 +13,7 @@
             <label>Password</label>
             <input class="form-control" name="password" type="password" placeholder="Enter Password" maxlength="255">
         </div>
-        <button class="btn btn-warning">Login</button>
+        <button class="btn btn-coffee">Login</button>
         <p>New customer?
         <?= anchor('login/register','Register here') ?> </p>
     </form>
