@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row footer_margin mt-2 cart">
     <div class="col">
         <h4>Shopping cart</h4>
         <table class="table">
@@ -20,7 +20,7 @@
 
                 <td>
                     <a class="cart_remove" href="<?= site_url('cart/remove/' . $products['productID'])?>">
-                        <i class="fas fa-minus-circle"></i>
+                        <i class="fas fa-minus-circle"></i> Delete product
                     </a>
                 </td>
                 <!-- LASKETAAN OSTOSKORIN SUMMA -->
@@ -32,19 +32,18 @@
                        
             <tr>
                 <td></td>
+                
                 <td>
-                <!-- Tähän tulostetaan summa -->
                 <?php printf ("%.2f €", $sum);?>
                 </td>
                 <td></td>
 
                 <td>
                     <a id="clear" href="<?= site_url('cart/clear');?>" >
-                    <i class="fas fa-trash"></i>
+                    <i class="fas fa-trash"></i> Empty cart
                     </a>
                 </td>
             </tr>
         </table>
-
     </div>
 </div>

@@ -1,4 +1,4 @@
-<div class=" d-flex justify-content-center">
+<div class=" d-flex justify-content-center footer_margin mt-2">
     <div class="col-5">
     <h3>Register as user</h3>
     <form action="registration">

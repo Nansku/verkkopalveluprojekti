@@ -96,6 +96,16 @@ dropdown-toggle::after {
   font-family: 'Oswald', sans-serif;
 }
 
+.footer_margin {
+  margin-bottom: 8em;
+}
+
+/* Margin for shopping cart */
+.cart {
+  margin-left: 10em;
+  margin-right: 10em;
+}
+
 /*Products*/
 h4, h3{
   font-family: 'Oswald', sans-serif;

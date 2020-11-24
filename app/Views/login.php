@@ -1,4 +1,4 @@
-<div class=" d-flex justify-content-center">
+<div class=" d-flex justify-content-center mt-3 footer_margin">
     <div class="col-5">
     <h3>Login</h3>
     <form action="/login/check">
