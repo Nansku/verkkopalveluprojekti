@@ -231,6 +231,7 @@ footer i{
 
 /*Button color for login & register*/
 .btn-coffee {
+  font-family: 'Oswald', sans-serif;
   border: 5px;
   border-width: 2px;
   border-style: solid;
