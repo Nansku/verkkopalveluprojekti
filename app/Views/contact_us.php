@@ -27,10 +27,9 @@ oikea järjestys -->
       <div class="card my-3 ml-lg-auto" style="max-width: 540px;">
          <div class="row">
             <div class="col-4 text-center my-auto">
-               <!-- Icon is temporary -->
-               <i class="fas fa-user-ninja fa-6x user"></i>
-               <!-- <img src=<?= base_url("img/jami.jpg") ?>
-               class="card-img" alt="Jami Salmela"> -->
+
+               <img src=<?= base_url("img/jampula2.jpg") ?>
+               class="card-img us_img" alt="Jami Salmela">
             </div>
             <div class="col-8">
                <div class="card-body">
@@ -46,10 +45,9 @@ oikea järjestys -->
       <div class="card my-3 mr-lg-auto" style="max-width: 540px;">
          <div class="row">
             <div class="col-4 text-center my-auto">
-               <!-- Icon is temporary -->
-               <i class="fas fa-user-ninja fa-6x user"></i>
-               <!-- <img src=<?= base_url("img/eveliina.jpg") ?>
-               class="card-img" alt="Eveliina Purontaus"> -->
+ 
+               <img src=<?= base_url("img/eveliina.png") ?>
+               class="card-img us_img" alt="Eveliina Purontaus">
             </div>
             <div class="col-8">
                <div class="card-body">
@@ -69,10 +67,9 @@ oikea järjestys -->
       <div class="card my-3 ml-lg-auto" style="max-width: 540px;">
          <div class="row no-gutters">
             <div class="col-4 text-center my-auto">
-               <!-- Icon is temporary -->
-               <i class="fas fa-user-ninja fa-6x user"></i>
-               <!-- <img src=<?= base_url("img/ilari.jpg") ?>
-               class="card-img" alt="Ilari Puustinen"> -->
+               
+               <img src=<?= base_url("img/ilari.PNG") ?>
+               class="card-img us_img" alt="Ilari Puustinen">
             </div>
             <div class="col-8">
                <div class="card-body">
@@ -88,10 +85,9 @@ oikea järjestys -->
       <div class="card my-3 mr-lg-auto" style="max-width: 540px;">
          <div class="row no-gutters">
             <div class="col-4 text-center my-auto">
-               <!-- Icon is temporary -->
-               <i class="fas fa-user-ninja fa-6x user"></i>
-               <!-- <img src=<?= base_url("img/jenna.jpg") ?>
-               class="card-img" alt="Jenna Pennanen"> -->
+ 
+               <img src=<?= base_url("img/jenna.jpg") ?>
+               class="card-img us_img" alt="Jenna Pennanen">
             </div>
             <div class="col-8">
                <div class="card-body">
@@ -111,10 +107,9 @@ oikea järjestys -->
       <div class="card my-3 ml-lg-auto" style="max-width: 540px;">
          <div class="row no-gutters">
             <div class="col-4 text-center my-auto">
-               <!-- Icon is temporary -->
-               <i class="user fas fa-user-ninja fa-6x"></i>
-               <!-- <img src=<?= base_url("img/henri.jpg") ?>
-               class="card-img" alt="Henri Aukee"> -->
+
+               <img src=<?= base_url("img/henri.jpg") ?>
+               class="card-img us_img" alt="Henri Aukee">
             </div>
             <div class="col-8">
                <div class="card-body">
@@ -130,10 +125,9 @@ oikea järjestys -->
       <div class="card my-3 mr-lg-auto" style="max-width: 540px;">
          <div class="row no-gutters">
             <div class="col-4 text-center my-auto">
-               <!-- Icon is temporary -->
-               <i class="fas fa-user-ninja fa-6x user"></i>
-               <!-- <img src=<?= base_url("img/jukka.jpg") ?>
-               class="card-img" alt="Jukka Liimatta"> -->
+
+               <img src=<?= base_url("img/jukka.jpg") ?>
+               class="card-img us_img" alt="Jukka Liimatta">
             </div>
             <div class="col-8">
                <div class="card-body">
@@ -153,10 +147,9 @@ oikea järjestys -->
       <div class="card my-3 ml-lg-auto" style="max-width: 540px;">
          <div class="row no-gutters">
             <div class="col-4 text-center my-auto">
-               <!-- Icon is temporary -->
-               <i class="fas fa-user-ninja fa-6x user"></i>
-               <!-- <img src=<?= base_url("img/ville.jpg") ?>
-               class="card-img" alt="Ville Rantanen"> -->
+
+               <img src=<?= base_url("img/ville.jpg") ?>
+               class="card-img us_img" alt="Ville Rantanen">
             </div>
             <div class="col-8">
                <div class="card-body">
@@ -172,10 +165,9 @@ oikea järjestys -->
       <div class="card my-3 mr-lg-auto" style="max-width: 540px;">
          <div class="row no-gutters">
             <div class="col-4 text-center my-auto">
-               <!-- Icon is temporary -->
-               <i class="fas fa-user-ninja fa-6x user"></i>
-               <!-- <img src=<?= base_url("img/oskari.jpg") ?>
-               class="card-img" alt="Oskari Juntunen"> -->
+
+               <img src=<?= base_url("img/oskari.jpg") ?>
+               class="card-img us_img" alt="Oskari Juntunen">
             </div>
             <div class="col-8">
                <div class="card-body">

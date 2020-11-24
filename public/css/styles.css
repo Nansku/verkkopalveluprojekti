@@ -164,6 +164,16 @@ p{
   border-color: #ED9908; transition: 0.25s;
 }
 
+/*Contact us*/
+
+.us_img{
+  max-width: 90%;
+  height: 178px;
+  align-items: center;
+  padding: 3px;
+  border-radius: 4%;
+}
+
 /*Footer*/
 footer {
   padding-top: 2em;
