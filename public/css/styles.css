@@ -228,3 +228,18 @@ footer i{
 .static:hover {
   opacity:0;
 }
+
+/*Button color for login & register*/
+.btn-coffee {
+  border: 5px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #BF9E87;
+  background-color: #BF9E87;
+}
+
+.btn-coffee:hover {
+  color: white;
+  background-color: #ED9908; transition: 0.25s;
+  border-color: #ED9908; transition: 0.25s;
+}

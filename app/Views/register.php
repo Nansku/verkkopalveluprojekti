@@ -37,7 +37,7 @@
             <label>Confirm password</label>
             <input class="form-control" name="confirmpassword" type="password" placeholder="Enter password again" maxlength="255">
         </div>
-        <button class="btn btn-warning">Lähetä</button>
+        <button class="btn btn-coffee">Submit</button>
     </form>
 </div>
 </div>
