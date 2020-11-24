@@ -51,6 +51,21 @@ class Coffee extends BaseController
         echo view('template/footer');
         }
         
+        // Admin log in
+        public function admin_my_page()
+	{
+        if (!isset($_SESSION['customer'])) {
+        return redirect('login_page');
+        }
+        $data['cart_count'] = $this->cartModel->count();
+        $data['categories'] =$this->CategoryModel->getCategory();
+        $data['title'] = 'My Page';
+        echo view('admin/admin_header',$data);
+        echo view('admin/admin_my_page');
+        echo view('template/footer');
+        }
+
+
         public function my_page()
 	{
         if (!isset($_SESSION['customer'])) {
