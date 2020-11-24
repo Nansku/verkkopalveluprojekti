@@ -1,7 +1,7 @@
 <div class="row">
    <h2>Frequently Asked Questions</h2>
 
-   <div class="col-12">
+   <div class="col-12 mb-3">
       <div class="accordion" id="faqAccordion">
          <div class="card">
             <div class="card-header" id="headingOne">
