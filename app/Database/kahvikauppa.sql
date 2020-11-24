@@ -73,6 +73,11 @@ VALUES ("Machines & Presses");
 INSERT INTO category (categoryname)
 VALUES ("Accessories");
 
+/* Admin käyttäjän luontilause */
+
+INSERT INTO customer (name, password, address, postalnumber, city, email)
+VALUES ('Admin', '12345678', 'Keskisentie 5', '84100', 'Ylivieska','office@vienoscoffee.com');
+
 /* Tuotteiden lisäys lauseita */
 
 INSERT INTO product (productname, description, price, cost, picture, categorynum)
