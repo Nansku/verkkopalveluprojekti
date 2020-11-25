@@ -100,7 +100,7 @@ class Login extends BaseController {
                 echo view('template/footer');
                 
             }elseif ($customer) {
-                //$_SESSION['customer'] = $customer;
+                $_SESSION['customer'] = $customer;
                 echo view('template/header', $data);
                 echo view('my_page', $data);
                 echo view('template/footer');

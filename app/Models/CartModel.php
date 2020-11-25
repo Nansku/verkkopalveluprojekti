@@ -93,4 +93,26 @@ class CartModel extends Model
         $_SESSION['cart'] = null;
         $_SESSION['cart'] = array();
     }
+
+    public function order($customer) {
+        $this->db->transStart();
+        $this->customerModel->save($customer);
+
+        $customerID = $this->insertID();
+
+        $this->orderModel->save(['customerID' => $customerID]);
+        $orderID = $this->insertID();
+
+        foreach ($_SESSION['cart'] as $product) {
+            $this->order_rowModel->save([
+                'ordernum' => $orderID,
+                'productID' => $product['productID'],
+                'amount' => $product['amount']
+            ]);
+        }
+
+        $this->clear();
+        $this->db->transComplete();
+    }
+
 }

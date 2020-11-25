@@ -254,3 +254,7 @@ footer i{
   background-color: #ED9908; transition: 0.25s;
   border-color: #ED9908; transition: 0.25s;
 }
+
+.order_inp {
+  margin-bottom: 2em;
+}

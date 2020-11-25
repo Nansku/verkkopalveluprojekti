@@ -1,5 +1,6 @@
 <div class="row footer_margin mt-2 cart">
     <div class="col">
+        <form action="<?= site_url('Order/index')?>" method="post">
         <h4>Shopping cart</h4>
         <table class="table">
             <?php $sum = 0; ?>
@@ -45,5 +46,7 @@
                 </td>
             </tr>
         </table>
+        <button class="btn btn-warning" >ORDER HERE!!!!</button>
+    </form>
     </div>
 </div>

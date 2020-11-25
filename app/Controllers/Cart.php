@@ -54,4 +54,6 @@ class Cart extends BaseController{
         $this->cartModel->remove($productID);
         return redirect()->to(site_url('cart/index'));	
     }
+
+    
 }
