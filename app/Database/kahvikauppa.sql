@@ -34,7 +34,7 @@ address varchar(50),
 city varchar(50),
 phonenumber varchar(13),
 postalnum char(5),
-ordernum int(10) PRIMARY KEY,
+ordernum int(5) AUTO_INCREMENT PRIMARY KEY,
 date timestamp,
 status char(1)
 );
@@ -42,10 +42,12 @@ status char(1)
 /*  tilausrivi, sisältää tilausnumeron tuote ID:n montako tuotetta tilauksessa on (rownum) sekä paljonko tuotetta on 
 tilattu*/ 
 CREATE TABLE ordr_row (
-ordernum int(10) AUTO_INCREMENT PRIMARY KEY,
+ordernum int(10) ,
 productID int UNSIGNED,
 rownum int(3),
-amount int(3)
+amount int(3),
+FOREIGN KEY (ordernum)
+REFERENCES ordr (ordernum)
 );
 
 /*  Tuotetaulu, sisältää tuote ID:n,tuotenimen, hinnan, kustannuksen, kuva nimen, ja kategoria numeron*/ 
