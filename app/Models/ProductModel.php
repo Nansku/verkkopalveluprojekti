@@ -36,4 +36,9 @@ class ProductModel extends Model {
 
         return $return;
     }
+    // admin poistaa tuoteryhmällä
+        public function deleteByCategory($categorynum) {
+            $this->where('categorynum',$categorynum);
+            $this->delete();
+    }
 }

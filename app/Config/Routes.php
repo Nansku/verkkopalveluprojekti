@@ -1,5 +1,8 @@
 <?php namespace Config;
 
+//http://localhost:8080/index.php/admin/index
+
+
 // Create a new instance of our RouteCollection class.
 $routes = Services::routes();
 
@@ -34,6 +37,9 @@ $routes->get('/', 'Coffee::index');
 $routes->get('login_page', 'Login::login_page');
 $routes->get('register', 'Login::register');
 $routes->get('check', 'Login::check');
+$routes->get('/admin/index', 'Admin::index');
+
+
 
 /**
  * --------------------------------------------------------------------
