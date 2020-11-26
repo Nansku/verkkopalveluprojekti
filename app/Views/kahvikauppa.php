@@ -24,6 +24,7 @@
 
 </div>
 
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up fa-2x"></i></button>
 <!-- <div id="design" class="text">
     <h3></h3>
 </div> -->

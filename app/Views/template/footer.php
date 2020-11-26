@@ -44,6 +44,7 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.rawgit.com/igorlino/elevatezoom-plus/1.1.6/src/jquery.ez-plus.js"></script>
     <script src="<?=base_url('js\zoom.js')?>" type="text/javascript"></script>
+    <script src="<?=base_url('js\scroll_up.js')?>" type="text/javascript"></script>
     </body>
 
     </html>

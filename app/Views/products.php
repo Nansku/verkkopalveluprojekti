@@ -28,5 +28,6 @@
       </div>
    <!-- </form> -->
    <?php endforeach; ?>
-
+      <!-- scroll up button -->
+   <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up fa-2x"></i></button>
 </div>

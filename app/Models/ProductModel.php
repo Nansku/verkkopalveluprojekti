@@ -1,27 +1,34 @@
-<?php namespace App\Models;
+<?php
+
+namespace App\Models;
 
 use CodeIgniter\Model;
 
-class ProductModel extends Model {
+class ProductModel extends Model
+{
     protected $table = 'product';
 
-    public function getWithCategory($categorynum) {
+    public function getWithCategory($categorynum)
+    {
         return $this->getWhere(['categorynum' => $categorynum])->getResultArray();
     }
 
-    public function getAllProducts() {
+    public function getAllProducts()
+    {
         return $this->findAll();
     }
 
     // product getteri
-    public function getProduct($id) {
+    public function getProduct($id)
+    {
         $this->where('productID', $id);
         $query = $this->get();
         $product = $query->getRowArray();
         return $product;
     }
 
-    public function getProducts($ids) {
+    public function getProducts($ids)
+    {
         $return = array();
         foreach ($ids as $id) {
             $this->table('product');
@@ -29,7 +36,7 @@ class ProductModel extends Model {
             $this->where('productID', $id);
             $query = $this->get();
             $product = $query->getRowArray();
-            array_push($return,$product);
+            array_push($return, $product);
 
             $this->resetQuery();
         }
@@ -37,8 +44,9 @@ class ProductModel extends Model {
         return $return;
     }
     // admin poistaa tuoteryhmällä
-        public function deleteByCategory($categorynum) {
-            $this->where('categorynum',$categorynum);
-            $this->delete();
+    public function deleteByCategory($categorynum)
+    {
+        $this->where('categorynum', $categorynum);
+        $this->delete();
     }
 }
