@@ -6,7 +6,6 @@ use CodeIgniter\Model;
 
 class CartModel extends Model
 {
-
     private $productModel = null;
     private $customerModel = null;
     private $order_rowModel = null;
@@ -24,8 +23,9 @@ class CartModel extends Model
         $this->db = \Config\Database::connect();
 
         $this->productModel = new ProductModel();
-        // $this->customerModel = new CustomerModel();
-        //  $this->order_rowModel = new Order_rowModel();
+        //$this->customerModel = new CustomerModel();
+        $this->order_rowModel = new Order_rowModel();
+        $this->orderModel = new OrderModel();
     }
     /**
      *    @return Array cart
@@ -94,18 +94,18 @@ class CartModel extends Model
         $_SESSION['cart'] = array();
     }
 
+
     public function order($customer) {
         $this->db->transStart();
-        $this->customerModel->save($customer);
+        $this->orderModel->save($customer);
 
-        $customerID = $this->insertID();
+        /*$customerID = $this->insertID();
 
-        $this->orderModel->save(['customerID' => $customerID]);
-        $orderID = $this->insertID();
+        $this->orderModel->save(['customerID' => $customerID]);*/
 
         foreach ($_SESSION['cart'] as $product) {
             $this->order_rowModel->save([
-                'ordernum' => $orderID,
+                // 'ordernum' => $orderID,
                 'productID' => $product['productID'],
                 'amount' => $product['amount']
             ]);

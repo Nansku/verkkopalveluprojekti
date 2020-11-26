@@ -55,5 +55,23 @@ class Cart extends BaseController{
         return redirect()->to(site_url('cart/index'));	
     }
 
-    
+    public function order() {
+        $data['categories']  = $this->categoryModel->getCategory();
+        $customer = [
+            'customername' => $this->request->getPost('customername'),
+            'address' => $this->request->getPost('address'),
+            'postalnum' => $this->request->getPost('postalnum'),
+            'city' => $this->request->getPost('city'),
+            'email' => $this->request->getPost('email'),
+            'phonenumber' => $this->request->getPost('phonenumber')
+        ];
+
+        // $orderID = $this->orderModel->getOrdernum();
+        $this->cartModel->order($customer);
+
+        $data['cart_count'] = $this->cartModel->count();
+        echo view ('template/header', $data);
+        echo view ('thank_you');
+        echo view ('template/footer');
+    }
 }
