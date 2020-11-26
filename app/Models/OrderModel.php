@@ -11,7 +11,7 @@ class OrderModel extends Model {
     'city','email','phonenumber','delivery'];
 
     public function getOrdernum($ordernum) {
-        $this->where('ordernum',$ordernum);
+        $this->where('ordernum', $ordernum);
         $query = $this->get();
         $ordernum = $query->getRowArray();
         return $ordernum;

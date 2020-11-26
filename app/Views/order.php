@@ -1,7 +1,7 @@
 <div class="d-flex justify-content-center mt-3 footer_margin">
     <div class="col-6">
 
-        <h4 class="mb-4">Order Information</h4>
+            <h4 class="mb-4">Order Information</h4>
 
         <form action="<?= site_url('cart/order'); ?>" method="post">
             <div class="form-group">
