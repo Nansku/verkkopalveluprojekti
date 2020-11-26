@@ -3,7 +3,18 @@
 use CodeIgniter\Model;
 
 class OrderModel extends Model {
-    protected $table = 'customer';
+    
+    protected $table = 'ordr';
 
-    protected $allowedFields = ['customerID'];
+    protected $allowedFields = 
+    ['customername','address','postalnum',
+    'city','email','phonenumber','delivery'];
+
+    public function getOrdernum($ordernum) {
+        $this->where('ordernum',$ordernum);
+        $query = $this->get();
+        $ordernum = $query->getRowArray();
+        return $ordernum;
+    }
 }
+

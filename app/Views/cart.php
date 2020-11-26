@@ -46,7 +46,7 @@
                 </td>
             </tr>
         </table>
-        <button class="btn btn-warning" >ORDER HERE!!!!</button>
+        <button class="btn btn-warning" >Continue</button>
     </form>
     </div>
 </div>

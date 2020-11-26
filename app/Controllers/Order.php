@@ -34,22 +34,4 @@ class Order extends BaseController {
 		echo view('template/footer');
     }
 
-    public function order() {
-        $data['categories']  = $this->categoryModel->getCategory();
-        $customer = [
-            'name' => $this->request->getPost('name'),
-            'address' => $this->request->getPost('address'),
-            'postalnumber' => $this->request->getPost('postalnumber'),
-            'city' => $this->request->getPost('city'),
-            'email' => $this->request->getPost('email'),
-            'phonenumber' => $this->request->getPost('phonenumber')
-        ];
-
-        $this->cartModel->order($customer);
-
-        $data['cart_count'] = $this->cartModel->count();
-        echo view ('template/header', $data);
-        echo view ('thank_you');
-        echo view ('template/footer');
-    }
 }
