@@ -25,8 +25,8 @@ class Login extends BaseController {
     public function login_page() {
         $data['cart_count'] = $this->cartModel->count();
         $data['categories'] =$this->CategoryModel->getCategory();
-        echo view('template/header');
-        echo view('login');
+        echo view('template/header', $data);
+        echo view('login', $data);
         echo view('template/footer');
     }
     
@@ -108,7 +108,7 @@ class Login extends BaseController {
             else {
                 echo view('template/header', $data);
                 echo view('login', $data);
-                echo view('template/footer');;
+                echo view('template/footer');
             }
         }
     }
