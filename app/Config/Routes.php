@@ -38,6 +38,8 @@ $routes->get('login_page', 'Login::login_page');
 $routes->get('register', 'Login::register');
 $routes->get('check', 'Login::check');
 $routes->get('/admin/index', 'Admin::index');
+$routes->get('/product/index/(:segment)', 'Product::index/$1');
+$routes->get('/product/index', 'Product::index');
 
 
 
