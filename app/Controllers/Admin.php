@@ -62,7 +62,7 @@ class Admin extends BaseController{
       // Mikäli tuoteryhmä on asetettu, ollaan muokkaamassa ja haetaan tietokannasta
       // tiedot lomakkeelle.
       if ($categorynum != null) {
-        $category = $this->CategoryModel->get($categorynum);
+        $category = $this->CategoryModel->categoryGet($categorynum);
         $data['categorynum'] = $category['categorynum'];
         $data['categoryname'] = $category['categoryname'];  
       }

@@ -3,8 +3,12 @@
     <div class=" d-flex justify-content-center">
         <div class="mt-5 mb-5" style="width: 1200px;">
             <div class="row no-gutters mt-5 mb-5">
+
+
+                
+
                     <div class="col-6">
-                        <img class="float-right mr-4" id="zoom_05" src="<?= base_url('img/' . $products['picture']) ?>" 
+                        <img class="float-right mr-4 kaka" id="zoom_05" src="<?= base_url('img/' . $products['picture']) ?>" 
                         data-zoom-image="<?= base_url('img/large/' . $products['picture']) ?>"/>
                     </div>
                     <div class="col-6">
