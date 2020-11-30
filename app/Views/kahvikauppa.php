@@ -8,7 +8,7 @@
 <div id="design" class="text">
     <h3>Selling quality coffee since 2020.
         <br>Our company is founded by people from all corners of Finland and
-         we share a same passion for coffee.
+        we share a same passion for coffee.
         <br>We want to spread our shared love towards coffee for the entire world.</h3>
 </div>
 
@@ -18,6 +18,7 @@
 
 <div id="design" class="text">
     <h3>Our recommended products:</h3>
+    <!-- <php print(json_encode($info)); ?> -->
 </div>
 
 <div id="Sauli" class="parallax">

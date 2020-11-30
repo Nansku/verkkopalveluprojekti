@@ -49,4 +49,10 @@ class ProductModel extends Model
         $this->where('categorynum', $categorynum);
         $this->delete();
     }
+
+    //  public function frontpageProduct($id)
+    //  {
+    //      $q = $this->select('*')->from('product')->where('productID',$id)->get(); 
+    //      return $q->result();
+    // }
 }
