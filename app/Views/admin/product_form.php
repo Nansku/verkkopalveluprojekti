@@ -2,8 +2,8 @@
 <div>
   <?= \Config\Services::validation()->listErrors();?>
 </div>
-<form action="/product/save/<?= $categorynum?>" method="post" enctype="multipart/form-data">
-  <input type="hidden" name="categorynum" value="<?= $categorynum?>">
+<form action="/product/save/<?= $category_id?>" method="post" enctype="multipart/form-data">
+  <input type="hidden" name="id" value="<?= $id?>">
   <div class="form-group">
     <label>Name</label>
     <input name="productname" class="form-control" maxlength="50" value="<?= $productname?>"/>

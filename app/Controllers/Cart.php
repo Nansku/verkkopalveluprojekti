@@ -36,10 +36,10 @@ class Cart extends BaseController{
     }
     
     // Add an item to the cart 
-    public function add($productID) {
-        $this->cartModel->modelAdd($productID);
-        //array_push($_SESSION['cart'],$productID);
-        return redirect()->to(site_url('Coffee/product/' . $productID));
+    public function add($product_id) {
+        $this->cartModel->modelAdd($product_id);
+        //array_push($_SESSION['cart'],$product_id);
+        return redirect()->to(site_url('Coffee/product/' . $product_id));
       
       }
 
@@ -50,8 +50,8 @@ class Cart extends BaseController{
     }  
 
     // Removes certain products one at a time 
-    public function remove($productID) {
-        $this->cartModel->remove($productID);
+    public function remove($product_id) {
+        $this->cartModel->remove($product_id);
         return redirect()->to(site_url('cart/index'));	
     }
 

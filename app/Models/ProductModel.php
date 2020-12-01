@@ -7,11 +7,11 @@ use CodeIgniter\Model;
 class ProductModel extends Model
 {
     protected $table = 'product';
-    protected $allowedFields = ['productname','description','price','cost','picture','categorynum'];
+    protected $allowedFields = ['productname','description','price','cost','picture','category_id'];
 
-    public function getWithCategory($categorynum)
+    public function getWithCategory($category_id)
     {
-        return $this->getWhere(['categorynum' => $categorynum])->getResultArray();
+        return $this->getWhere(['category_id' => $category_id])->getResultArray();
     }
 
     public function getAllProducts()
@@ -22,7 +22,7 @@ class ProductModel extends Model
     // product getteri
     public function getProduct($id)
     {
-        $this->where('productID', $id);
+        $this->where('id', $id);
         $query = $this->get();
         $product = $query->getRowArray();
         return $product;
@@ -33,8 +33,8 @@ class ProductModel extends Model
         $return = array();
         foreach ($ids as $id) {
             $this->table('product');
-            $this->select('productID, productname,price');
-            $this->where('productID', $id);
+            $this->select('id, productname,price');
+            $this->where('id', $id);
             $query = $this->get();
             $product = $query->getRowArray();
             array_push($return, $product);
@@ -45,9 +45,9 @@ class ProductModel extends Model
         return $return;
     }
     // admin poistaa tuoteryhmällä
-    public function deleteByCategory($categorynum)
+    public function deleteByCategory($category_id)
     {
-        $this->where('categorynum', $categorynum);
+        $this->where('category_id', $category_id);
         $this->delete();
     }
 
@@ -56,13 +56,38 @@ class ProductModel extends Model
     //      $q = $this->select('*')->from('product')->where('productID',$id)->get(); 
     //      return $q->result();
     // }
+
+
+    public function randomProducts()
+    {
+
+        $random = array();
+        $ids = array();
+
+        $products = $this->findAll();
+
+        if (count($products) > 3) {
+            $amount = 0;
+            while ($amount < 3) {
+                $product = $products[rand(0, count($products) - 1)];
+                if (!in_array($product['id'], $ids)) {
+                    array_push($ids, $product['id']);
+                    array_push($random, $product);
+                    $amount++;
+                }
+            }
+            return $random;
+        } else {
+            return $products;
+        }
+    }
       /**
    * Poistaa tuotteenn.
    * 
    * @param int $id Poistettavan tuotteen id.
    */
-  public function deleteProduct($id) {
-    $this->where('productID',$id);
-    $this->delete();
-  }
+   public function deleteProduct($category_id) {
+     $this->where('category_id',$category_id);
+     $this->delete();
+   }
 }

@@ -17,8 +17,8 @@ class CategoryModel extends Model {
    * @param int $id Haettavan tuotteen id.
    * @return Array Haetun tuoteryhmän tiedot taulukkona (yksi rivi).
    */
-  public function categoryGet($categorynum) {
-    return $this->getWhere(['categorynum' => $categorynum])->getRowArray();
+  public function categoryGet($id) {
+    return $this->getWhere(['id' => $id])->getRowArray();
   }
 
 
@@ -26,12 +26,12 @@ class CategoryModel extends Model {
    * Hakee ensimmäisen tuoteryhmän tietokannassa.
    */
   public function getFirstCategory() {
-    $this->select('categorynum');
-    $this->orderBy('categorynum','asc');
+    $this->select('id');
+    $this->orderBy('id','asc');
     $this->limit(1);
     $query = $this->get();
     $category = $query->getRowArray();
-    return $category['categorynum'];
+    return $category['id'];
   }
 
 
@@ -41,7 +41,7 @@ class CategoryModel extends Model {
    * @param int $id Poistettavan tuoteryhmän id.
    */
   public function deleteCategory($id) {
-    $this->where('categorynum',$id);
+    $this->where('id',$id);
     $this->delete();
   }
 

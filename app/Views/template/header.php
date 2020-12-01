@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <!-- Authors -->
     <meta name="author" content="Jenna Pennanen">
     <meta name="author" content="Eveliina Purontaus">
@@ -59,7 +59,7 @@
                     
                     <div class="dropdown-divider"></div>
                         <?php foreach($categories as $category):?>
-                        <a class="dropdown-item nav-txt-dropdown" href="<?= site_url('/coffee/products/' . $category['categorynum'])?>"><?=$category['categoryname']?></a>
+                        <a class="dropdown-item nav-txt-dropdown" href="<?= site_url('/coffee/products/' . $category['id'])?>"><?=$category['categoryname']?></a>
                         <?php endforeach; ?>
                     </div>
                 </li>
