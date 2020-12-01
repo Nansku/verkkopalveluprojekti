@@ -51,11 +51,11 @@ class CartModel extends Model
      */
 
 
-    public function modelAdd($productID)
+    public function modelAdd($product_id)
     {   
-        $product = $this->productModel->getProduct($productID);
+        $product = $this->productModel->getProduct($product_id);
 
-        $cartProduct['productID'] = $product['productID'];
+        $cartProduct['id'] = $product['id'];
         $cartProduct['productname'] = $product['productname'];
         $cartProduct['price'] = $product['price'];
         $cartProduct['amount'] = 1;
@@ -68,7 +68,7 @@ class CartModel extends Model
     private function addProductArray($product, &$array)
     {
         for ($i = 0; $i < count($array); $i++) {
-            if ($array[$i]['productID'] === $product['productID']) {
+            if ($array[$i]['id'] === $product['id']) {
                 $array[$i]['amount'] = $array[$i]['amount'] + 1;
                 return;
             }
@@ -78,10 +78,10 @@ class CartModel extends Model
         array_push($array, $product);
     }
 
-    public function remove($productID)
+    public function remove($product_id)
     {   for ($i = count($_SESSION['cart']) - 1; $i >= 0; $i--) {
             $product = $_SESSION['cart'][$i];
-            if ($product['productID'] === $productID) {
+            if ($product['id'] === $product_id) {
                 array_splice($_SESSION['cart'], $i, 1);
             }
         }
@@ -98,15 +98,16 @@ class CartModel extends Model
     public function order($customer) {
         $this->db->transStart();
         $this->orderModel->save($customer);
-
-        /*$customerID = $this->insertID();
-
-        $this->orderModel->save(['customerID' => $customerID]);*/
+        $orderID = $this->insertID();
+        //$orderID = $this->orderModel->getOrdernum();
+        
+        
 
         foreach ($_SESSION['cart'] as $product) {
             $this->order_rowModel->save([
                 // 'ordernum' => $orderID,
-                'productID' => $product['productID'],
+                'ordernum' => $orderID,
+                'product_id' => $product['id'],
                 'amount' => $product['amount']
             ]);
         }

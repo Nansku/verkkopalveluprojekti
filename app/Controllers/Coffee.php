@@ -102,10 +102,10 @@ class Coffee extends BaseController
                 echo view('template/footer');
         }
 
-        public function products($categorynum)
+        public function products($category_id)
         {
                 $data['cart_count'] = $this->cartModel->count();
-                if ($categorynum == 'allProducts') {
+                if ($category_id == 'allProducts') {
 
                         $data['products'] = $this->ProductModel->getAllProducts();
                         $data['categories'] = $this->CategoryModel->getCategory();
@@ -114,7 +114,7 @@ class Coffee extends BaseController
                         echo view('products', $data);
                         echo view('template/footer');
                 } else {
-                        $data['products'] = $this->ProductModel->getWithCategory($categorynum);
+                        $data['products'] = $this->ProductModel->getWithCategory($category_id);
                         $data['categories'] = $this->CategoryModel->getCategory();
                         $data['title'] = 'Products';
                         echo view('template/header', $data);
@@ -124,11 +124,11 @@ class Coffee extends BaseController
         }
 
         // Opens single products pages
-        public function product($productID)
+        public function product($product_id)
         {
                 $data['cart_count'] = $this->cartModel->count();
                 $data['categories'] = $this->CategoryModel->getCategory();
-                $data['products'] = $this->ProductModel->getProduct($productID);
+                $data['products'] = $this->ProductModel->getProduct($product_id);
                 echo view('template/header', $data);
                 echo view('product', $data);
                 echo view('template/footer');

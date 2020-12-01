@@ -1,4 +1,4 @@
-<form action="<?= site_url('cart/add/' . $products['productID']);?>" method="post">
+<form action="<?= site_url('cart/add/' . $products['id']);?>" method="post">
 <div class="product_color container">
     <div class=" d-flex justify-content-center">
         <div class="mt-5 mb-5" style="width: 1200px;">
