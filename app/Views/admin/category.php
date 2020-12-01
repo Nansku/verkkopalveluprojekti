@@ -6,9 +6,9 @@
 <?php foreach($category as $category): ?>
   <tr>
     <td><?= $category['categoryname']?></td>
-    <td><?= anchor('admin/save/' . $category['categorynum'],'Muokkaa')?></td>
+    <td><?= anchor('admin/save/' . $category['id'],'Muokkaa')?></td>
     <!- Kysytään varmistus, tehdäänkö poisto. -->
-    <td><a href="<?= site_url('admin/deleteCategory/'. $category['categorynum'])?>" onclick="return confirm('Haluatko varmasti poistaa tuoteryhmän? Myös kaikki tuoteryhmän tuotteet poistetaan.')">Poista</a></td>
+    <td><a href="<?= site_url('admin/deleteCategory/'. $category['id'])?>" onclick="return confirm('Haluatko varmasti poistaa tuoteryhmän? Myös kaikki tuoteryhmän tuotteet poistetaan.')">Poista</a></td>
   </tr>
 <?php endforeach;?>
 </table>
