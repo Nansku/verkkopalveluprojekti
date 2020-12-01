@@ -25,7 +25,7 @@ class Coffee extends BaseController
         {
                 $data['cart_count'] = $this->cartModel->count();
                 $data['categories'] = $this->CategoryModel->getCategory();
-                // $data['info'] = $this->ProductModel->frontpageProduct();
+                $data['products'] = $this->ProductModel->randomProducts();
                 $data['title'] = 'Kahvikauppa';
                 echo view('template/header', $data);
                 echo view('kahvikauppa', $data);
