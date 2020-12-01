@@ -91,15 +91,16 @@ class Login extends BaseController {
                 $this->request->getVar('password')
             );
 
-            if ($customer = ['office@vienoscoffee.com','12345678']) {
+            //if ($customer = ['office@vienoscoffee.com','12345678']) {
                 
-                $_SESSION['customer'] = $customer;
+            //    $_SESSION['customer'] = $customer;
 
-                echo view('admin/admin_header', $data);
-                echo view('admin/admin_my_page', $data);
-                echo view('template/footer');
-                
-            }elseif ($customer) {
+            //    echo view('admin/admin_header', $data);
+            //    echo view('admin/admin_my_page', $data);
+            //    echo view('template/footer');
+            //    
+            //}else
+            if ($customer) {
                 $_SESSION['customer'] = $customer;
                 echo view('template/header', $data);
                 echo view('my_page', $data);
@@ -121,6 +122,18 @@ class Login extends BaseController {
         echo view('template/header', $data);
         echo view('login', $data);
         echo view('template/footer');
+    }
+
+    public function showinfo(){
+        $data['cart_count'] = $this->cartModel->count();
+        $data['categories'] =$this->CategoryModel->getCategory();
+        echo view('template/header', $data);
+        echo view('edit/showinfo', $data);
+        echo view('template/footer');
+    }
+
+    public function showsingleuser(){
+        $email = $this->LoginModel->getUsers($this->$_SESSION->email);
     }
     
 }
