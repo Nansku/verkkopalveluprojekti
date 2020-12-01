@@ -98,16 +98,17 @@ class CartModel extends Model
     public function order($customer) {
         $this->db->transStart();
         $this->orderModel->save($customer);
-
-        /*$customerID = $this->insertID();
-
-        $this->orderModel->save(['customerID' => $customerID]);*/
+        $orderID = $this->insertID();
+        //$orderID = $this->orderModel->getOrdernum();
+        
+        
 
         foreach ($_SESSION['cart'] as $product) {
             $this->order_rowModel->save([
-                // 'ordernum' => $orderID,
+                'ordernum' => $orderID,
                 'productID' => $product['productID'],
-                'amount' => $product['amount']
+                'amount' => $product['amount'],
+                //'rownum' => $rownum
             ]);
         }
 
