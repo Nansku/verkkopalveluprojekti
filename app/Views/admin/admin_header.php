@@ -59,7 +59,7 @@
                     
                     <div class="dropdown-divider"></div>
                         <?php foreach($categories as $category):?>
-                        <a class="dropdown-item nav-txt-dropdown" href="<?= site_url('/coffee/products/' . $category['category_id'])?>"><?=$category['categoryname']?></a>
+                        <a class="dropdown-item nav-txt-dropdown" href="<?= site_url('/coffee/products/' . $category['id'])?>"><?=$category['categoryname']?></a>
                         <?php endforeach; ?>
                     </div>
                 </li>
