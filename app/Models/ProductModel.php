@@ -56,7 +56,7 @@ class ProductModel extends Model
     //      $q = $this->select('*')->from('product')->where('productID',$id)->get(); 
     //      return $q->result();
     // }
- 
+
 
     public function randomProducts()
     {
@@ -86,8 +86,8 @@ class ProductModel extends Model
    * 
    * @param int $id Poistettavan tuotteen id.
    */
-  public function deleteProduct($category_id) {
-    $this->where('category_id',$category_id);
-    $this->delete();
-  }
+   public function deleteProduct($category_id) {
+     $this->where('category_id',$category_id);
+     $this->delete();
+   }
 }
