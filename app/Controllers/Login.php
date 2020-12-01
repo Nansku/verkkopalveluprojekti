@@ -91,15 +91,15 @@ class Login extends BaseController {
                 $this->request->getVar('password')
             );
 
-            //if ($customer = ['office@vienoscoffee.com','12345678']) {
+            if ($customer = ['office@vienoscoffee.com','12345678']) {
                 
-            //    $_SESSION['customer'] = $customer;
+                $_SESSION['customer'] = $customer;
 
-            //    echo view('admin/admin_header', $data);
-            //    echo view('admin/admin_my_page', $data);
-            //    echo view('template/footer');
-            //    
-            //}else
+                echo view('admin/admin_header', $data);
+                echo view('admin/admin_my_page', $data);
+                echo view('template/footer');
+                
+            }else
             if ($customer) {
                 $_SESSION['customer'] = $customer;
                 echo view('template/header', $data);
