@@ -93,6 +93,13 @@ class CartModel extends Model
         $_SESSION['cart'] = null;
         $_SESSION['cart'] = array();
     }
+    
+   /* public function rownum() {
+        $rownum = 0;
+        foreach ($_SESSION['cart'] as $rownum) {
+            $rownum = count($_SESSION['cart']) + 1;
+        }
+    } */
 
 
     public function order($customer) {
@@ -100,15 +107,14 @@ class CartModel extends Model
         $this->orderModel->save($customer);
         $orderID = $this->insertID();
         //$orderID = $this->orderModel->getOrdernum();
-        
-        
+        $rownum = $this->rownum();
 
         foreach ($_SESSION['cart'] as $product) {
             $this->order_rowModel->save([
                 'ordernum' => $orderID,
                 'productID' => $product['productID'],
                 'amount' => $product['amount'],
-                //'rownum' => $rownum
+                'rownum' => $rownum
             ]);
         }
 
