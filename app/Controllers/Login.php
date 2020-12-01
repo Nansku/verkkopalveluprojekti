@@ -124,16 +124,38 @@ class Login extends BaseController {
         echo view('template/footer');
     }
 
-    public function showinfo(){
+    public function updateinfo() {
         $data['cart_count'] = $this->cartModel->count();
         $data['categories'] =$this->CategoryModel->getCategory();
-        echo view('template/header', $data);
-        echo view('edit/showinfo', $data);
-        echo view('template/footer');
-    }
+        $model = new LoginModel();
 
-    public function showsingleuser(){
-        $email = $this->LoginModel->getUsers($this->$_SESSION->email);
+        if (!$this->validate([
+            'name' => 'required',
+            'email' => 'required',
+            'address' => 'required',
+            'postalnumber' => 'required',
+            'city' => 'required',
+            
+        ])){
+            echo view('template/header', $data);
+            echo view('my_page', $data);
+            echo view('template/footer');
+        }
+        else {
+            $model->update([
+                'name' => $this->request->getVar('name'),
+                'address' => $this->request->getVar('address'),
+                'postalnumber' => $this->request->getVar('postalnumber'),
+                'city' => $this->request->getVar('city'),
+                'email' => $this->request->getVar('email'),
+                'phonenumber' => $this->request->getVar('phonenumber')
+
+            ]);
+            return redirect('my_page');
+        }
     }
+    
+
+    
     
 }
