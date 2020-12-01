@@ -18,14 +18,22 @@
 
 <div id="design" class="text">
     <h3>Our recommended products:</h3>
-    <!-- <php print(json_encode($info)); ?> -->
+    <div class="row d-flex justify-content-center">
+        <div class="card-deck">
+        <?php foreach($products as $product): ?>
+            <div class="card col-lg-4 mx-1">
+                <a href="<?= site_url('Coffee/product/' . $product['id'])?>">
+                <h4><?= $product['productname'] ?></h4>
+                <p><?= $product['price'] ?> €</p>
+                <img src="<?=base_url('img/' . $product['picture']) ?>"></img>
+            </a>
+            </div>
+        <?php endforeach;?>
+        </div>
+    </div>
 </div>
 
 <div id="Sauli" class="parallax">
 
 </div>
-
 <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up fa-2x"></i></button>
-<!-- <div id="design" class="text">
-    <h3></h3>
-</div> -->
