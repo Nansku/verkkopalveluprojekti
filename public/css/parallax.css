@@ -21,22 +21,22 @@ body, html {
 
 #kissa {
   background-image: url('/img/FP3.jpg');
-  height: 700px;
+  height: 600px;
 }
 
 #kettu {
   background-image: url('/img/FP2.JPG');
-  height: 700px;
+  height: 600px;
 }
 
 #Sauli {
   background-image: url('/img/FP1.jpg');
-  height: 700px;
+  height: 600px;
 }
 
 #spirit {
   background-image: url('/img/spirit.jpg');;
-  height: 700px;
+  height: 600px;
 }
 
 .caption {

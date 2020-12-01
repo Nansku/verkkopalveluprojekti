@@ -25,9 +25,10 @@ class Coffee extends BaseController
         {
                 $data['cart_count'] = $this->cartModel->count();
                 $data['categories'] = $this->CategoryModel->getCategory();
+                // $data['info'] = $this->ProductModel->frontpageProduct();
                 $data['title'] = 'Kahvikauppa';
                 echo view('template/header', $data);
-                echo view('kahvikauppa');
+                echo view('kahvikauppa', $data);
                 echo view('template/footer');
         }
 
@@ -132,5 +133,4 @@ class Coffee extends BaseController
                 echo view('product', $data);
                 echo view('template/footer');
         }
-
 }
