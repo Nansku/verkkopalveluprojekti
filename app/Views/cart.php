@@ -20,7 +20,7 @@
                 </td>
 
                 <td>
-                    <a class="cart_remove" href="<?= site_url('cart/remove/' . $products['productID'])?>">
+                    <a class="cart_remove" href="<?= site_url('cart/remove/' . $products['id'])?>">
                         <i class="fas fa-minus-circle"></i> Delete product
                     </a>
                 </td>
