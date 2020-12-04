@@ -30,7 +30,7 @@
     <title>Vienon Kahvikauppa</title>
 </head>
 <body>
-<div class="container-fluid">
+<div class="container-fluid main">
     <nav class="navbar navbar-expand-xl navbar-light pr-5 pl-5">
         <!-- Logo -->
         <a class="navbar-brand active" href="<?= site_url('Coffee/index')?>">
