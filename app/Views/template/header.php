@@ -31,7 +31,7 @@
 </head>
 <body>
 <div class="container-fluid">
-    <nav class="navbar navbar-expand-lg navbar-light pr-5 pl-5">
+    <nav class="navbar navbar-expand-xl navbar-light pr-5 pl-5">
         <!-- Logo -->
         <a class="navbar-brand active" href="<?= site_url('Coffee/index')?>">
             <!--<img class="img-fluid site-logo" src="<?= base_url('img/logo_mk5.png')?>"></img>-->

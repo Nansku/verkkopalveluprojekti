@@ -144,12 +144,17 @@ p{
   text-align: left;
   margin-left: 15px;
   padding: 10px;
-} 
+}
 
 .card{
   background-color: white;
   border-color: #BF9E87;
   border-width: 3px;
+}
+
+#product .card{
+  border: none;
+  padding: 10px;
 }
 
 .nappula{
