@@ -46,7 +46,7 @@ oikea järjestys -->
          <div class="row">
             <div class="col-4 text-center my-auto">
  
-               <img class="img-fluid card-img us_img" src=<?= base_url("img/eveliina.png") ?>
+               <img class="img-fluid card-img us_img" src=<?= base_url("img/Eve.jpeg") ?>
                alt="Eveliina Purontaus">
             </div>
             <div class="col-8">
@@ -167,7 +167,7 @@ oikea järjestys -->
             <div class="col-4 text-center my-auto">
 
                <img class="img-fluid card-img us_img" src=<?= base_url("img/oskari.jpg") ?>
-               alt="Oskari Juntunen">
+                alt="Oskari Juntunen">
             </div>
             <div class="col-8">
                <div class="card-body">
