@@ -102,10 +102,10 @@ dropdown-toggle::after {
 }
 
 /* Margin for shopping cart */
-.cart {
-  margin-left: 10em;
-  margin-right: 10em;
-}
+/* .cart {
+  margin-left: 5em;
+  margin-right: 5em;
+} */
 
 /*Products*/
 h4, h3{
