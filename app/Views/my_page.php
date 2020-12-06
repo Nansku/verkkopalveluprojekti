@@ -30,7 +30,7 @@
             aria-labelledby="customerInformation-tab">
             <div class="d-flex justify-content-center footer_margin mt-2">
                <div class="col">
-                  <form action="updateinfo">
+                  <form action="/login/updateinfo">
                      <div>
                         <?= \Config\Services::validation()->listErrors(); ?>
                      </div>
