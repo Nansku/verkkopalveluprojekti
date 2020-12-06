@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <!-- Authors -->
     <meta name="author" content="Jenna Pennanen">
     <meta name="author" content="Eveliina Purontaus">
@@ -30,8 +30,8 @@
     <title>Vienon Kahvikauppa</title>
 </head>
 <body>
-<div class="container-fluid">
-    <nav class="navbar navbar-expand-lg navbar-light pr-5 pl-5">
+<div class="container-fluid main">
+    <nav class="navbar navbar-expand-xl navbar-light pr-5 pl-5">
         <!-- Logo -->
         <a class="navbar-brand active" href="<?= site_url('Coffee/index')?>">
             <!--<img class="img-fluid site-logo" src="<?= base_url('img/logo_mk5.png')?>"></img>-->

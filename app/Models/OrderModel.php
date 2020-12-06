@@ -11,11 +11,11 @@ class OrderModel extends Model {
     'city','email','phonenumber','delivery'];
 
 
-    public function getOrdernum() {
+   /* public function getOrdernum() {
         $this->select('ordernum');
         $query = $this->get();
         $ordernum = $query->getRowArray();
         return $ordernum;
-    }
+    }*/
 }
 

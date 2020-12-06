@@ -11,7 +11,7 @@
 </div>
 
 <!-- Google Maps -->
-<div class="row">
+<div class="row d-none d-md-block">
    <div class="col mx-auto">
       <iframe id="googlemap" 
       src="https://maps.google.com/maps?q=keskisentie%205%20ylivieska&t=&z=13&ie=UTF8&iwloc=&output=embed" 
@@ -23,13 +23,13 @@
 oikea järjestys -->
 <!-- Jami ja Eveliina -->
 <div class="row">
-   <div class="col-12 col-lg-6">
+   <div class="col-md-6 col-lg-6">
       <div class="card my-3 ml-lg-auto" style="max-width: 540px;">
-         <div class="row">
+         <div class="row no-gutters">
             <div class="col-4 text-center my-auto">
 
-               <img src=<?= base_url("img/jampula2.jpg") ?>
-               class="card-img us_img" alt="Jami Salmela">
+               <img class="img-fluid card-img us_img" src=<?= base_url("img/jami_web.jpg") ?>
+               alt="Jami Salmela">
             </div>
             <div class="col-8">
                <div class="card-body">
@@ -41,13 +41,13 @@ oikea järjestys -->
          </div>
       </div>
    </div>
-   <div class="col-12 col-lg-6">
+   <div class="col-md-6 col-lg-6">
       <div class="card my-3 mr-lg-auto" style="max-width: 540px;">
-         <div class="row">
+         <div class="row no-gutters">
             <div class="col-4 text-center my-auto">
  
-               <img src=<?= base_url("img/eveliina.png") ?>
-               class="card-img us_img" alt="Eveliina Purontaus">
+               <img class="img-fluid card-img us_img" src=<?= base_url("img/eveliina_web.jpg") ?>
+               alt="Eveliina Purontaus">
             </div>
             <div class="col-8">
                <div class="card-body">
@@ -63,13 +63,13 @@ oikea järjestys -->
 
 <!-- Ilari ja Jenna -->
 <!-- <div class="row"> -->
-   <div class="col-12 col-lg-6">
+   <div class="col-md-6 col-lg-6">
       <div class="card my-3 ml-lg-auto" style="max-width: 540px;">
          <div class="row no-gutters">
             <div class="col-4 text-center my-auto">
                
-               <img src=<?= base_url("img/ilari.PNG") ?>
-               class="card-img us_img" alt="Ilari Puustinen">
+               <img class="img-fluid card-img us_img" src=<?= base_url("img/ilari_web.jpg") ?>
+               alt="Ilari Puustinen">
             </div>
             <div class="col-8">
                <div class="card-body">
@@ -81,13 +81,13 @@ oikea järjestys -->
          </div>
       </div>
    </div>
-   <div class="col-12 col-lg-6">
+   <div class="col-md-6 col-lg-6">
       <div class="card my-3 mr-lg-auto" style="max-width: 540px;">
          <div class="row no-gutters">
             <div class="col-4 text-center my-auto">
  
-               <img src=<?= base_url("img/jenna.jpg") ?>
-               class="card-img us_img" alt="Jenna Pennanen">
+               <img class="img-fluid card-img us_img" src=<?= base_url("img/jenna_web.jpg") ?>
+               alt="Jenna Pennanen">
             </div>
             <div class="col-8">
                <div class="card-body">
@@ -103,13 +103,13 @@ oikea järjestys -->
 
 <!-- Henri ja Jukka -->
 <!-- <div class="row"> -->
-   <div class="col-12 col-lg-6">
+   <div class="col-md-6 col-lg-6">
       <div class="card my-3 ml-lg-auto" style="max-width: 540px;">
          <div class="row no-gutters">
             <div class="col-4 text-center my-auto">
 
-               <img src=<?= base_url("img/henri.jpg") ?>
-               class="card-img us_img" alt="Henri Aukee">
+               <img class="img-fluid card-img us_img" src=<?= base_url("img/henri_web.jpg") ?>
+               alt="Henri Aukee">
             </div>
             <div class="col-8">
                <div class="card-body">
@@ -121,13 +121,13 @@ oikea järjestys -->
          </div>
       </div>
    </div>
-   <div class="col-12 col-lg-6">
+   <div class="col-md-6 col-lg-6">
       <div class="card my-3 mr-lg-auto" style="max-width: 540px;">
          <div class="row no-gutters">
             <div class="col-4 text-center my-auto">
 
-               <img src=<?= base_url("img/jukka.jpg") ?>
-               class="card-img us_img" alt="Jukka Liimatta">
+               <img class="img-fluid card-img us_img" src=<?= base_url("img/jukka_web.jpg") ?>
+               alt="Jukka Liimatta">
             </div>
             <div class="col-8">
                <div class="card-body">
@@ -143,13 +143,13 @@ oikea järjestys -->
 
 <!-- Ville ja Oskari -->
 <!-- <div class="row"> -->
-   <div class="col-12 col-lg-6">
+   <div class="col-md-6 col-lg-6">
       <div class="card my-3 ml-lg-auto" style="max-width: 540px;">
          <div class="row no-gutters">
             <div class="col-4 text-center my-auto">
 
-               <img src=<?= base_url("img/ville.jpg") ?>
-               class="card-img us_img" alt="Ville Rantanen">
+               <img class="img-fluid card-img us_img" src=<?= base_url("img/ville_web.jpg") ?>
+               alt="Ville Rantanen">
             </div>
             <div class="col-8">
                <div class="card-body">
@@ -161,13 +161,13 @@ oikea järjestys -->
          </div>
       </div>
    </div>
-   <div class="col-12 col-lg-6">
+   <div class="col-md-6 col-lg-6">
       <div class="card my-3 mr-lg-auto" style="max-width: 540px;">
          <div class="row no-gutters">
             <div class="col-4 text-center my-auto">
 
-               <img src=<?= base_url("img/oskari.jpg") ?>
-               class="card-img us_img" alt="Oskari Juntunen">
+               <img class="img-fluid card-img us_img" src=<?= base_url("img/oskari_web.jpg") ?>
+                alt="Oskari Juntunen">
             </div>
             <div class="col-8">
                <div class="card-body">
@@ -180,5 +180,5 @@ oikea järjestys -->
       </div>
    </div>
    <!-- scroll up button -->
-   <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up fa-2x"></i></button>
+   <button class="d-none d-lg-block" onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up fa-2x"></i></button>
 </div>

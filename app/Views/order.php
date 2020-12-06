@@ -1,5 +1,5 @@
 <div class="d-flex justify-content-center mt-3 footer_margin">
-    <div class="col-6">
+    <div class="col-lg-6 col-md-9 col-sm-12">
 
             <h4 class="mb-4">Order Information</h4>
 
@@ -31,7 +31,6 @@
 
             <h4>Delivery options</h4>
             <div class="col-12 mb-3" align="center">
-
                 <div class="accordion col-12 float-center" id="postiAccordion" style="padding-bottom:none; margin-bottom:none;">
                     <div class="card">
                         <div class="card-header" id="postiHeading">
