@@ -65,4 +65,16 @@ class ProductModel extends Model
     $this->where('productID',$id);
     $this->delete();
   }
+
+  /** 
+   * Hakee tuotteita nimen perusteella.
+   * 
+   * @param $product Tuotteen nimi taia osa nimestä, jolla haetaan.
+   * @return Array Nimen perusteella löydetyt tuotteet taulukossa.
+    */
+    public function getProductByName($productname) {
+        $this->like('productname',$productname);
+        $query = $this->get();
+        return $query->getResultArray();
+    }
 }

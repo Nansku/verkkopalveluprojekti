@@ -130,6 +130,9 @@ VALUES ("Jacobs Krönung Filter Ground Coffee 500g", "The secret of Jacobs Krön
  The beans are roasted in a way that results in a coffee with rich taste and best aroma. Premium roasted coffee beans and 
  Jacobs best selling coffee blend. Roast level 3.",5.90,1,"Jacobs-Krönung-kahvi-500g.jpg",1);
 
+
+/* Kahvin keittimet */
+
 INSERT INTO product (productname, description, price, cost, picture, categorynum)
 VALUES ("Moccamaster KBG962AO Coffee Maker 10 cups, 1.25 l","The Moccamaster KBG962 AO coffee machine represents guaranteed Moccamaster quality and style. 
 This premium model combines complete comfort, timelessly stylish design and reliability.The Moccamaster KBG962 AO coffee machine brews 10 cups of coffee 
@@ -143,6 +146,7 @@ INSERT INTO product (productname, description, price, cost, picture, categorynum
 VALUES ("Smeg 50 s Style Coffee Maker DCF02WHEU (White)","The good-looking Smeg 50 s Style coffee machine has a large volume, function for keeping your coffee hot, 
 an automatic switch-off and a convenient LED display.",219.00,1,"",3);
 
+/* Suodatinpaperit */
 INSERT INTO product (productname, description, price, cost, picture, categorynum)
 VALUES ("Moccamaster oxygen bleached filter paper No. 4, 100 pcs","White high quality filter paper for coffee makers. Size no. 4 (also known as 1x4). 
 The paper is made of FSC-certified wood fiber and is oxygen bleached in an environmentally friendly way. The package contains 100 pieces of filter papers.",4.95,1,"",2);
@@ -168,6 +172,7 @@ INSERT INTO product (productname, description, price, cost, picture, categorynum
 VALUES ("Melitta 1X2/40 Brown filter paper","Melitta filter paper has Aromapor aroma pores that make your coffee moment enjoyable and full-bodied. Unbleached. 
 FSC certified. Unbleached.",1.99,1,"",2);
 
+/* Varaosat */
 INSERT INTO product (productname, description, price, cost, picture, categorynum)
 VALUES ("Moccamaster spout","9-hole Moccamaster spout. Fits all Moccamaster coffee machines.",24.95,1,"",4);
 
