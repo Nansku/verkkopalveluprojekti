@@ -3,7 +3,7 @@
   <?= \Config\Services::validation()->listErrors();?>
 </div>
 <form action="/admin/save" method="post">
-  <input type="hidden" name="categorynum" value="<?= $categorynum?>">
+  <input type="hidden" name="id" value="<?= $id?>">
   <div>
     <label>Nimi</label>
     <input name="categoryname" maxlength="50" value="<?= $categoryname?>"/>

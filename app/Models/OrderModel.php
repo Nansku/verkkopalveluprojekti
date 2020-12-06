@@ -10,11 +10,12 @@ class OrderModel extends Model {
     ['customername','address','postalnum',
     'city','email','phonenumber','delivery'];
 
-    public function getOrdernum($ordernum) {
-        $this->where('ordernum', $ordernum);
+
+   /* public function getOrdernum() {
+        $this->select('ordernum');
         $query = $this->get();
         $ordernum = $query->getRowArray();
         return $ordernum;
-    }
+    }*/
 }
 

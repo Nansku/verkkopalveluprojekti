@@ -19,6 +19,7 @@
   box-sizing: border-box;
 }
 
+
 /* Fix for full-length footer */
 .row {
   margin: 0;
@@ -101,10 +102,10 @@ dropdown-toggle::after {
 }
 
 /* Margin for shopping cart */
-.cart {
-  margin-left: 10em;
-  margin-right: 10em;
-}
+/* .cart {
+  margin-left: 5em;
+  margin-right: 5em;
+} */
 
 /*Products*/
 h4, h3{
@@ -144,12 +145,17 @@ p{
   text-align: left;
   margin-left: 15px;
   padding: 10px;
-} 
+}
 
 .card{
   background-color: white;
   border-color: #BF9E87;
   border-width: 3px;
+}
+
+#product .card{
+  border: none;
+  padding: 10px;
 }
 
 .nappula{
@@ -167,12 +173,14 @@ p{
 /*Contact us*/
 
 .us_img{
-  max-width: 90%;
-  height: 178px;
   align-items: center;
-  padding: 3px;
+  padding: 2px;
   border-radius: 4%;
 }
+
+ .card-body{
+  padding: 2px;
+} 
 
 /*Footer*/
 footer {

@@ -1,4 +1,4 @@
-    <footer class="footer row text-center">
+    <footer class="footer row text-center ">
         <!-- Left side text -->
         <div class="col-sm-4 col-md-4 text-md-center">
             <h4>Our management</h4>
@@ -15,13 +15,13 @@
         <div class="col-sm-4 col-md-4">
             <h4 class="text-md-center">Find us on social media</h4>
             <a href="https://www.instagram.com/oamk_ouas/?hl=fi" target="_blank">
-                <i class="fab fa-instagram fa-2x"></i>
+                <i class="fab fa-instagram fa-2x someIcon"></i>
             </a>
             <a href="https://twitter.com/oamk_ouas" target="_blank">
-                <i class="fab fa-twitter fa-2x"></i>
+                <i class="fab fa-twitter fa-2x someIcon"></i>
             </a>
             <a href="https://www.facebook.com/oamk.ouas" target="_blank">
-                <i class="fab fa-facebook-square fa-2x"></i>
+                <i class="fab fa-facebook-square fa-2x someIcon"></i>
             </a>
         </div>
         <!-- Right side -->

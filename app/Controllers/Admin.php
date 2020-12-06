@@ -26,11 +26,11 @@ class Admin extends BaseController{
   /**
    * Tallentaa tuoteryhmän.
    * 
-   * @param int $tuoteryhma_id = Tuoteryhmän id, mikäli tuoteryhmää muokataan.
+   * @param int $category_id = Tuoteryhmän id, mikäli tuoteryhmää muokataan.
    */
-  public function save($categorynum = null) {
+  public function save($category_id = null) {
     // Näytetään otsikko sen mukaan, ollaanko lisäämässä vai muokkaamassa.
-    if ($categorynum != null || $this->request->getPost('categorynum')!=null) {
+    if ($category_id != null || $this->request->getPost('id')!=null) {
       $data['title'] = "Muokkaa tuoteryhmää";
     }
     else {
@@ -43,13 +43,13 @@ class Admin extends BaseController{
         'categoryname' => 'required|max_length[255]'
       ])) {  
         // Validointi ei mene läpi, palautetaan lomake näkyviin.
-        $data['categorynum'] = $this->request->getPost('categorynum');
+        $data['id'] = $this->request->getPost('id');
         $data['categoryname'] = $this->request->getPost('categoryname');
         $this->showForm($data);
       }
       else {
         // Tallennetaan.
-        $save['categorynum'] = $this->request->getPost('categorynum');
+        $save['id'] = $this->request->getPost('id');
         $save['categoryname'] = $this->request->getPost('categoryname');
         $this->CategoryModel->save($save);
         return redirect('admin/index');
@@ -57,13 +57,13 @@ class Admin extends BaseController{
     }
     else {
       // Näytetään lomake.
-      $data['categorynum'] = '';
+      $data['id'] = '';
       $data['categoryname'] = '';
       // Mikäli tuoteryhmä on asetettu, ollaan muokkaamassa ja haetaan tietokannasta
       // tiedot lomakkeelle.
-      if ($categorynum != null) {
-        $category = $this->CategoryModel->categoryGet($categorynum);
-        $data['categorynum'] = $category['categorynum'];
+      if ($category_id != null) {
+        $category = $this->CategoryModel->categoryGet($category_id);
+        $data['id'] = $category['id'];
         $data['categoryname'] = $category['categoryname'];  
       }
       $this->showForm($data);

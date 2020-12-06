@@ -1,5 +1,5 @@
-<div class=" d-flex justify-content-center footer_margin mt-2">
-    <div class="col-5">
+<div class="row d-flex justify-content-center footer_margin mt-2">
+    <div class="col-lg-6 col-md-6 col-sm-10">
     <h3>Register as user</h3>
     <form action="registration">
         <div class="col-12">

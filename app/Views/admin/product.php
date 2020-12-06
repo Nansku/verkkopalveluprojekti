@@ -5,12 +5,12 @@
 -->
 <form action="/product/changeCategory/" method="post">
 <label>Tuoteryhmä</label>
-<select name="categorynum" onChange="this.form.submit()">
+<select name="category_id" onChange="this.form.submit()">
 <?php foreach($categories as $category): ?>
-  <option value="<?=$category['categorynum']?>"
+  <option value="<?=$category['id']?>"
   <?php
   // Asetetaan tuoteryhmä valituksi pudotuslistassa kirjoittamalla selected html:n sekaan oikeaan kohtaan.
-  if ($category['categorynum'] === $categorynum) {
+  if ($category['id'] === $category_id) {
     print " selected";
   }
   ?>
@@ -22,15 +22,15 @@
 </form>
 </div>
 <div>
-<?= anchor('product/save/' . $categorynum,'Lisää uusi')?>
+<?= anchor('product/save/' . $category_id,'Lisää uusi')?>
 </div>
 <table class="table">
 <?php foreach($products as $product): ?>
   <tr>
     <td><?= $product['productname']?></td>
     <td><?= $product['price']?> €</td>
-    <td><?= anchor('product/save/' . $categorynum . '/' . $product['productID'],'Muokkaa')?></td>
-    <td><a href="<?= site_url('product/deleteProduct/'. $product['productID'])?>" onclick="return confirm('Haluatko varmasti poistaa tuotteen?')">Poista</a></td>
+    <td><?= anchor('product/save/' . $category_id . '/' . $product['id'],'Muokkaa')?></td>
+    <td><a href="<?= site_url('product/deleteProduct/'. $product['id'])?>" onclick="return confirm('Haluatko varmasti poistaa tuotteen?')">Poista</a></td>
   </tr>
 <?php endforeach;?>
 </table>
