@@ -5,19 +5,19 @@
             <div class="row no-gutters id1">
                <div class="col-8 card-body">
                   <!-- Linkki vie yksittäisen tuotteen sivulle -->
-                  <a href="<?= site_url('/coffee/product/' . $product['productID'])?>">
+                  <a href="<?= site_url('/coffee/product/' . $product['id'])?>">
                   <h4 class="card-title"><?= $product['productname'] ?></h4>
                   </a>
                      <p class="card-text"><?=$product['description']?></p>
                      <p class="card-text"><?=$product['price']?> €</p>
                <!-- Form lisää tuotteen ostoskoriin 
-               <form action="<?= site_url('cart/add2/' . $product['productID']);?>" method="post">
+               <form action="<?= site_url('cart/add2/' . $product['id']);?>" method="post">
                      <button class="btn nappula shadow-none"> <i class="fas fa-shopping-cart mr-2"></i>Lisää koriin</button>
                -->
                </div>
                <div class="col-4">
                   <div class="float-right">
-                     <a href="<?= site_url('/coffee/product/' . $product['productID'])?>">
+                     <a href="<?= site_url('/coffee/product/' . $product['id'])?>">
                      <img class="card-img" src="<?= base_url('img/' . $product['picture'])?>"></img>
                      </a>
                   </div>
