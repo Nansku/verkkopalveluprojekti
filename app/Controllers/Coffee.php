@@ -133,4 +133,15 @@ class Coffee extends BaseController
                 echo view('product', $data);
                 echo view('template/footer');
         }
+        // Etsii Tuotteita Nimen perusteella
+        public function search() {
+                $productname = $this->request->getPost('search');
+                $data['categories'] = $this->CategoryModel->getCategory();
+                $data['products'] = $this->ProductModel->getProductByName($productname);
+                $data['cart_count'] = $this->cartModel->count();
+                echo view('template/header',$data);
+                echo view('search');
+                echo view('template/footer');
+            }
+            
 }

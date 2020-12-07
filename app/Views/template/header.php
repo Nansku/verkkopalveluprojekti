@@ -103,11 +103,11 @@
             </ul>
 
             <!-- Search bar -->
-            <form class="form-inline my-2 my-lg-0 pt-2">
-                <input class="form-control mr-sm-2" type="search" 
+            <form action="<?= site_url('coffee/search')?>" method="post" class="form-inline my-2 my-lg-0 pt-2">
+                <input class="form-control mr-sm-2" type="search" name="search"
                 placeholder="Search from site" aria-label="Go">
 
-                <button class="btn btn-outline-success my-2 my-sm-0 " type="submit">Go</button>
+                <button class="btn btn-outline-success my-2 my-sm-0 " type="submit" name="search-submit">Go</button>
             </form>
         </div>
         
