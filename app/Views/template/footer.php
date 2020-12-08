@@ -1,4 +1,4 @@
-    <footer class="footer row text-center ">
+    <footer class="footer row text-center " >
         <!-- Left side text -->
         <div class="col-sm-4 col-md-4 text-md-center">
             <h4>Our management</h4>
