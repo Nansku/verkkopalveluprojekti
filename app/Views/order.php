@@ -36,18 +36,19 @@
                         <div class="card-header" id="postiHeading">
                             <h3 class="mb-0">
                                 <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    <p class="float-right" style="font-size:x-large">Posti</p>
+                                    <p class="float-right" style="font-size:x-large">POSTI</p>
                                     <div class="form-check float-left">
                                         <input type="radio" class="form-check-input" id="postiCheck" name="deliveryOption" value="option1" checked>
-                                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                        <label class="form-check-label" for="postiCheck">Check me out</label>
                                     </div>
                                 </button>
                             </h3>
                         </div>
                         <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#postiAccordion">
                             <div class="card-body">
-                                <p></p>
-
+                                <p>Shipping inside Finland</p>
+                                <p>Small package: 4,90 € - 5,90 €</p>
+                                <p>Large package: 7,90 € - 10,90 €</p>
                             </div>
                         </div>
                     </div>
@@ -60,16 +61,17 @@
                                 <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                                     <p class="float-right" style="font-size:x-large">Matkahuolto</p>
                                     <div class="form-check float-left">
-                                        <input type="radio" class="form-check-input" id="matkahuoltoCheck" name="deliveryOption" value="option2">
-                                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                        <input type="radio" class="form-check-input" id="matkahuoltoCheck" name="deliveryOption" value="MH">
+                                        <label class="form-check-label" for="matkahuoltoCheck">Check me out</label>
                                     </div>
                                 </button>
                             </h3>
                         </div>
                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#matkahuoltoAccordion">
                             <div class="card-body">
-                                <p></p>
-
+                            <p>Shipping inside Finland</p>
+                                <p>Small package: 4,90 € - 5,90 €</p>
+                                <p>Large package: 7,90 € - 10,90 €</p>
                             </div>
                         </div>
                     </div>
@@ -83,16 +85,17 @@
                                 <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
                                     <p class="float-right" style="font-size:x-large">DHL</p>
                                     <div class="form-check float-left">
-                                        <input type="radio" class="form-check-input" id="dhlCheck" name="deliveryOption" value="option3">
-                                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                        <input type="radio" class="form-check-input" id="dhlCheck" name="deliveryOption" value="DHL">
+                                        <label class="form-check-label" for="dhlCheck">Check me out</label>
                                     </div>
                                 </button>
                             </h3>
                         </div>
                         <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#dhlAccordion">
                             <div class="card-body">
-                                <p></p>
-
+                                <p>Shipping inside EU</p>
+                                <p>Small package: 4,89 €</p>
+                                <p>Large package: 8,89 €</p>
                             </div>
                         </div>
                     </div>
