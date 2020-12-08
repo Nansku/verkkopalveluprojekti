@@ -1,7 +1,7 @@
 <div class="d-flex justify-content-center mt-3 footer_margin">
     <div class="col-lg-6 col-md-9 col-sm-12">
 
-            <h4 class="mb-4">Order Information</h4>
+        <h4 class="mb-4">Order Information</h4>
 
         <form action="<?= site_url('cart/order'); ?>" method="post">
             <div class="form-group">
@@ -30,7 +30,8 @@
             </div>
 
             <h4>Delivery options</h4>
-            <div class="col-12 mb-3" align="center">
+
+            <div class="col-12 mb-3" align="center"><!--
                 <div class="accordion col-12 float-center" id="postiAccordion" style="padding-bottom:none; margin-bottom:none;">
                     <div class="card">
                         <div class="card-header" id="postiHeading">
@@ -69,7 +70,7 @@
                         </div>
                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#matkahuoltoAccordion">
                             <div class="card-body">
-                            <p>Shipping inside Finland</p>
+                                <p>Shipping inside Finland</p>
                                 <p>Small package: 4,90 € - 5,90 €</p>
                                 <p>Large package: 7,90 € - 10,90 €</p>
                             </div>
@@ -96,12 +97,73 @@
                                 <p>Shipping inside EU</p>
                                 <p>Small package: 4,89 €</p>
                                 <p>Large package: 8,89 €</p>
+                                
+                                
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <button class="btn btn-warning mt-4">Place order</button>
+-->
+                <div class="card mb-3">
+                    <div class="row no-gutters">
+                        <div class="col-4">
+                            <img src="<?= base_url('img/delivery/posti.png')?>" class="card-img" alt="posti" style="max-width: 100%;">
+                        </div>
+                        <div class="col-7">
+                            <div class="card-body">
+                                <h5 class="card-title">Posti</h5>
+                                <p class="card-text"><small class="text-muted">Shipping inside Finland</small></p>
+                                <p class="card-text">Small package: 4,90 € - 5,90 €</p>
+                                <p class="card-text">Large package: 7,90 € - 10,90 €</p>
+                                <div class="form-check">
+                                    <input type="radio" class="form-check-input" id="postiCheck" name="deliveryOption" value="posti" checked>
+                                    <label class="form-check-label card-text" for="postiCheck">Choose Posti</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3">
+                    <div class="row no-gutters">
+                        <div class="col-md-3">
+                            <img src="<?= base_url('img/delivery/MH.png')?>" class="card-img" alt="matkahuolto" style="max-width: 50%;">
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-body">
+                                <h5 class="card-title">Matkahuolto</h5>
+                                <p class="card-text"><small class="text-muted">Shipping inside Finland</small></p>
+                                <p class="card-text">Small package: 4,90 € - 5,90 €</p>
+                                <p class="card-text">Large package: 7,90 € - 10,90 €</p>
+                                <div class="form-check">
+                                <input type="radio" class="form-check-input" id="matkahuoltoCheck" name="deliveryOption" value="MH">
+                                        <label class="form-check-label card-text" for="matkahuoltoCheck">Choose Matkahuolto</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="<?= base_url('img/delivery/DHL.png')?>" class="card-img mx-auto" alt="DHL" style="max-width: 70%;">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">DHL</h5>
+                                <p class="card-text"><small class="text-muted">Shipping inside EU</small></p>
+                                <p class="card-text">Small package: 4,89 €</p>
+                                <p class="card-text">Large package: 8,89 €</p>
+                                <div class="form-check">
+                                    <input type="radio" class="form-check-input" id="dhlCheck" name="deliveryOption" value="DHL">
+                                    <label class="form-check-label" for="dhlCheck">Choose DHL</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-warning mt-4">Place order</button>
         </form>
     </div>
 </div>
