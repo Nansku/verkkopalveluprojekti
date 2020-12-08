@@ -66,7 +66,7 @@ class Product extends BaseController
     // Jos post-metodi, yritetään tallentaa.
     if ($this->request->getMethod() === 'post') {
       if (!$this->validate([
-        'productname' => 'required|max_length[50]',
+        'productname' => 'required|max_length[255]',
         'price' => 'required'
       ])) {  
         // Validointi ei mene läpi, palautetaan lomake näkyviin.
