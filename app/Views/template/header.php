@@ -27,7 +27,7 @@
     box-sizing: border-box;}
     </style>-->
 
-    <title>Vienon Kahvikauppa</title>
+    <title>Vieno's Coffee Shop</title>
 </head>
 <body class="d-flex flex-column h-100">
 <div class="container-fluid main flex-shrink-0" >
