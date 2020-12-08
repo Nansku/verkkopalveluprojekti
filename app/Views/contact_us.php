@@ -28,7 +28,7 @@ oikea järjestys -->
          <div class="row no-gutters">
             <div class="col-4 text-center my-auto">
 
-               <img class="img-fluid card-img us_img" src=<?= base_url("img/jami_web.jpg") ?>
+               <img class="img-fluid card-img us_img" src=<?= base_url("img/staff/jami_web.jpg") ?>
                alt="Jami Salmela">
             </div>
             <div class="col-8 p-2">
@@ -46,7 +46,7 @@ oikea järjestys -->
          <div class="row no-gutters">
             <div class="col-4 text-center my-auto">
  
-               <img class="img-fluid card-img us_img" src=<?= base_url("img/eveliina_web.jpg") ?>
+               <img class="img-fluid card-img us_img" src=<?= base_url("img/staff/eveliina_web.jpg") ?>
                alt="Eveliina Purontaus">
             </div>
             <div class="col-8 p-2">
@@ -68,7 +68,7 @@ oikea järjestys -->
          <div class="row no-gutters">
             <div class="col-4 text-center my-auto">
                
-               <img class="img-fluid card-img us_img" src=<?= base_url("img/ilari_web.jpg") ?>
+               <img class="img-fluid card-img us_img" src=<?= base_url("img/staff/ilari_web.jpg") ?>
                alt="Ilari Puustinen">
             </div>
             <div class="col-8 p-2">
@@ -86,7 +86,7 @@ oikea järjestys -->
          <div class="row no-gutters">
             <div class="col-4 text-center my-auto">
  
-               <img class="img-fluid card-img us_img" src=<?= base_url("img/jenna_web.jpg") ?>
+               <img class="img-fluid card-img us_img" src=<?= base_url("img/staff/jenna_web.jpg") ?>
                alt="Jenna Pennanen">
             </div>
             <div class="col-8 p-2">
@@ -108,7 +108,7 @@ oikea järjestys -->
          <div class="row no-gutters">
             <div class="col-4 text-center my-auto">
 
-               <img class="img-fluid card-img us_img" src=<?= base_url("img/henri_web.jpg") ?>
+               <img class="img-fluid card-img us_img" src=<?= base_url("img/staff/henri_web.jpg") ?>
                alt="Henri Aukee">
             </div>
             <div class="col-8 p-2">
@@ -126,7 +126,7 @@ oikea järjestys -->
          <div class="row no-gutters">
             <div class="col-4 text-center my-auto">
 
-               <img class="img-fluid card-img us_img" src=<?= base_url("img/jukka_web.jpg") ?>
+               <img class="img-fluid card-img us_img" src=<?= base_url("img/staff/jukka_web.jpg") ?>
                alt="Jukka Liimatta">
             </div>
             <div class="col-8 p-2">
@@ -148,7 +148,7 @@ oikea järjestys -->
          <div class="row no-gutters">
             <div class="col-4 text-center my-auto">
 
-               <img class="img-fluid card-img us_img" src=<?= base_url("img/ville_web.jpg") ?>
+               <img class="img-fluid card-img us_img" src=<?= base_url("img/staff/ville_web.jpg") ?>
                alt="Ville Rantanen">
             </div>
             <div class="col-8 p-2">
@@ -166,7 +166,7 @@ oikea järjestys -->
          <div class="row no-gutters">
             <div class="col-4 text-center my-auto">
 
-               <img class="img-fluid card-img us_img" src=<?= base_url("img/oskari_web.jpg") ?>
+               <img class="img-fluid card-img us_img" src=<?= base_url("img/staff/oskari_web.jpg") ?>
                 alt="Oskari Juntunen">
             </div>
             <div class="col-8 p-2">

@@ -58,6 +58,7 @@ class ProductModel extends Model
     // }
 
 
+
     public function randomProducts()
     {
 
@@ -67,7 +68,7 @@ class ProductModel extends Model
         $products = $this->findAll();
 
         if (count($products) > 3) {
-            $amount = 0;
+            $amount = 0;  
             while ($amount < 3) {
                 $product = $products[rand(0, count($products) - 1)];
                 if (!in_array($product['id'], $ids)) {
@@ -77,7 +78,7 @@ class ProductModel extends Model
                 }
             }
             return $random;
-        } else {
+        } else {          
             return $products;
         }
     }

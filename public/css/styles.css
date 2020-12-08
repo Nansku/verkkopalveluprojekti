@@ -283,3 +283,25 @@ footer i{
   padding: 15px;
   border-radius: 4px;
 }
+
+.recommended {
+  max-width: 400px;
+  padding: 40px;
+  text-align: center;
+}
+
+.recommended p {
+  background-color: #BF9E87;
+  width: 80px;
+  color: black;
+  font-weight: bold;
+  border-radius: 3px; 
+  transition: 0.25s
+}
+
+/* Recommended button */
+
+a:hover p{
+  background-color: #ED9908;
+  color: white;
+}

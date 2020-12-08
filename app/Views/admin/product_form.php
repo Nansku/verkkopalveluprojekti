@@ -6,7 +6,7 @@
   <input type="hidden" name="id" value="<?= $id?>">
   <div class="form-group">
     <label>Name</label>
-    <input name="productname" class="form-control" maxlength="50" value="<?= $productname?>"/>
+    <input name="productname" class="form-control" maxlength="255" value="<?= $productname?>"/>
   </div>
   <div class="form-group">
     <label>Description</label>
