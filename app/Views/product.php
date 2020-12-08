@@ -17,18 +17,18 @@
             </div>
         </div>
     </div>
-    <!-- <div class="row d-flex justify-content-center">
+    <div class="row d-flex justify-content-center">
         <div class="card-deck col-12">
-            <php foreach ($products as $product) : ?>
+            <?php foreach ($productrand as $product): ?>
                 <div class="card mx-1">
-                    <a href="<= site_url('Coffee/product/' . $product['id']) ?>">
-                        <h4><= $product['productname'] ?></h4>
-                        <p><= $product['price'] ?> €</p>
-                        <img class="img-fluid" src="<= base_url('img/' . $product['picture']) ?>"></img>
+                <a href="<?= site_url('/coffee/product/' . $product['id'])?>">
+                        <h4><?= $product['productname'] ?></h4>
+                        <p><?= $product['price'] ?> €</p>
+                        <img class="img-fluid" src="<?= base_url('img/' . $product['picture']) ?>"></img>
                     </a>
                 </div>
-            <php endforeach; ?>
+            <?php endforeach; ?>
         </div>
-    </div> -->
+    </div>
 </form>
 </div>
