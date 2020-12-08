@@ -128,6 +128,7 @@ class Coffee extends BaseController
         {
                 $data['cart_count'] = $this->cartModel->count();
                 $data['categories'] = $this->CategoryModel->getCategory();
+                $data['productrand'] = $this->ProductModel->randomProducts();
                 $data['products'] = $this->ProductModel->getProduct($product_id);
                 echo view('template/header', $data);
                 echo view('product', $data);
