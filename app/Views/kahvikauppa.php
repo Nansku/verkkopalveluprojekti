@@ -16,12 +16,12 @@
     <div id="kettu" class="parallax col-12">
 
     </div>
-
-    <div id="design recom" class="text col-12">
+    
+    <div id="design" class="text col-12">
         <h3>Our recommended products:</h3>
         <div class="row d-flex justify-content-center">
             <div class="row">
-                
+  
                 <?php foreach ($products as $product) : ?>
                     <div class="recommended mx-1">
                         <a href="<?= site_url('Coffee/product/' . $product['id']) ?>">
