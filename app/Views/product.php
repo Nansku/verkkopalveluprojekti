@@ -1,4 +1,4 @@
-<div style="margin-bottom: 10em;">
+<div>
 <form action="<?= site_url('cart/add/' . $products['id']); ?>" method="post">
     <div class="product_color producti" id="product">
         <div class="d-flex justify-content-center">
@@ -17,7 +17,7 @@
             </div>
         </div>
     </div>
-    <div id="design recom" class="text col-12">
+    <div id="design" class="text col-12">
         <h3>More products:</h3>
         <div class="row d-flex justify-content-center">
             <div class="row">
