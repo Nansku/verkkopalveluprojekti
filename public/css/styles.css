@@ -305,3 +305,10 @@ a:hover p{
   background-color: #ED9908;
   color: white;
 }
+
+/* yhden productin marginit :D */
+
+.producti {
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
