@@ -1,3 +1,4 @@
+<div style="margin-bottom: 10em;">
 <form action="<?= site_url('cart/add/' . $products['id']); ?>" method="post">
     <div class="product_color" id="product">
         <div class="d-flex justify-content-center">
@@ -30,3 +31,4 @@
         </div>
     </div> -->
 </form>
+</div>
