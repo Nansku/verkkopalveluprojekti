@@ -38,4 +38,4 @@
 
     </div>
 </div>
-<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up fa-2x"></i></button>
+<button class="d-none d-lg-block" onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up fa-2x"></i></button>
