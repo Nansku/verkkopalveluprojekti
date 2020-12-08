@@ -111,14 +111,16 @@ class CartModel extends Model
         //$orderID = $this->orderModel->getOrdernum();
         //$rownum = $this->rownum();
 
+        $rownum = 1;
         foreach ($_SESSION['cart'] as $product) {
             $this->order_rowModel->save([
                 // 'ordernum' => $orderID,
                 'ordernum' => $orderID,
                 'product_id' => $product['id'],
                 'amount' => $product['amount'],
-                //'rownum' => $rownum
+                'rownum' => $rownum
             ]);
+            $rownum++;
         }
 
         $this->clear();
