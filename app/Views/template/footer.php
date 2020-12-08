@@ -12,7 +12,7 @@
             <p>ville@vienoscoffee.com</p>
         </div>
         <!-- Middle text -->
-        <div class="col-sm-4 col-md-4">
+        <div class="col-sm-4 col-md-4 my-5 my-sm-0">
             <h4 class="text-md-center">Find us on social media</h4>
             <a href="https://www.instagram.com/oamk_ouas/?hl=fi" target="_blank">
                 <i class="fab fa-instagram fa-2x someIcon"></i>
