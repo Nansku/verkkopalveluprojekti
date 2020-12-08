@@ -24,7 +24,7 @@
    </div>
 </div>
 <div class="row d-flex justify-content-center">
-   <div class="col-6">
+   <div class="col-12 col-lg-6">
       <div class="tab-content" id="pills-tabContent">
          <div class="tab-pane fade show active" id="customerInformation" role="tabpanel"
             aria-labelledby="customerInformation-tab">

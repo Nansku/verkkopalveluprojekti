@@ -31,7 +31,7 @@ oikea järjestys -->
                <img class="img-fluid card-img us_img" src=<?= base_url("img/jami_web.jpg") ?>
                alt="Jami Salmela">
             </div>
-            <div class="col-8">
+            <div class="col-8 p-2">
                <div class="card-body">
                   <h5 class="card-title">CEO</h5>
                   <p class="card-text">Jami Salmela<br>
@@ -49,7 +49,7 @@ oikea järjestys -->
                <img class="img-fluid card-img us_img" src=<?= base_url("img/eveliina_web.jpg") ?>
                alt="Eveliina Purontaus">
             </div>
-            <div class="col-8">
+            <div class="col-8 p-2">
                <div class="card-body">
                   <h5 class="card-title">Sales, invoicing</h5>
                   <p class="card-text">Eveliina Purontaus<br>
@@ -71,7 +71,7 @@ oikea järjestys -->
                <img class="img-fluid card-img us_img" src=<?= base_url("img/ilari_web.jpg") ?>
                alt="Ilari Puustinen">
             </div>
-            <div class="col-8">
+            <div class="col-8 p-2">
                <div class="card-body">
                   <h5 class="card-title">Orders, customer service</h5>
                   <p class="card-text">Ilari Puustinen<br>
@@ -89,7 +89,7 @@ oikea järjestys -->
                <img class="img-fluid card-img us_img" src=<?= base_url("img/jenna_web.jpg") ?>
                alt="Jenna Pennanen">
             </div>
-            <div class="col-8">
+            <div class="col-8 p-2">
                <div class="card-body">
                   <h5 class="card-title">Orders, customer service</h5>
                   <p class="card-text">Jenna Pennanen<br>
@@ -111,7 +111,7 @@ oikea järjestys -->
                <img class="img-fluid card-img us_img" src=<?= base_url("img/henri_web.jpg") ?>
                alt="Henri Aukee">
             </div>
-            <div class="col-8">
+            <div class="col-8 p-2">
                <div class="card-body">
                   <h5 class="card-title">New products</h5>
                   <p class="card-text">Henri Aukee<br>
@@ -129,7 +129,7 @@ oikea järjestys -->
                <img class="img-fluid card-img us_img" src=<?= base_url("img/jukka_web.jpg") ?>
                alt="Jukka Liimatta">
             </div>
-            <div class="col-8">
+            <div class="col-8 p-2">
                <div class="card-body">
                   <h5 class="card-title">New customers</h5>
                   <p class="card-text">Jukka Liimatta<br>
@@ -151,7 +151,7 @@ oikea järjestys -->
                <img class="img-fluid card-img us_img" src=<?= base_url("img/ville_web.jpg") ?>
                alt="Ville Rantanen">
             </div>
-            <div class="col-8">
+            <div class="col-8 p-2">
                <div class="card-body">
                   <h5 class="card-title">Storage manager</h5>
                   <p class="card-text">Ville Rantanen<br>
@@ -169,7 +169,7 @@ oikea järjestys -->
                <img class="img-fluid card-img us_img" src=<?= base_url("img/oskari_web.jpg") ?>
                 alt="Oskari Juntunen">
             </div>
-            <div class="col-8">
+            <div class="col-8 p-2">
                <div class="card-body">
                   <h5 class="card-title">IT</h5>
                   <p class="card-text">Oskari Juntunen<br>
