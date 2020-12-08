@@ -91,9 +91,24 @@ class Product extends BaseController
 
           \Config\Services::image()
           ->withFile($path . $file->getName())
-          
+          ->fit(400, 250, 'center')
           ->save($path . $file->getName());
           $save['picture'] = $file->getName();
+
+          
+        }
+
+        $path = ROOTPATH . '/public/img/large/';
+        $file= $this->request->getFile('large_picture');
+        if ($file->isValid()) {
+          
+          $file->move($path ,$file->getName());
+
+          \Config\Services::image()
+          ->withFile($path . $file->getName())
+          ->fit(600, 375, 'center')
+          ->save($path . $file->getName());
+          $save['large_picture'] = $file->getName();
         }
 
 

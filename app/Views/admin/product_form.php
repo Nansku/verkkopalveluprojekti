@@ -31,6 +31,18 @@
     ?>
   </div>
 
+  <div class="form-group">
+    <label>Large picture</label>
+    <span><br>Tähän sama kuva vaan uudestaan</span>
+    <input name="large_picture" class="form-control" type="file">
+    <?php 
+    if ($picture !== '') {
+      $path = base_url('img/large/' . $picture);
+      print "<img src='" .$path  . "'/>";
+    }
+    ?>
+  </div>
+
 
   <button>Tallenna</button>
 </form>

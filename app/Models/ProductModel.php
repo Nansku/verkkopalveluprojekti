@@ -87,7 +87,7 @@ class ProductModel extends Model
    * @param int $id Poistettavan tuotteen id.
    */
   public function deleteProduct($id) {
-    $this->where('productID',$id);
+    $this->where('id',$id);
     $this->delete();
   }
 
@@ -102,8 +102,4 @@ class ProductModel extends Model
         $query = $this->get();
         return $query->getResultArray();
     }
-   public function deleteProduct($category_id) {
-     $this->where('id',$category_id);
-     $this->delete();
-   }
 }
