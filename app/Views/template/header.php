@@ -29,8 +29,8 @@
 
     <title>Vienon Kahvikauppa</title>
 </head>
-<body>
-<div class="container-fluid main" >
+<body class="d-flex flex-column h-100">
+<div class="container-fluid main flex-shrink-0" >
     <nav class="navbar navbar-expand-xl navbar-light pr-5 pl-5">
         <!-- Logo -->
         <a class="navbar-brand active" href="<?= site_url('Coffee/index')?>">

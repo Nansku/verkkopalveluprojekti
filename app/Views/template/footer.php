@@ -1,4 +1,7 @@
-    <footer class="footer row text-center " >
+</div>
+
+    <footer class="footer mt-auto py-3 container-fluid text-center" >
+       <div class="row">
         <!-- Left side text -->
         <div class="col-sm-4 col-md-4 text-md-center">
             <h4>Our management</h4>
@@ -35,9 +38,9 @@
                 <a href="<?= site_url('Coffee/faq') ?>" class="w-25">FAQ</a>
             </p>
         </div>
+       </div>
     </footer>
 
-    </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     
