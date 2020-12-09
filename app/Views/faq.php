@@ -1,19 +1,19 @@
-<div class="row">
-   <h2>Frequently Asked Questions</h2>
+<div class="row" style="margin-left: 20em; margin-right: 20em; margin-bottom: 5em;">
+   <h2 style="margin-left: 1em; margin-bottom: 1em; margin-top: 1em;">Frequently Asked Questions</h2>
 
-   <div class="col-12 mb-3">
+   <div class="col-12">
       <div class="accordion" id="faqAccordion">
-         <div class="card">
+         <div class="card cards">
             <div class="card-header" id="headingOne">
                <h3 class="mb-0">
                   <button class="btn btn-block text-left" type="button" data-toggle="collapse"
-                     data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                     data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="font-size: 23px">
                      Ordering
                   </button>
                </h3>
             </div>
             <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#faqAccordion">
-               <div class="card-body p-3">
+               <div class="card-body p-3" style="margin-left: 2em; margin-right: 5em;">
                   <p>You can order our products through our online store. You can 
                      browse product categories under the Products tab. Click on a 
                      product category to browse the products in that category. 
@@ -29,17 +29,17 @@
             </div>
          </div>
 
-         <div class="card">
+         <div class="card cards">
             <div class="card-header" id="headingTwo">
                <h3 class="mb-0">
                   <button class="btn btn-block text-left" type="button" data-toggle="collapse"
-                     data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                     data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" style="font-size: 23px">
                      Payment methods
                   </button>
                </h3>
             </div>
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
-               <div class="card-body p-3">
+               <div class="card-body p-3" style="margin-left: 2em; margin-right: 5em;">
                   <p>You can pay for your purchases either as direct online 
                      banking payments or with a debit card.</p>
 
@@ -53,17 +53,17 @@
             </div>
          </div>
 
-         <div class="card">
+         <div class="card cards">
             <div class="card-header" id="headingThree">
                <h3 class="mb-0">
                   <button class="btn btn-block text-left" type="button" data-toggle="collapse"
-                     data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                     data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree" style="font-size: 23px">
                      Deliveries
                   </button>
                </h3>
             </div>
             <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
-               <div class="card-body p-3">
+               <div class="card-body p-3" style="margin-left: 2em; margin-right: 5em;">
                   <p>Orders will be delivered to the nearest Posti or Schenker 
                      pick-up point according to your postal code. Home delivery 
                      is also available. We deliver international orders via DHL.</p>
@@ -78,17 +78,17 @@
             </div>
          </div>
 
-         <div class="card">
+         <div class="card cards">
             <div class="card-header" id="headingFour">
                <h3 class="mb-0">
                   <button class="btn btn-block text-left" type="button" data-toggle="collapse"
-                     data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                     data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour" style="font-size: 23px">
                      Changing and returning of products
                   </button>
                </h3>
             </div>
             <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faqAccordion">
-               <div class="card-body p-3">
+               <div class="card-body p-3" style="margin-left: 2em; margin-right: 5em;">
                   <p>Vieno’s coffee shop offers a 100-day free return on its products.</p>
 
                   <p>However, the products must be unused, in original condition 
@@ -97,17 +97,17 @@
             </div>
          </div>
 
-         <div class="card">
+         <div class="card cards">
             <div class="card-header" id="headingFive">
                <h3 class="mb-0">
                   <button class="btn btn-block text-left" type="button" data-toggle="collapse"
-                     data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                     data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive" style="font-size: 23px">
                      Delivery errors
                   </button>
                </h3>
             </div>
             <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#faqAccordion">
-               <div class="card-body p-3">
+               <div class="card-body p-3" style="margin-left: 2em; margin-right: 5em;">
                   <p>If you received a wrong or defective product or the product 
                      was missing from your delivery, please contact our customer 
                      service office@vienoscoffee.com without delay.</p>
@@ -121,17 +121,17 @@
             </div>
          </div>
 
-         <div class="card">
+         <div class="card cards">
             <div class="card-header" id="headingSix">
                <h3 class="mb-0">
                   <button class="btn btn-block text-left" type="button" data-toggle="collapse"
-                     data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                     data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix" style="font-size: 23px">
                      Range of products
                   </button>
                </h3>
             </div>
             <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#faqAccordion">
-               <div class="card-body p-3">
+               <div class="card-body p-3" style="margin-left: 2em; margin-right: 5em;">
                   <p>Vieno's coffee shop has an ever-expanding selection of 
                      different coffees, filter papers, coffee machines, coffee 
                      presses and accessories.</p>
@@ -145,50 +145,50 @@
             </div>
          </div>
 
-         <div class="card">
+         <div class="card cards">
             <div class="card-header" id="headingSeven">
                <h3 class="mb-0">
                   <button class="btn btn-block text-left" type="button" data-toggle="collapse"
-                     data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                     data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven" style="font-size: 23px">
                      Gift cards
                   </button>
                </h3>
             </div>
             <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#faqAccordion">
-               <div class="card-body p-3">
+               <div class="card-body p-3" style="margin-left: 2em; margin-right: 5em;">
                   <p>Unfortunately, there are no gift cards in our selection yet, 
                      but we will launch them in early 2021.</p>
                </div>
             </div>
          </div>
 
-         <div class="card">
+         <div class="card cards">
             <div class="card-header" id="headingEight">
                <h3 class="mb-0">
                   <button class="btn btn-block text-left" type="button" data-toggle="collapse"
-                     data-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+                     data-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight" style="font-size: 23px">
                      Registration
                   </button>
                </h3>
             </div>
             <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#faqAccordion">
-               <div class="card-body p-3">
+               <div class="card-body p-3" style="margin-left: 2em; margin-right: 5em;">
                   <p>Add information about registering when the functionality is complete.</p>
                </div>
             </div>
          </div>
 
-         <div class="card">
+         <div class="card cards">
             <div class="card-header" id="headingNine">
                <h3 class="mb-0">
                   <button class="btn btn-block text-left" type="button" data-toggle="collapse"
-                     data-target="#collapseNine" aria-expanded="true" aria-controls="collapseNine">
+                     data-target="#collapseNine" aria-expanded="true" aria-controls="collapseNine" style="font-size: 25px">
                      Login
                   </button>
                </h3>
             </div>
             <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#faqAccordion">
-               <div class="card-body p-3">
+               <div class="card-body p-3" style="margin-left: 2em; margin-right: 5em;">
                   <p>Add information about registering when the functionality is complete.</p>
                </div>
             </div>

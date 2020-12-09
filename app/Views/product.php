@@ -2,7 +2,7 @@
 <form action="<?= site_url('cart/add/' . $products['id']); ?>" method="post">
     <div class="product_color producti" id="product">
         <div class="d-flex justify-content-center">
-            <div class=" card mt-5 mb-5" style="width: 1200px;">
+            <div class=" card cards mt-5 mb-5" style="width: 1200px;">
                 <div class="row no-gutters">
                     <div class="col-lg-6 col-md-6 col-sm-12 card-body">
                         <img class="float-right mr-4 kaka" id="zoom_05" src="<?= base_url('img/' . $products['picture']) ?>" data-zoom-image="<?= base_url('img/large/' . $products['picture']) ?>" />

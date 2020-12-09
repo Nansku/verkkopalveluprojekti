@@ -147,7 +147,7 @@ p{
   padding: 10px;
 }
 
-.card{
+.cards{
   background-color: white;
   border-color: #BF9E87;
   border-width: 3px;
@@ -311,4 +311,25 @@ a:hover p{
 .producti {
   margin-top: 50px;
   margin-bottom: 60px;
+}
+
+
+.card-input-element {
+  display: none;
+ 
+}
+
+.card-input {
+  margin: 10px;
+  padding: 0px;
+  ;
+}
+
+.card-input:hover {
+  cursor: pointer;
+}
+
+.card-input-element:checked + .card-input {
+  box-shadow: 0 0 2px 2px #179768;
+  transition: 0.3s;
 }

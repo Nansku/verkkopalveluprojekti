@@ -24,7 +24,7 @@ oikea järjestys -->
 <!-- Jami ja Eveliina -->
 <div class="row">
    <div class="col-md-6 col-lg-6">
-      <div class="card my-3 ml-lg-auto" style="max-width: 540px;">
+      <div class="card cards my-3 ml-lg-auto" style="max-width: 540px;">
          <div class="row no-gutters">
             <div class="col-4 text-center my-auto">
 
@@ -42,7 +42,7 @@ oikea järjestys -->
       </div>
    </div>
    <div class="col-md-6 col-lg-6">
-      <div class="card my-3 mr-lg-auto" style="max-width: 540px;">
+      <div class="card cards my-3 mr-lg-auto" style="max-width: 540px;">
          <div class="row no-gutters">
             <div class="col-4 text-center my-auto">
  
@@ -64,7 +64,7 @@ oikea järjestys -->
 <!-- Ilari ja Jenna -->
 <!-- <div class="row"> -->
    <div class="col-md-6 col-lg-6">
-      <div class="card my-3 ml-lg-auto" style="max-width: 540px;">
+      <div class="card cards my-3 ml-lg-auto" style="max-width: 540px;">
          <div class="row no-gutters">
             <div class="col-4 text-center my-auto">
                
@@ -82,7 +82,7 @@ oikea järjestys -->
       </div>
    </div>
    <div class="col-md-6 col-lg-6">
-      <div class="card my-3 mr-lg-auto" style="max-width: 540px;">
+      <div class="card cards my-3 mr-lg-auto" style="max-width: 540px;">
          <div class="row no-gutters">
             <div class="col-4 text-center my-auto">
  
@@ -104,7 +104,7 @@ oikea järjestys -->
 <!-- Henri ja Jukka -->
 <!-- <div class="row"> -->
    <div class="col-md-6 col-lg-6">
-      <div class="card my-3 ml-lg-auto" style="max-width: 540px;">
+      <div class="card cards my-3 ml-lg-auto" style="max-width: 540px;">
          <div class="row no-gutters">
             <div class="col-4 text-center my-auto">
 
@@ -122,7 +122,7 @@ oikea järjestys -->
       </div>
    </div>
    <div class="col-md-6 col-lg-6">
-      <div class="card my-3 mr-lg-auto" style="max-width: 540px;">
+      <div class="card cards my-3 mr-lg-auto" style="max-width: 540px;">
          <div class="row no-gutters">
             <div class="col-4 text-center my-auto">
 
@@ -144,7 +144,7 @@ oikea järjestys -->
 <!-- Ville ja Oskari -->
 <!-- <div class="row"> -->
    <div class="col-md-6 col-lg-6">
-      <div class="card my-3 ml-lg-auto" style="max-width: 540px;">
+      <div class="card cards my-3 ml-lg-auto" style="max-width: 540px;">
          <div class="row no-gutters">
             <div class="col-4 text-center my-auto">
 
@@ -162,7 +162,7 @@ oikea järjestys -->
       </div>
    </div>
    <div class="col-md-6 col-lg-6">
-      <div class="card my-3 mr-lg-auto" style="max-width: 540px;">
+      <div class="card cards my-3 mr-lg-auto" style="max-width: 540px;">
          <div class="row no-gutters">
             <div class="col-4 text-center my-auto">
 
