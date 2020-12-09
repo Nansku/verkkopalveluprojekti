@@ -66,7 +66,7 @@
          <div class="tab-pane fade" id="loginInformation" role="tabpanel" aria-labelledby="loginInformation-tab">
             <div class="d-flex justify-content-center footer_margin mt-2">
                <div class="col">
-                  <form action="#">
+                  <form action="/login/updatelogin">
                      <div>
                         <?= \Config\Services::validation()->listErrors(); ?>
                      </div>

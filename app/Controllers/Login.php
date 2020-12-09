@@ -19,6 +19,7 @@ class Login extends BaseController {
         $this->CategoryModel = new CategoryModel();
         $this->ProductModel = new ProductModel();
         $this->cartModel = new CartModel();
+        $this->LoginModel = new LoginModel();
     }
 
 
@@ -91,15 +92,15 @@ class Login extends BaseController {
                 $this->request->getVar('password')
             );
 
-            if ($customer = ['office@vienoscoffee.com','12345678']) {
+            //if ($customer = ['office@vienoscoffee.com','12345678']) {
                 
-                $_SESSION['customer'] = $customer;
+            //    $_SESSION['customer'] = $customer;
 
-                echo view('admin/admin_header', $data);
-                echo view('admin/admin_my_page', $data);
-                echo view('template/footer');
+            //    echo view('admin/admin_header', $data);
+            //    echo view('admin/admin_my_page', $data);
+            //    echo view('template/footer');
                 
-            }else
+            //}else
             if ($customer) {
                 $_SESSION['customer'] = $customer;
                 echo view('template/header', $data);
@@ -124,35 +125,68 @@ class Login extends BaseController {
         echo view('template/footer');
     }
 
+
     public function updateinfo() {
+
         $data['cart_count'] = $this->cartModel->count();
         $data['categories'] =$this->CategoryModel->getCategory();
-        $model = new LoginModel();
+
+        $data['name'] = $this->request->getVar('name');
+        $data['email'] = $this->request->getVar('email');
+        $data['address'] = $this->request->getVar('address');
+        $data['postalnumber'] = $this->request->getVar('postalnumber');
+        $data['city'] = $this->request->getVar('city');
+        $data['phonenumber'] = $this->request->getVar('phonenumber');
+
+        $info = $this->LoginModel->hae();
+
+        $info['name'] = $data['name'];
+        $info['email'] = $data['email'];
+        $info['address'] = $data['address'];
+        $info['postalnumber'] = $data['postalnumber'];
+        $info['city'] = $data['city'];
+        $info['phonenumber'] = $data['phonenumber'];
+   
+
+        $this->LoginModel->replace($info);
+
+        echo view('template/header', $data);
+        echo view('my_page', $data);
+        echo view('template/footer');
+    }
+
+    public function updatelogin() {
+
+        $data['cart_count'] = $this->cartModel->count();
+        $data['categories'] =$this->CategoryModel->getCategory();
 
         if (!$this->validate([
-            'name' => 'required',
             'email' => 'required',
-            'address' => 'required',
-            'postalnumber' => 'required',
-            'city' => 'required',
-            
-        ])){
+            // old password check?
+            'password_new' => 'required|min_length[8]|max_length[30]',
+            'password_confirm' => 'required|min_length[8]|max_length[30]|matches[password_new]',
+
+            ])){
+                echo view('template/header', $data);
+                echo view('my_page', $data);
+                echo view('template/footer');
+            }
+            else {
+            $data['email'] = $this->request->getVar('email');
+            $data['password_new'] = password_hash($this->request->getVar('password_new'),PASSWORD_DEFAULT);
+
+            $info = $this->LoginModel->hae();
+
+            $info['email'] = $data['email'];
+            $info['password'] = $data['password_new'];
+
+            $this->LoginModel->replace($info);
+
             echo view('template/header', $data);
             echo view('my_page', $data);
             echo view('template/footer');
-        }
-        else {
-            $model->update([
-                'name' => $this->request->getVar('name'),
-                'address' => $this->request->getVar('address'),
-                'postalnumber' => $this->request->getVar('postalnumber'),
-                'city' => $this->request->getVar('city'),
-                'email' => $this->request->getVar('email'),
-                'phonenumber' => $this->request->getVar('phonenumber')
+            }
 
-            ]);
-            return redirect('my_page');
-        }
     }
     
 
