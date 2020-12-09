@@ -20,4 +20,11 @@ class LoginModel extends Model {
         }
         return null;
     }
+    public function hae() {
+        $query = $this->query("SELECT * FROM CUSTOMER");
+
+        foreach ($query->getResultArray() as $row){
+            return $row;
+        }
+    }
 }
