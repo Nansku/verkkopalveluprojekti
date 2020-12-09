@@ -1,5 +1,6 @@
+<div>
 <form action="<?= site_url('cart/add/' . $products['id']); ?>" method="post">
-    <div class="product_color" id="product">
+    <div class="product_color producti" id="product">
         <div class="d-flex justify-content-center">
             <div class=" card mt-5 mb-5" style="width: 1200px;">
                 <div class="row no-gutters">
@@ -16,17 +17,25 @@
             </div>
         </div>
     </div>
-    <!-- <div class="row d-flex justify-content-center">
-        <div class="card-deck col-12">
-            <php foreach ($products as $product) : ?>
-                <div class="card mx-1">
-                    <a href="<= site_url('Coffee/product/' . $product['id']) ?>">
-                        <h4><= $product['productname'] ?></h4>
-                        <p><= $product['price'] ?> €</p>
-                        <img class="img-fluid" src="<= base_url('img/' . $product['picture']) ?>"></img>
-                    </a>
-                </div>
-            <php endforeach; ?>
+    <div id="design" class="text col-12">
+        <h3>More products:</h3>
+        <div class="row d-flex justify-content-center">
+            <div class="row">
+            <?php foreach ($productrand as $product): ?>
+                    <div class="recommended mx-1">
+                        <a href="<?= site_url('Coffee/product/' . $product['id']) ?>">
+                            <img class="img-fluid" src="<?= base_url('img/' . $product['picture']) ?>"></img>
+                            <h4 class="mt-2" ><?= $product['productname'] ?></h4>
+                            <div class="container">
+                                <div class="row justify-content-center">   
+                                        <p class="mt-2 justify-content-center"><?= $product['price'] ?> €</p>    
+                                </div>   
+                            </div>                     
+                        </a>
+                    </div>
+            <?php endforeach; ?>
+            </div>
         </div>
-    </div> -->
+    </div>
 </form>
+</div>

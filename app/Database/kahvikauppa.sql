@@ -34,6 +34,7 @@ address varchar(50),
 city varchar(50),
 phonenumber varchar(13),
 postalnum char(5),
+email varchar(40),
 delivery varchar(10),
 ordernum int(5) AUTO_INCREMENT PRIMARY KEY,
 date timestamp,
@@ -45,7 +46,7 @@ tilattu*/
 CREATE TABLE ordr_row (
 ordernum int(10) ,
 product_id int UNSIGNED,
-rownum int(3),
+rownum smallint UNSIGNED,
 amount int(3),
 FOREIGN KEY (ordernum)
 REFERENCES ordr(ordernum)
@@ -129,70 +130,73 @@ VALUES ("Arvid Nordquist Selection 450g Blond Organic Filter Ground Coffee", "Bl
 VALUES ("Jacobs Krönung Filter Ground Coffee 500g", "The secret of Jacobs Krönung coffee is in specially selected coffee beans from Latin America and Asia.
  The beans are roasted in a way that results in a coffee with rich taste and best aroma. Premium roasted coffee beans and 
  Jacobs best selling coffee blend. Roast level 3.",5.90,1,"Jacobs-Krönung-kahvi-500g.jpg",1);
-
+ 
+/*Kahvinkeittimet*/
 INSERT INTO product (productname, description, price, cost, picture, category_id)
 VALUES ("Moccamaster KBG962AO Coffee Maker 10 cups, 1.25 l","The Moccamaster KBG962 AO coffee machine represents guaranteed Moccamaster quality and style. 
 This premium model combines complete comfort, timelessly stylish design and reliability.The Moccamaster KBG962 AO coffee machine brews 10 cups of coffee 
-(1.25 l) in just six minutes. The aroma lid mixes during coffee filtration to ensure an optimal taste experience.",279.00,1,"",3);
+(1.25 l) in just six minutes. The aroma lid mixes during coffee filtration to ensure an optimal taste experience.",279.00,1,"Moccamaster-KBG962AO-Coffee-Maker.jpg",3);
 
 INSERT INTO product (productname, description, price, cost, picture, category_id)
 VALUES ("OBH Nordica Vivace kahvinkeitin 2327","Make delicious coffee with the OBH Nordica Vivace coffee machine with drip lock. The machine can produce 
-12 cups at a time and has an automatic switch-off and a removable filter holder.",64.95,1,"",3);
+12 cups at a time and has an automatic switch-off and a removable filter holder.",64.95,1,"obh-nordica-vivace-kahvinkeitin-2327.jpg",3);
 
 INSERT INTO product (productname, description, price, cost, picture, category_id)
 VALUES ("Smeg 50 s Style Coffee Maker DCF02WHEU (White)","The good-looking Smeg 50 s Style coffee machine has a large volume, function for keeping your coffee hot, 
-an automatic switch-off and a convenient LED display.",219.00,1,"",3);
+an automatic switch-off and a convenient LED display.",219.00,1,"smeg-50-s-style-kahvinkeitin-dcf02wheu-valkoinen.jpg",3);
 
+/*Suodatinpaperit*/
 INSERT INTO product (productname, description, price, cost, picture, category_id)
 VALUES ("Moccamaster oxygen bleached filter paper No. 4, 100 pcs","White high quality filter paper for coffee makers. Size no. 4 (also known as 1x4). 
-The paper is made of FSC-certified wood fiber and is oxygen bleached in an environmentally friendly way. The package contains 100 pieces of filter papers.",4.95,1,"",2);
+The paper is made of FSC-certified wood fiber and is oxygen bleached in an environmentally friendly way. The package contains 100 pieces of filter papers.",4.95,1,"Moccamaster-oxygen-bleached-filter-paper.jpg",2);
 
 INSERT INTO product (productname, description, price, cost, picture, category_id)
 VALUES ("Moccamaster oxygen bleached filter paper 100 X 110 mm","White high quality filter paper for 1.8 liter coffee makers. The paper is made of FSC-certified wood 
-fiber and is oxygen bleached in an environmentally friendly way. The package contains 100 pieces of filter papers.",8.90,1,"",2);
+fiber and is oxygen bleached in an environmentally friendly way. The package contains 100 pieces of filter papers.",8.90,1,"Moccamaster-oxygen-bleached-filter-paper-100X110.jpg",2);
 
 INSERT INTO product (productname, description, price, cost, picture, category_id)
 VALUES ("Westmark Permanent Steel Coffee Filter","Westmark's reusable coffee steel filter bag is used in the same way as a traditional paper filter. The steel coffee 
 filter bag is made of a dense metal mesh that lets the coffee oils through, unlike filter paper, this makes the coffee taste richer and fuller. For cleaning, rinse 
-with hot water and occasionally wash by hand with detergent or in the dishwasher. Available in two sizes: 02 and 04",12.90,1,"",2);
+with hot water and occasionally wash by hand with detergent or in the dishwasher. Available in two sizes: 02 and 04",12.90,1,"Westmark-Permanent-Steel-Coffee-Filter.jpg",2);
 
 INSERT INTO product (productname, description, price, cost, picture, category_id)
 VALUES ("Melitta 1X4/80 Brown filter paper","With Melitta coffee filters you will find an aromatic and balanced taste experience, as they contain 3 patented AromaZone 
-aroma zones. They have Aromapore aroma pores. This guarantees a perfect aroma. FSC certified product. Unbleached.",2.49,1,"",2);
+aroma zones. They have Aromapore aroma pores. This guarantees a perfect aroma. FSC certified product. Unbleached.",2.49,1,"Melitta-Brown-filter-paper.jpg",2);
 
 INSERT INTO product (productname, description, price, cost, picture, category_id)
 VALUES ("Melitta 101/40 Brown filter paper","Unleash the good aroma of your coffee with the fine Aromapor aroma pores of Melitta filter papers. For the perfect, 
-classic coffee enjoyment. Unbleached.",1.55,1,"",2);
+classic coffee enjoyment. Unbleached.",1.55,1,"Melitta-10140-Brown-filter-paper.jpg",2);
 
 INSERT INTO product (productname, description, price, cost, picture, category_id)
 VALUES ("Melitta 1X2/40 Brown filter paper","Melitta filter paper has Aromapor aroma pores that make your coffee moment enjoyable and full-bodied. Unbleached. 
-FSC certified. Unbleached.",1.99,1,"",2);
+FSC certified. Unbleached.",1.99,1,"Melitta-1X240-Brown-filter-paper.jpg",2);
 
+/*Varaosat*/
 INSERT INTO product (productname, description, price, cost, picture, category_id)
-VALUES ("Moccamaster spout","9-hole Moccamaster spout. Fits all Moccamaster coffee machines.",24.95,1,"",4);
+VALUES ("Moccamaster spout","9-hole Moccamaster spout. Fits all Moccamaster coffee machines.",24.95,1,"9-hole-Moccamaster-spout.jpg",4);
 
 INSERT INTO product (productname, description, price, cost, picture, category_id)
 VALUES ("Moccamaster Glass Jug, 1250 ml","The glass jugs of Moccamaster coffee makers are elegantly elegantly designed and designed to maintain the aromas of the 
 filtered coffee beverage at its best on top of the heating elements. The Moccamaster-Technivorm seal is a mark of quality on the side of each Moccamaster glass jug. 
 The Moccamaster KB glass jug is suitable for Moccamaster KB model coffee machines with a mechanical drip lock. The glass jug has a mixing aroma lid that ensures 
 the homogeneity of the coffee and the mixing of the aromas. Keep the jug clear by washing it after each use. The taste of the coffee filtered in this way remains 
-full-bodied aroma without unpleasant side flavors.",30.95,1,"",4);
+full-bodied aroma without unpleasant side flavors.",30.95,1,"moccamaster-kahvikannu.jpg",4);
 
 INSERT INTO product (productname, description, price, cost, picture, category_id)
-VALUES ("AEG Glass Jug, Black","10-15 cup glass jug for AEG coffee maker.",37.95,1,"",4);
+VALUES ("AEG Glass Jug, Black","10-15 cup glass jug for AEG coffee maker.",37.95,1,"AEG-Glass-Jug-Black.jpg",4);
 
 INSERT INTO product (productname, description, price, cost, picture, category_id)
-VALUES ("OBH Glass Jug, 1250 ml","Coffee pot with black jug and handle. Jug capacity 1.25 l (10 cups).",36.95,1,"",4);
+VALUES ("OBH Glass Jug, 1250 ml","Coffee pot with black jug and handle. Jug capacity 1.25 l (10 cups).",36.95,1,"OBH-Glass-Jug.jpg",4);
 
 INSERT INTO product (productname, description, price, cost, picture, category_id)
-VALUES ("Lid on glass jug, Moccamaster coffee maker, Black","Lid with mixing stick for Moccamaster glass jug.",21.95,1,"",4);
+VALUES ("Lid on glass jug, Moccamaster coffee maker, Black","Lid with mixing stick for Moccamaster glass jug.",21.95,1,"Lid-on-glass-jug-Moccamaster.jpg",4);
 
 INSERT INTO product (productname, description, price, cost, picture, category_id)
 VALUES ("Coffee measure, Moccamaster coffee maker 12g","This is a universal product that is suitable for many different 
-brands and models.",11.95,1,"",4);
+brands and models.",11.95,1,"moccamaster-2-cup-coffee-measure.jpg",4);
 
 INSERT INTO product (productname, description, price, cost, picture, category_id)
 VALUES ("Filter cover, Moccamaster coffee maker","The lid fits all Moccamaster coffee machines with a glass jug. 
 The lid protects the filter funnel from contaminants and prevents heat from evaporating during filtration. 
 We recommend washing the coffee machine and its parts daily. The lid of the Moccamaster filter funnel is made of 
-durable BPA and BPS-free material.",17.95,1,"",4);
+durable BPA and BPS-free material.",17.95,1,"moccamaster-suodatinsuppilon-kansi.jpg",4);

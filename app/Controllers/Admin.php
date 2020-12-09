@@ -3,15 +3,18 @@
 use App\Models\CategoryModel;
 use App\Models\ProductModel;
 
+
 class Admin extends BaseController{
 
     private $CategoryModel=null;
     private $ProductModel=null;
 
+
     function __construct()
     {
       $this->CategoryModel = new CategoryModel();
       $this->ProductModel = new ProductModel();
+
     }
 
     public function index()

@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" style="margin-bottom: 25em;">
     <div class="row footer_margin mt-2 cart">
         <div class="col">
             <form action="<?= site_url('Order/index') ?>" method="post">
