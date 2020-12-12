@@ -133,7 +133,7 @@ class Login extends BaseController {
         $data['categories'] =$this->CategoryModel->getCategory();
 
         $data['name'] = $this->request->getVar('name');
-        $data['email'] = $this->request->getVar('email');
+        // $data['email'] = $this->request->getVar('email');
         $data['address'] = $this->request->getVar('address');
         $data['postalnumber'] = $this->request->getVar('postalnumber');
         $data['city'] = $this->request->getVar('city');
@@ -143,8 +143,8 @@ class Login extends BaseController {
 
         if ($data['name'] != null){
         $info['name'] = $data['name'];}
-        if ($data['email'] != null){
-        $info['email'] = $data['email'];}
+        // if ($data['email'] != null){
+        // $info['email'] = $data['email'];}
         if ($data['address'] != null){
         $info['address'] = $data['address'];}
         if ($data['address'] != null){
@@ -189,8 +189,9 @@ class Login extends BaseController {
 
             $this->LoginModel->replace($info);
 
+            $_SESSION['customer'] = null;
             echo view('template/header', $data);
-            echo view('my_page', $data);
+            echo view('login', $data);
             echo view('template/footer');
             }
 

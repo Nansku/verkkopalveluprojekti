@@ -39,10 +39,6 @@
                         <input class="form-control" name="name" placeholder="Empty" maxlength="100">
                      </div>
                      <div class="form-group">
-                        <label>Email</label>
-                        <input class="form-control" name="email" placeholder="Empty" maxlength="255">
-                     </div>
-                     <div class="form-group">
                         <label>Address</label>
                         <input class="form-control" name="address" placeholder="Empty" maxlength="100">
                      </div>
@@ -87,6 +83,7 @@
                         <input class="form-control" name="password_confirm" type="password" maxlength="255">
                      </div>
                      <button class="btn btn-coffee">Update</button>
+                     <p>You will be redirected to login again after updating your login information.</p>
                   </form>
                </div>
             </div>
