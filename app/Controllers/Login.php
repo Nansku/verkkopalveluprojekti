@@ -87,6 +87,7 @@ class Login extends BaseController {
             echo view('template/footer');
         }
         else {
+            $_SESSION['CurrentUser'] = $this->request->getVar('email');
             $customer = $model->check(
                 $this->request->getVar('email'),
                 $this->request->getVar('password')
