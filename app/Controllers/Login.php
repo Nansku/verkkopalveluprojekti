@@ -140,12 +140,18 @@ class Login extends BaseController {
 
         $info = $this->LoginModel->hae();
 
-        $info['name'] = $data['name'];
-        $info['email'] = $data['email'];
-        $info['address'] = $data['address'];
-        $info['postalnumber'] = $data['postalnumber'];
-        $info['city'] = $data['city'];
-        $info['phonenumber'] = $data['phonenumber'];
+        if ($data['name'] != null){
+        $info['name'] = $data['name'];}
+        if ($data['email'] != null){
+        $info['email'] = $data['email'];}
+        if ($data['address'] != null){
+        $info['address'] = $data['address'];}
+        if ($data['address'] != null){
+        $info['postalnumber'] = $data['postalnumber'];}
+        if ($data['city'] != null){
+        $info['city'] = $data['city'];}
+        if ($data['phonenumber'] != null){
+        $info['phonenumber'] = $data['phonenumber'];}
    
 
         $this->LoginModel->replace($info);
