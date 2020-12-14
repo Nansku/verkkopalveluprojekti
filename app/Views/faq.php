@@ -1,7 +1,8 @@
-<div class="row" style="margin-left: 20em; margin-right: 20em; margin-bottom: 5em;">
-   <h2 style="margin-left: 1em; margin-bottom: 1em; margin-top: 1em;">Frequently Asked Questions</h2>
-
+<div class="row text-center">
    <div class="col-12">
+      <h2>Frequently Asked Questions</h2>
+   </div>
+   <div class="col-lg-8 col-md-8 col-sm-12 mx-auto">
       <div class="accordion" id="faqAccordion">
          <div class="card cards">
             <div class="card-header" id="headingOne">
