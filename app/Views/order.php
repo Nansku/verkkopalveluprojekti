@@ -104,66 +104,72 @@
                     </div>
                 </div>
 -->
-                <div class="card mb-3">
+        <label class="form-check-label" for="postiCheck" >
+            <input type="radio" class="form-check-input card-input-element" id="postiCheck" name="deliveryOption" value="posti" checked>
+                <div class="card mb-3 card-input" style="width: 700px;">
                     <div class="row no-gutters">
-                        <div class="col-4">
-                            <img src="<?= base_url('img/delivery/posti.png')?>" class="card-img" alt="posti" style="max-width: 100%;">
+                        <div class="col-3" style="padding-left: 2em;">
+                            <img src="<?= base_url('img/delivery/posti2.png')?>" class="card-img" alt="posti" style="max-width: 100%;">
                         </div>
-                        <div class="col-7">
+                        <div class="col-9">
                             <div class="card-body">
                                 <h5 class="card-title">Posti</h5>
                                 <p class="card-text"><small class="text-muted">Shipping inside Finland</small></p>
-                                <p class="card-text">Small package: 4,90 € - 5,90 €</p>
-                                <p class="card-text">Large package: 7,90 € - 10,90 €</p>
-                                <div class="form-check">
-                                    <input type="radio" class="form-check-input" id="postiCheck" name="deliveryOption" value="posti" checked>
-                                    <label class="form-check-label card-text" for="postiCheck">Choose Posti</label>
+                                <p class="card-text">Small package: 4,90 € - 5,90 €
+                                , Large package: 7,90 € - 10,90 €</p>
+                                <div class="form-check"> 
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="card mb-3">
-                    <div class="row no-gutters">
+            </label>
+ 
+            <label class="form-check-label" for="matkahuoltoCheck" >
+            <input type="radio" class="form-check-input card-input-element" id="matkahuoltoCheck" name="deliveryOption" value="MH">
+                <div class="card mb-3 card-input" style="width: 700px;">
+                    <div class="row no-gutters" style="padding-left: 2em;">
                         <div class="col-md-3">
-                            <img src="<?= base_url('img/delivery/MH.png')?>" class="card-img" alt="matkahuolto" style="max-width: 50%;">
+                            <img src="<?= base_url('img/delivery/MH2.png')?>" class="card-img" alt="matkahuolto" style="max-width: 90%;">
                         </div>
                         <div class="col-md-9">
                             <div class="card-body">
                                 <h5 class="card-title">Matkahuolto</h5>
                                 <p class="card-text"><small class="text-muted">Shipping inside Finland</small></p>
-                                <p class="card-text">Small package: 4,90 € - 5,90 €</p>
-                                <p class="card-text">Large package: 7,90 € - 10,90 €</p>
-                                <div class="form-check">
-                                <input type="radio" class="form-check-input" id="matkahuoltoCheck" name="deliveryOption" value="MH">
-                                        <label class="form-check-label card-text" for="matkahuoltoCheck">Choose Matkahuolto</label>
+                                <p class="card-text">Small package: 4,90 € - 5,90 €, 
+                                Large package: 7,90 € - 10,90 €</p>
+                                <div class="form-check">     
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </label>
 
-                <div class="card mb-3">
-                    <div class="row no-gutters">
-                        <div class="col-md-4">
-                            <img src="<?= base_url('img/delivery/DHL.png')?>" class="card-img mx-auto" alt="DHL" style="max-width: 70%;">
+            <label class="form-check-label" for="dhlCheck" >
+            <input type="radio" class="form-check-input card-input-element" id="dhlCheck" name="deliveryOption" value="DHL">
+                <div class="card mb-3 card-input" style="width: 700px;">
+                    <div class="row no-gutters" style="padding-left: 2em;">
+                        <div class="col-md-3">
+                            <img src="<?= base_url('img/delivery/DHL2.png')?>" class="card-img mx-auto" alt="DHL" style="max-width: 90%;">
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-9">
                             <div class="card-body">
                                 <h5 class="card-title">DHL</h5>
                                 <p class="card-text"><small class="text-muted">Shipping inside EU</small></p>
-                                <p class="card-text">Small package: 4,89 €</p>
-                                <p class="card-text">Large package: 8,89 €</p>
+                                <p class="card-text">Small package: 4,89 €, 
+                                Large package: 8,89 €</p>
                                 <div class="form-check">
-                                    <input type="radio" class="form-check-input" id="dhlCheck" name="deliveryOption" value="DHL">
-                                    <label class="form-check-label" for="dhlCheck">Choose DHL</label>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </label>
+
+            <div class="row">
                 <button class="btn btn-warning mt-4">Place order</button>
+            </div>
         </form>
     </div>
 </div>
