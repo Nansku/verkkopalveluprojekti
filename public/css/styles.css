@@ -334,6 +334,13 @@ a:hover p{
   transition: 0.3s;
 }
 
-.story{
-  margin: 1em;
+.story hr{
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border-top: 2px  solid #BF9E87;
+}
+
+/* all hail the CEO! */
+.CEOJami{
+  padding-bottom: 1em;
 }
