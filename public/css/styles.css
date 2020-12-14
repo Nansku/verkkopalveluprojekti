@@ -176,6 +176,8 @@ p{
   align-items: center;
   padding: 2px;
   border-radius: 4%;
+  position: relative;
+  display: inline-block;
 }
 
  .card-body{
@@ -347,4 +349,15 @@ a:hover p{
 /* all hail the CEO! */
 .CEOJami{
   padding-bottom: 1em;
+}
+
+.card .img-top {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.card:hover .img-top {
+  display: inline;
 }
