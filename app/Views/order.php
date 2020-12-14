@@ -1,175 +1,114 @@
 <div class="d-flex justify-content-center mt-3 footer_margin">
     <div class="col-lg-6 col-md-9 col-sm-12">
-
+        
         <h4 class="mb-4">Order Information</h4>
 
         <form action="<?= site_url('cart/order'); ?>" method="post">
             <div class="form-group">
-                <label>Name</label>
+                <label class="form-label">First and last name *</label>
                 <input name="customername" type="text" class="form-control order_inp" maxlength="100">
+                
             </div>
             <div class="form-group">
-                <label>Address</label>
+                <label>Address *</label>
                 <input name="address" type="text" class="form-control order_inp" maxlength="100">
+                
             </div>
             <div class="form-group">
-                <label>Postal number</label>
+                <label>Postal number *</label>
                 <input name="postalnum" type="text" class="form-control order_inp" maxlength="5">
+                
             </div>
             <div class="form-group">
-                <label>Postal district</label>
+                <label>City *</label>
                 <input name="city" type="text" class="form-control order_inp" maxlength="50">
+                
             </div>
             <div class="form-group">
-                <label>Email</label>
+                <label class="form-label">Email *</label>
                 <input name="email" type="email" class="form-control order_inp" maxlength="250">
+                
             </div>
             <div class="form-group">
                 <label>Phone number</label>
                 <input name="phonenumber" type="text" class="form-control order_inp" maxlength="13">
             </div>
 
-            <h4>Delivery options</h4>
+            <p style="font-size: large;">Fields marked with * are mandatory.</p>
 
-            <div class="col-12 mb-3" align="center"><!--
-                <div class="accordion col-12 float-center" id="postiAccordion" style="padding-bottom:none; margin-bottom:none;">
-                    <div class="card">
-                        <div class="card-header" id="postiHeading">
-                            <h3 class="mb-0">
-                                <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    <p class="float-right" style="font-size:x-large">POSTI</p>
-                                    <div class="form-check float-left">
-                                        <input type="radio" class="form-check-input" id="postiCheck" name="deliveryOption" value="option1" checked>
-                                        <label class="form-check-label" for="postiCheck">Check me out</label>
-                                    </div>
-                                </button>
-                            </h3>
-                        </div>
-                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#postiAccordion">
-                            <div class="card-body">
-                                <p>Shipping inside Finland</p>
-                                <p>Small package: 4,90 € - 5,90 €</p>
-                                <p>Large package: 7,90 € - 10,90 €</p>
+
+
+            <h4 class="mt-5 mb-4">Delivery options</h4>
+
+            <div class="col-12 mb-3" align="center">
+
+                <label class="form-check-label" for="postiCheck">
+                    <input type="radio" class="form-check-input card-input-element" id="postiCheck" name="deliveryOption" value="posti">
+                    <div class="card mb-3 card-input" style="width: 700px;">
+                        <div class="row no-gutters">
+                            <div class="col-3" style="padding-left: 2em;">
+                                <img src="<?= base_url('img/delivery/posti2.png') ?>" class="card-img" alt="posti" style="max-width: 100%;">
                             </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion col-12 float-center" id="matkahuoltoAccordion" style="padding-bottom:none; margin-bottom:none;">
-                    <div class="card">
-                        <div class="card-header" id="matkahuoltoHeading">
-                            <h3 class="mb-0">
-                                <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                                    <p class="float-right" style="font-size:x-large">Matkahuolto</p>
-                                    <div class="form-check float-left">
-                                        <input type="radio" class="form-check-input" id="matkahuoltoCheck" name="deliveryOption" value="MH">
-                                        <label class="form-check-label" for="matkahuoltoCheck">Check me out</label>
+                            <div class="col-9">
+                                <div class="card-body">
+                                    <h5 class="card-title">Posti</h5>
+                                    <p class="card-text"><small class="text-muted">Shipping inside Finland</small></p>
+                                    <p class="card-text">Small package: 4,90 € - 5,90 €
+                                        , Large package: 7,90 € - 10,90 €</p>
+                                    <div class="form-check">
                                     </div>
-                                </button>
-                            </h3>
-                        </div>
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#matkahuoltoAccordion">
-                            <div class="card-body">
-                                <p>Shipping inside Finland</p>
-                                <p>Small package: 4,90 € - 5,90 €</p>
-                                <p>Large package: 7,90 € - 10,90 €</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="accordion col-12 float-center" id="dhlAccordion" style="padding-bottom:none; margin-bottom:none;">
-                    <div class="card">
-                        <div class="card-header" id="dhlHeading">
-                            <h3 class="mb-0">
-                                <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                                    <p class="float-right" style="font-size:x-large">DHL</p>
-                                    <div class="form-check float-left">
-                                        <input type="radio" class="form-check-input" id="dhlCheck" name="deliveryOption" value="DHL">
-                                        <label class="form-check-label" for="dhlCheck">Check me out</label>
-                                    </div>
-                                </button>
-                            </h3>
-                        </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#dhlAccordion">
-                            <div class="card-body">
-                                <p>Shipping inside EU</p>
-                                <p>Small package: 4,89 €</p>
-                                <p>Large package: 8,89 €</p>
-                                
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
--->
-        <label class="form-check-label" for="postiCheck" >
-            <input type="radio" class="form-check-input card-input-element" id="postiCheck" name="deliveryOption" value="posti" checked>
-                <div class="card mb-3 card-input" style="width: 700px;">
-                    <div class="row no-gutters">
-                        <div class="col-3" style="padding-left: 2em;">
-                            <img src="<?= base_url('img/delivery/posti2.png')?>" class="card-img" alt="posti" style="max-width: 100%;">
-                        </div>
-                        <div class="col-9">
-                            <div class="card-body">
-                                <h5 class="card-title">Posti</h5>
-                                <p class="card-text"><small class="text-muted">Shipping inside Finland</small></p>
-                                <p class="card-text">Small package: 4,90 € - 5,90 €
-                                , Large package: 7,90 € - 10,90 €</p>
-                                <div class="form-check"> 
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </label>
- 
-            <label class="form-check-label" for="matkahuoltoCheck" >
-            <input type="radio" class="form-check-input card-input-element" id="matkahuoltoCheck" name="deliveryOption" value="MH">
-                <div class="card mb-3 card-input" style="width: 700px;">
-                    <div class="row no-gutters" style="padding-left: 2em;">
-                        <div class="col-md-3">
-                            <img src="<?= base_url('img/delivery/MH2.png')?>" class="card-img" alt="matkahuolto" style="max-width: 90%;">
-                        </div>
-                        <div class="col-md-9">
-                            <div class="card-body">
-                                <h5 class="card-title">Matkahuolto</h5>
-                                <p class="card-text"><small class="text-muted">Shipping inside Finland</small></p>
-                                <p class="card-text">Small package: 4,90 € - 5,90 €, 
-                                Large package: 7,90 € - 10,90 €</p>
-                                <div class="form-check">     
+                </label>
+
+                <label class="form-check-label" for="matkahuoltoCheck">
+                    <input type="radio" class="form-check-input card-input-element" id="matkahuoltoCheck" name="deliveryOption" value="MH">
+                    <div class="card mb-3 card-input" style="width: 700px;">
+                        <div class="row no-gutters" style="padding-left: 2em;">
+                            <div class="col-md-3">
+                                <img src="<?= base_url('img/delivery/MH2.png') ?>" class="card-img" alt="matkahuolto" style="max-width: 90%;">
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-body">
+                                    <h5 class="card-title">Matkahuolto</h5>
+                                    <p class="card-text"><small class="text-muted">Shipping inside Finland</small></p>
+                                    <p class="card-text">Small package: 4,90 € - 5,90 €,
+                                        Large package: 7,90 € - 10,90 €</p>
+                                    <div class="form-check">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </label>
+                </label>
 
-            <label class="form-check-label" for="dhlCheck" >
-            <input type="radio" class="form-check-input card-input-element" id="dhlCheck" name="deliveryOption" value="DHL">
-                <div class="card mb-3 card-input" style="width: 700px;">
-                    <div class="row no-gutters" style="padding-left: 2em;">
-                        <div class="col-md-3">
-                            <img src="<?= base_url('img/delivery/DHL2.png')?>" class="card-img mx-auto" alt="DHL" style="max-width: 90%;">
-                        </div>
-                        <div class="col-md-9">
-                            <div class="card-body">
-                                <h5 class="card-title">DHL</h5>
-                                <p class="card-text"><small class="text-muted">Shipping inside EU</small></p>
-                                <p class="card-text">Small package: 4,89 €, 
-                                Large package: 8,89 €</p>
-                                <div class="form-check">
+                <label class="form-check-label" for="dhlCheck">
+                    <input type="radio" class="form-check-input card-input-element" id="dhlCheck" name="deliveryOption" value="DHL">
+                    <div class="card mb-3 card-input" style="width: 700px;">
+                        <div class="row no-gutters" style="padding-left: 2em;">
+                            <div class="col-md-3">
+                                <img src="<?= base_url('img/delivery/DHL2.png') ?>" class="card-img mx-auto" alt="DHL" style="max-width: 90%;">
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-body">
+                                    <h5 class="card-title">DHL</h5>
+                                    <p class="card-text"><small class="text-muted">Shipping inside EU</small></p>
+                                    <p class="card-text">Small package: 4,89 €,
+                                        Large package: 8,89 €</p>
+                                    <div class="form-check">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </label>
+                </label>
 
-            <div class="row">
-                <button class="btn btn-warning mt-4">Place order</button>
-            </div>
+                <div class="row">
+                    <input class="btn btn-warning mt-4" type="submit" value="Place order">
+                </div>
         </form>
+
     </div>
 </div>
