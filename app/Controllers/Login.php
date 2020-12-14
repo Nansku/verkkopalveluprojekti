@@ -88,12 +88,14 @@ class Login extends BaseController {
         }
         else {
             $_SESSION['CurrentUser'] = $this->request->getVar('email');
+            $_SESSION['CurrentPass'] = $this->request->getVar('password');
             $customer = $model->check(
                 $this->request->getVar('email'),
                 $this->request->getVar('password')
             );
 
-            if ($_SESSION['CurrentUser'] === 'office@vienoscoffee.com') {
+            if ($_SESSION['CurrentUser'] === 'office@vienoscoffee.com' && 
+                $_SESSION['CurrentPass'] === '12345678') {
                 
                $_SESSION['customer'] = $customer;
 

@@ -333,3 +333,7 @@ a:hover p{
   box-shadow: 0 0 2px 2px #179768;
   transition: 0.3s;
 }
+
+.story{
+  margin: 1em;
+}

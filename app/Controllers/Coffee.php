@@ -146,5 +146,4 @@ class Coffee extends BaseController
                 echo view('search');
                 echo view('template/footer');
             }
-            
 }
