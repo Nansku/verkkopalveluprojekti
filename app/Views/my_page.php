@@ -71,7 +71,7 @@
                         <input class="form-control" name="email" maxlength="100">
                      </div>
                      <div class="form-group">
-                        <label>Old Password</label>
+                        <label>Old Password*</label>
                         <input class="form-control" name="password_old" type="password" maxlength="255">
                      </div>
                      <div class="form-group">
@@ -83,6 +83,7 @@
                         <input class="form-control" name="password_confirm" type="password" maxlength="255">
                      </div>
                      <button class="btn btn-coffee">Update</button>
+                     <p>*Old password required to update login information.</p>
                      <p>You will be redirected to login again after updating your login information.</p>
                   </form>
                </div>
