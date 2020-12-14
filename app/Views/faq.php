@@ -174,7 +174,11 @@
             </div>
             <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#faqAccordion">
                <div class="card-body p-3" style="margin-left: 2em; margin-right: 5em;">
-                  <p>Add information about registering when the functionality is complete.</p>
+                  <p>You can register in our Coffee Shop. We will collect your name,
+                     email, address and phone number. Of course, you have to set a
+                     password, too.
+                     
+                     Just go to My Page and under the login form, click Register here.</p>
                </div>
             </div>
          </div>
@@ -190,7 +194,11 @@
             </div>
             <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#faqAccordion">
                <div class="card-body p-3" style="margin-left: 2em; margin-right: 5em;">
-                  <p>Add information about registering when the functionality is complete.</p>
+                  <p>With your given email address and password you can login to
+                     our Coffee Shop. 
+
+                     When logged in, you can update your customer and login information.
+                  </p>
                </div>
             </div>
          </div>
