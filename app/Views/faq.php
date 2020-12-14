@@ -2,7 +2,7 @@
    <div class="col-12">
       <h2>Frequently Asked Questions</h2>
    </div>
-   <div class="col-lg-8 col-md-8 col-sm-12 mx-auto">
+   <div class="col-lg-8 col-md-8 col-sm-12 mx-auto faq-site">
       <div class="accordion" id="faqAccordion">
          <div class="card cards">
             <div class="card-header" id="headingOne">
