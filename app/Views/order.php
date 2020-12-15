@@ -3,29 +3,29 @@
         
         <h4 class="mb-4">Order Information</h4>
 
-        <form action="<?= site_url('cart/order'); ?>" method="post">
+        <form action="<?= site_url('cart/order'); ?>" method="post" name="order" onsubmit="return validateForm()">
             <div class="form-group">
-                <label class="form-label">First and last name *</label>
+                <label class="form-label">First and last name *<span id="alert1" class="alert" style="font-size: medium; display: none; ">Field must be filled.</span></label>
                 <input name="customername" type="text" class="form-control order_inp" maxlength="100">
                 
             </div>
             <div class="form-group">
-                <label>Address *</label>
+                <label>Address *<span id="alert2" class="alert" style="font-size: medium; display: none;">Field must be filled.</span></label>
                 <input name="address" type="text" class="form-control order_inp" maxlength="100">
                 
             </div>
             <div class="form-group">
-                <label>Postal number *</label>
+                <label>Postal number *<span id="alert3" class="alert" style="font-size: medium; display: none;">Field must be filled.</span></label>
                 <input name="postalnum" type="text" class="form-control order_inp" maxlength="5">
                 
             </div>
             <div class="form-group">
-                <label>City *</label>
+                <label>City *<span id="alert4" class="alert" style="font-size: medium; display: none;">Field must be filled.</span></label>
                 <input name="city" type="text" class="form-control order_inp" maxlength="50">
                 
             </div>
             <div class="form-group">
-                <label class="form-label">Email *</label>
+                <label class="form-label">Email *<span id="alert5" class="alert" style="font-size: medium; display: none;">Field must be filled.</span></label>
                 <input name="email" type="email" class="form-control order_inp" maxlength="250">
                 
             </div>

@@ -132,6 +132,15 @@ p{
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
+.alert{
+  color: red;
+  padding: none;
+  margin: none;
+  font-size: small;
+}
+
+
+
 .description{
   font-size: large;
   font-family: 'Open Sans Condensed', sans-serif;
