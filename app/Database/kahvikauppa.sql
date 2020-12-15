@@ -130,7 +130,16 @@ VALUES ("Arvid Nordquist Selection 450g Blond Organic Filter Ground Coffee", "Bl
 VALUES ("Jacobs Krönung Filter Ground Coffee 500g", "The secret of Jacobs Krönung coffee is in specially selected coffee beans from Latin America and Asia.
  The beans are roasted in a way that results in a coffee with rich taste and best aroma. Premium roasted coffee beans and 
  Jacobs best selling coffee blend. Roast level 3.",5.90,1,"Jacobs-Krönung-kahvi-500g.jpg",1);
- 
+
+  INSERT INTO product (productname, description, price, cost, picture, category_id)
+VALUES ("Nescafé Kulta Instant Coffee 100g", "The subtle roasting of the coffee guarantees a rich and balanced taste with a fruity undertone.
+ The secret of coffee lies in the ten times finer ground arabica beans,
+ from which the flavors and aromas are clearly released.
+The sophisticated aroma of natural, pleasant, full-bodied and soft coffee is now even better - resulting in the perfect daily coffee moment. Roast level 1."
+,4.15,1,"Nescafé-Kulta-100g",1);
+
+
+
 /*Kahvinkeittimet*/
 INSERT INTO product (productname, description, price, cost, picture, category_id)
 VALUES ("Moccamaster KBG962AO Coffee Maker 10 cups, 1.25 l","The Moccamaster KBG962 AO coffee machine represents guaranteed Moccamaster quality and style. 
