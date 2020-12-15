@@ -76,6 +76,8 @@ class Login extends BaseController {
     public function check() {
         $data['cart_count'] = $this->cartModel->count();
         $data['categories'] =$this->CategoryModel->getCategory();
+        $data['category'] = $this->CategoryModel->getCategory();
+        $data['title'] = 'Categories';
         $model = new LoginModel();
 
         if (!$this->validate([
@@ -99,9 +101,8 @@ class Login extends BaseController {
                 
                $_SESSION['customer'] = $customer;
 
-               echo view('admin/admin_header', $data);
-               echo view('admin/admin_my_page', $data);
-               echo view('template/footer');
+                echo view('template/header_admin.php');
+                echo view('admin/category.php',$data);
                 
             }else
             if ($customer) {
@@ -168,34 +169,43 @@ class Login extends BaseController {
 
         $data['cart_count'] = $this->cartModel->count();
         $data['categories'] =$this->CategoryModel->getCategory();
-
-        if (!$this->validate([
-            'email' => 'required',
-            // old password check?
-            'password_new' => 'required|min_length[8]|max_length[30]',
-            'password_confirm' => 'required|min_length[8]|max_length[30]|matches[password_new]',
-
-            ])){
-                echo view('template/header', $data);
-                echo view('my_page', $data);
-                echo view('template/footer');
-            }
-            else {
-            $data['email'] = $this->request->getVar('email');
-            $data['password_new'] = password_hash($this->request->getVar('password_new'),PASSWORD_DEFAULT);
-
-            $info = $this->LoginModel->hae();
-
-            $info['email'] = $data['email'];
-            $info['password'] = $data['password_new'];
-
-            $this->LoginModel->replace($info);
-
-            $_SESSION['customer'] = null;
+        $data['oldpass'] = $this->request->getVar('password_old');
+        // oldpassword check
+        if ($data['oldpass'] != $_SESSION['CurrentPass']){
             echo view('template/header', $data);
-            echo view('login', $data);
+            echo view('my_page', $data);
             echo view('template/footer');
-            }
+        }else {
+            // Validation for login edit
+            if (!$this->validate([
+                'email' => 'required',
+                'password_new' => 'required|min_length[8]|max_length[30]',
+                'password_confirm' => 'required|min_length[8]|max_length[30]|matches[password_new]',
+    
+                ])){
+                    echo view('template/header', $data);
+                    echo view('my_page', $data);
+                    echo view('template/footer');
+                }
+                else {
+                // login information edit
+                $data['email'] = $this->request->getVar('email');
+                $data['password_new'] = password_hash($this->request->getVar('password_new'),PASSWORD_DEFAULT);
+    
+                $info = $this->LoginModel->hae();
+    
+                $info['email'] = $data['email'];
+                $info['password'] = $data['password_new'];
+    
+                $this->LoginModel->replace($info);
+    
+                $_SESSION['customer'] = null;
+                echo view('template/header', $data);
+                echo view('login', $data);
+                echo view('template/footer');
+                }
+        }
+        
 
     }
     
