@@ -76,6 +76,8 @@ class Login extends BaseController {
     public function check() {
         $data['cart_count'] = $this->cartModel->count();
         $data['categories'] =$this->CategoryModel->getCategory();
+        $data['category'] = $this->CategoryModel->getCategory();
+        $data['title'] = 'Categories';
         $model = new LoginModel();
 
         if (!$this->validate([
@@ -99,9 +101,8 @@ class Login extends BaseController {
                 
                $_SESSION['customer'] = $customer;
 
-               echo view('admin/admin_header', $data);
-               echo view('admin/admin_my_page', $data);
-               echo view('template/footer');
+                echo view('template/header_admin.php');
+                echo view('admin/category.php',$data);
                 
             }else
             if ($customer) {
@@ -114,6 +115,9 @@ class Login extends BaseController {
                 echo view('template/header', $data);
                 echo view('login', $data);
                 echo view('template/footer');
+                echo '<script language="javascript">';
+                echo 'alert("Email or Password is Incorrect")';
+                echo '</script>';
             }
         }
     }
@@ -174,6 +178,9 @@ class Login extends BaseController {
             echo view('template/header', $data);
             echo view('my_page', $data);
             echo view('template/footer');
+            echo '<script language="javascript">';
+            echo 'alert("Old password required")';
+            echo '</script>';
         }else {
             // Validation for login edit
             if (!$this->validate([

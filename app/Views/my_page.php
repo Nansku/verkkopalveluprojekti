@@ -9,14 +9,6 @@
             <a class="nav-link" id="loginInformation-tab" data-toggle="pill" href="#loginInformation" role="tab"
                aria-controls="loginInformation" aria-selected="false">Login Information</a>
          </li>
-         <li class="nav-item" role="presentation">
-            <a class="nav-link" id="orderHistory-tab" data-toggle="pill" href="#orderHistory" role="tab"
-               aria-controls="orderHistory" aria-selected="false">Order History</a>
-         </li>
-         <li class="nav-item" role="presentation">
-            <a class="nav-link" id="favorites-tab" data-toggle="pill" href="#favorites" role="tab"
-               aria-controls="favorites" aria-selected="false">Favorites</a>
-         </li>
          <li class="nav-item font-weight-bold" role="presentation">
             <?= anchor('login/logout','Logout',array('class' => 'nav-link')) ?>
          </li>
@@ -36,23 +28,23 @@
                      </div>
                      <div class="form-group">
                         <label>Name</label>
-                        <input class="form-control" name="name" placeholder="Empty" maxlength="100">
+                        <input class="form-control" name="name" placeholder="Change Name" maxlength="100">
                      </div>
                      <div class="form-group">
                         <label>Address</label>
-                        <input class="form-control" name="address" placeholder="Empty" maxlength="100">
+                        <input class="form-control" name="address" placeholder="Change Address" maxlength="100">
                      </div>
                      <div class="form-group">
                         <label>Postal code</label>
-                        <input class="form-control" name="postalnumber" placeholder="Empty" maxlength="5">
+                        <input class="form-control" name="postalnumber" placeholder="Change Postal Number" maxlength="5">
                      </div>
                      <div class="form-group">
                         <label>City</label>
-                        <input class="form-control" name="city" placeholder="Empty" maxlength="50">
+                        <input class="form-control" name="city" placeholder="Change City" maxlength="50">
                      </div>
                      <div class="form-group">
                         <label>Phone</label>
-                        <input class="form-control" name="phonenumber" placeholder="Empty" maxlength="10">
+                        <input class="form-control" name="phonenumber" placeholder="Change Phonenumber" maxlength="10">
                      </div>
                      <button class="btn btn-coffee">Update</button>
                   </form>
@@ -88,12 +80,6 @@
                   </form>
                </div>
             </div>
-         </div>
-         <div class="tab-pane fade" id="orderHistory" role="tabpanel" aria-labelledby="orderHistory-tab">
-            Order History
-         </div>
-         <div class="tab-pane fade" id="favorites" role="tabpanel" aria-labelledby="favorites-tab">
-            Favorites
          </div>
       </div>
    </div>
