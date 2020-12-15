@@ -9,14 +9,6 @@
             <a class="nav-link" id="loginInformation-tab" data-toggle="pill" href="#loginInformation" role="tab"
                aria-controls="loginInformation" aria-selected="false">Login Information</a>
          </li>
-         <li class="nav-item" role="presentation">
-            <a class="nav-link" id="orderHistory-tab" data-toggle="pill" href="#orderHistory" role="tab"
-               aria-controls="orderHistory" aria-selected="false">Order History</a>
-         </li>
-         <li class="nav-item" role="presentation">
-            <a class="nav-link" id="favorites-tab" data-toggle="pill" href="#favorites" role="tab"
-               aria-controls="favorites" aria-selected="false">Favorites</a>
-         </li>
          <li class="nav-item font-weight-bold" role="presentation">
             <?= anchor('login/logout','Logout',array('class' => 'nav-link')) ?>
          </li>
@@ -88,12 +80,6 @@
                   </form>
                </div>
             </div>
-         </div>
-         <div class="tab-pane fade" id="orderHistory" role="tabpanel" aria-labelledby="orderHistory-tab">
-            Order History
-         </div>
-         <div class="tab-pane fade" id="favorites" role="tabpanel" aria-labelledby="favorites-tab">
-            Favorites
          </div>
       </div>
    </div>
