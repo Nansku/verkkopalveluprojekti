@@ -94,31 +94,21 @@ class CartModel extends Model
         $_SESSION['cart'] = array();
     }
     
-   /*public function rownum() {
-        $rownum = 0;
-        for ($i = count($_SESSION['cart']) + 1; $i >= 0; $i++) {
-            $rownum = $_SESSION['cart'][$i]+ 1;
-            
-            return; 
-        }
-    }*/
-
 
     public function order($customer) {
         $this->db->transStart();
         $this->orderModel->save($customer);
         $orderID = $this->insertID();
-        //$orderID = $this->orderModel->getOrdernum();
-        //$rownum = $this->rownum();
 
+        $rownum = 1;
         foreach ($_SESSION['cart'] as $product) {
             $this->order_rowModel->save([
-                // 'ordernum' => $orderID,
                 'ordernum' => $orderID,
                 'product_id' => $product['id'],
                 'amount' => $product['amount'],
-                //'rownum' => $rownum
+                'rownum' => $rownum
             ]);
+            $rownum++;
         }
 
         $this->clear();

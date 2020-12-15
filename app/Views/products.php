@@ -2,7 +2,7 @@
 <div class="product_color">
    <?php foreach ($products as $product): ?> 
       <div class=" d-flex justify-content-center">
-         <div class="card mx-2 mt-4 mb-4" style="width: 1200px;">
+         <div class="card cards mx-2 mt-4 mb-4" style="width: 1200px;">
             <div class="row no-gutters id1">
                <div class="col-lg-8 col-md-12 card-body">
                   <!-- Linkki vie yksittäisen tuotteen sivulle -->

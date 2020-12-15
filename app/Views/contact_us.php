@@ -24,12 +24,16 @@ oikea järjestys -->
 <!-- Jami ja Eveliina -->
 <div class="row">
    <div class="col-md-6 col-lg-6">
-      <div class="card my-3 ml-lg-auto" style="max-width: 540px;">
+      <div class="card cards my-3 ml-lg-auto" style="max-width: 540px;">
          <div class="row no-gutters">
             <div class="col-4 text-center my-auto">
 
-               <img class="img-fluid card-img us_img" src=<?= base_url("img/jami_web.jpg") ?>
+               <img class="img-fluid card-img us_img" src=<?= base_url("img/staff/jami_web.jpg") ?>
                alt="Jami Salmela">
+
+               <img class="img-fluid card-img us_img img-top" src=<?= base_url("img/hmm/jami.jpeg") ?>
+               alt="Jami">
+
             </div>
             <div class="col-8 p-2">
                <div class="card-body">
@@ -42,12 +46,14 @@ oikea järjestys -->
       </div>
    </div>
    <div class="col-md-6 col-lg-6">
-      <div class="card my-3 mr-lg-auto" style="max-width: 540px;">
+      <div class="card cards my-3 mr-lg-auto" style="max-width: 540px;">
          <div class="row no-gutters">
             <div class="col-4 text-center my-auto">
  
-               <img class="img-fluid card-img us_img" src=<?= base_url("img/eveliina_web.jpg") ?>
+               <img class="img-fluid card-img us_img" src=<?= base_url("img/staff/eveliina_web.jpg") ?>
                alt="Eveliina Purontaus">
+               <img class="img-fluid card-img us_img img-top" src=<?= base_url("img/hmm/eveliina.jpeg") ?>
+               alt="Eveliina">
             </div>
             <div class="col-8 p-2">
                <div class="card-body">
@@ -64,12 +70,14 @@ oikea järjestys -->
 <!-- Ilari ja Jenna -->
 <!-- <div class="row"> -->
    <div class="col-md-6 col-lg-6">
-      <div class="card my-3 ml-lg-auto" style="max-width: 540px;">
+      <div class="card cards my-3 ml-lg-auto" style="max-width: 540px;">
          <div class="row no-gutters">
             <div class="col-4 text-center my-auto">
                
-               <img class="img-fluid card-img us_img" src=<?= base_url("img/ilari_web.jpg") ?>
+               <img class="img-fluid card-img us_img" src=<?= base_url("img/staff/ilari_web.jpg") ?>
                alt="Ilari Puustinen">
+               <img class="img-fluid card-img us_img img-top" src=<?= base_url("img/hmm/ilari.jpeg") ?>
+               alt="Ilari">
             </div>
             <div class="col-8 p-2">
                <div class="card-body">
@@ -82,12 +90,14 @@ oikea järjestys -->
       </div>
    </div>
    <div class="col-md-6 col-lg-6">
-      <div class="card my-3 mr-lg-auto" style="max-width: 540px;">
+      <div class="card cards my-3 mr-lg-auto" style="max-width: 540px;">
          <div class="row no-gutters">
             <div class="col-4 text-center my-auto">
  
-               <img class="img-fluid card-img us_img" src=<?= base_url("img/jenna_web.jpg") ?>
+               <img class="img-fluid card-img us_img" src=<?= base_url("img/staff/jenna_web.jpg") ?>
                alt="Jenna Pennanen">
+               <img class="img-fluid card-img us_img img-top" src=<?= base_url("img/hmm/jenna.jpeg") ?>
+               alt="Jenna">
             </div>
             <div class="col-8 p-2">
                <div class="card-body">
@@ -104,12 +114,14 @@ oikea järjestys -->
 <!-- Henri ja Jukka -->
 <!-- <div class="row"> -->
    <div class="col-md-6 col-lg-6">
-      <div class="card my-3 ml-lg-auto" style="max-width: 540px;">
+      <div class="card cards my-3 ml-lg-auto" style="max-width: 540px;">
          <div class="row no-gutters">
             <div class="col-4 text-center my-auto">
 
-               <img class="img-fluid card-img us_img" src=<?= base_url("img/henri_web.jpg") ?>
+               <img class="img-fluid card-img us_img" src=<?= base_url("img/staff/henri_web.jpg") ?>
                alt="Henri Aukee">
+               <img class="img-fluid card-img us_img img-top" src=<?= base_url("img/hmm/Henri.jpeg") ?>
+               alt="Henri">
             </div>
             <div class="col-8 p-2">
                <div class="card-body">
@@ -122,12 +134,14 @@ oikea järjestys -->
       </div>
    </div>
    <div class="col-md-6 col-lg-6">
-      <div class="card my-3 mr-lg-auto" style="max-width: 540px;">
+      <div class="card cards my-3 mr-lg-auto" style="max-width: 540px;">
          <div class="row no-gutters">
             <div class="col-4 text-center my-auto">
 
-               <img class="img-fluid card-img us_img" src=<?= base_url("img/jukka_web.jpg") ?>
+               <img class="img-fluid card-img us_img" src=<?= base_url("img/staff/jukka_web.jpg") ?>
                alt="Jukka Liimatta">
+               <img class="img-fluid card-img us_img img-top" src=<?= base_url("img/hmm/jukka.jpeg") ?>
+               alt="Jukka">
             </div>
             <div class="col-8 p-2">
                <div class="card-body">
@@ -144,12 +158,14 @@ oikea järjestys -->
 <!-- Ville ja Oskari -->
 <!-- <div class="row"> -->
    <div class="col-md-6 col-lg-6">
-      <div class="card my-3 ml-lg-auto" style="max-width: 540px;">
+      <div class="card cards my-3 ml-lg-auto" style="max-width: 540px;">
          <div class="row no-gutters">
             <div class="col-4 text-center my-auto">
 
-               <img class="img-fluid card-img us_img" src=<?= base_url("img/ville_web.jpg") ?>
+               <img class="img-fluid card-img us_img" src=<?= base_url("img/staff/ville_web.jpg") ?>
                alt="Ville Rantanen">
+               <img class="img-fluid card-img us_img img-top" src=<?= base_url("img/hmm/ville.jpeg") ?>
+               alt="Ville">
             </div>
             <div class="col-8 p-2">
                <div class="card-body">
@@ -162,12 +178,14 @@ oikea järjestys -->
       </div>
    </div>
    <div class="col-md-6 col-lg-6">
-      <div class="card my-3 mr-lg-auto" style="max-width: 540px;">
+      <div class="card cards my-3 mr-lg-auto" style="max-width: 540px;">
          <div class="row no-gutters">
             <div class="col-4 text-center my-auto">
 
-               <img class="img-fluid card-img us_img" src=<?= base_url("img/oskari_web.jpg") ?>
+               <img class="img-fluid card-img us_img" src=<?= base_url("img/staff/oskari_web.jpg") ?>
                 alt="Oskari Juntunen">
+                <img class="img-fluid card-img us_img img-top" src=<?= base_url("img/hmm/oskari.jpeg") ?>
+               alt="Oskari">
             </div>
             <div class="col-8 p-2">
                <div class="card-body">

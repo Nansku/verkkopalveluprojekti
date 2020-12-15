@@ -20,4 +20,13 @@ class LoginModel extends Model {
         }
         return null;
     }
+    public function hae() {
+        $emailID = $_SESSION['CurrentUser'];
+        $sql = "SELECT * FROM CUSTOMER WHERE EMAIL = :no:";
+        $query = $this->query($sql, ['no' => $emailID]);
+
+        foreach ($query->getResultArray() as $row){
+            return $row;
+        }
+    }
 }

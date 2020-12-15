@@ -63,9 +63,9 @@ class Cart extends BaseController{
             'postalnum' => $this->request->getPost('postalnum'),
             'city' => $this->request->getPost('city'),
             'email' => $this->request->getPost('email'),
-            'phonenumber' => $this->request->getPost('phonenumber')
+            'phonenumber' => $this->request->getPost('phonenumber'),
+            'delivery' => $this->request->getPost('deliveryOption')
         ];
-
         // $orderID = $this->orderModel->getOrdernum();
         $this->cartModel->order($customer);
 

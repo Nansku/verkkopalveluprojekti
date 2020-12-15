@@ -47,7 +47,8 @@
                             </td>
                         </tr>
                 </table>
-                <button class="btn btn-warning">Continue</button>
+                <!-- If cart is empty, continue button is disabled -->
+                <button class="btn btn-warning" <?php if ($cart_count == '0'){ ?> disabled <?php } ?>>Continue</button>
             </form>
         </div>
     </div>

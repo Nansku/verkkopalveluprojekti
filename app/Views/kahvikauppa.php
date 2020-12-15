@@ -16,17 +16,22 @@
     <div id="kettu" class="parallax col-12">
 
     </div>
-
+    
     <div id="design" class="text col-12">
         <h3>Our recommended products:</h3>
         <div class="row d-flex justify-content-center">
-            <div class="card-deck col-12">
+            <div class="row">
+  
                 <?php foreach ($products as $product) : ?>
-                    <div class="card mx-1">
+                    <div class="recommended mx-1">
                         <a href="<?= site_url('Coffee/product/' . $product['id']) ?>">
-                            <h4><?= $product['productname'] ?></h4>
-                            <p><?= $product['price'] ?> €</p>
                             <img class="img-fluid" src="<?= base_url('img/' . $product['picture']) ?>"></img>
+                            <h4 class="mt-2" ><?= $product['productname'] ?></h4>
+                            <div class="container">
+                                <div class="row justify-content-center">   
+                                        <p class="mt-2 justify-content-center"><?= $product['price'] ?> €</p>    
+                                </div>   
+                            </div>                     
                         </a>
                     </div>
                 <?php endforeach; ?>

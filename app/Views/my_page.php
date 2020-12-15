@@ -30,17 +30,13 @@
             aria-labelledby="customerInformation-tab">
             <div class="d-flex justify-content-center footer_margin mt-2">
                <div class="col">
-                  <form action="#">
+                  <form action="/login/updateinfo">
                      <div>
                         <?= \Config\Services::validation()->listErrors(); ?>
                      </div>
                      <div class="form-group">
                         <label>Name</label>
                         <input class="form-control" name="name" placeholder="Empty" maxlength="100">
-                     </div>
-                     <div class="form-group">
-                        <label>Email</label>
-                        <input class="form-control" name="email" placeholder="Empty" maxlength="255">
                      </div>
                      <div class="form-group">
                         <label>Address</label>
@@ -66,7 +62,7 @@
          <div class="tab-pane fade" id="loginInformation" role="tabpanel" aria-labelledby="loginInformation-tab">
             <div class="d-flex justify-content-center footer_margin mt-2">
                <div class="col">
-                  <form action="#">
+                  <form action="/login/updatelogin">
                      <div>
                         <?= \Config\Services::validation()->listErrors(); ?>
                      </div>
@@ -75,7 +71,7 @@
                         <input class="form-control" name="email" maxlength="100">
                      </div>
                      <div class="form-group">
-                        <label>Old Password</label>
+                        <label>Old Password*</label>
                         <input class="form-control" name="password_old" type="password" maxlength="255">
                      </div>
                      <div class="form-group">
@@ -87,6 +83,8 @@
                         <input class="form-control" name="password_confirm" type="password" maxlength="255">
                      </div>
                      <button class="btn btn-coffee">Update</button>
+                     <p>*Old password required to update login information.</p>
+                     <p>You will be redirected to login again after updating your login information.</p>
                   </form>
                </div>
             </div>

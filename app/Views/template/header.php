@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="<?= base_url('/css/parallax.css');?>">
     <!-- CSS -->
     <link rel="stylesheet" href="<?= base_url('/css/styles.css');?>">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="<?=base_url()?>\img\icon.png" type="image/x-icon">
     
     <!-- Fix for full length container -->
     <!--<style> .container-fluid{
@@ -27,7 +29,7 @@
     box-sizing: border-box;}
     </style>-->
 
-    <title>Vienon Kahvikauppa</title>
+    <title>Vieno's Coffee Shop</title>
 </head>
 <body class="d-flex flex-column h-100">
 <div class="container-fluid main flex-shrink-0" >

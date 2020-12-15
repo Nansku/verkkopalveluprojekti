@@ -46,7 +46,7 @@ tilattu*/
 CREATE TABLE ordr_row (
 ordernum int(10) ,
 product_id int UNSIGNED,
-rownum int(3),
+rownum smallint UNSIGNED,
 amount int(3),
 FOREIGN KEY (ordernum)
 REFERENCES ordr(ordernum)
