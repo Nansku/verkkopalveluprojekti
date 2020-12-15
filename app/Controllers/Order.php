@@ -34,4 +34,11 @@ class Order extends BaseController {
 		echo view('template/footer');
     }
 
+    public function order() {
+        $data['orders'] = $this->orderModel->getOrders();
+        echo view('template/header_admin.php');
+        echo view('admin/order.php',$data);
+        echo view('template/footer.php');
+      }
+
 }
