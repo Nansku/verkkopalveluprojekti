@@ -76,6 +76,8 @@ class Login extends BaseController {
     public function check() {
         $data['cart_count'] = $this->cartModel->count();
         $data['categories'] =$this->CategoryModel->getCategory();
+        $data['category'] = $this->CategoryModel->getCategory();
+        $data['title'] = 'Categories';
         $model = new LoginModel();
 
         if (!$this->validate([
@@ -99,9 +101,8 @@ class Login extends BaseController {
                 
                $_SESSION['customer'] = $customer;
 
-               echo view('admin/admin_header', $data);
-               echo view('admin/admin_my_page', $data);
-               echo view('template/footer');
+                echo view('template/header_admin.php');
+                echo view('admin/category.php',$data);
                 
             }else
             if ($customer) {
