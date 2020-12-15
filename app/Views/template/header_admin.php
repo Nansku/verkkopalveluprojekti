@@ -28,6 +28,9 @@
           <li class="nav-item">
             <a class="nav-link" href="<?=site_url('product/index/')?>">Tuotteet</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="<?=site_url('order/order/')?>">Tilaukset</a>
+          </li>
         </ul>  
       </div>
     </nav>  

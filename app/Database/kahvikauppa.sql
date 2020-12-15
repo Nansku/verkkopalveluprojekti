@@ -46,7 +46,7 @@ tilattu*/
 CREATE TABLE ordr_row (
 ordernum int(10) ,
 product_id int UNSIGNED,
-rownum smallint UNSIGNED,
+rownum int(3),
 amount int(3),
 FOREIGN KEY (ordernum)
 REFERENCES ordr(ordernum)
@@ -120,6 +120,12 @@ The taste of Presidentti-coffee highlights the Central American,
 VALUES ("Lehmus Roastery Kettu Filter Ground Coffee 220g", "The medium roasted Kettu is a soft and full-bodied coffee.
  Roast level 3.",8.95,1,"Lehmus-Roastery-Kettu-kahvi-220g.jpg",1);
 
+  INSERT INTO product (productname, description, price, cost, picture, category_id)
+VALUES ("Lehmus Roastery Sammonlahti: Italian Roast Coffee Beans 220g", "Espresso coffee in Italian style from
+ the hot corners of the Gulf of Sammon. The upright and temperamental roast is strong in taste and
+impressive, power downright stunning. Roast level 5."
+,9.90,1,"LehmusRoastery_Sammonlahti.jpg",1);
+
  INSERT INTO product (productname, description, price, cost, picture, category_id)
 VALUES ("Arvid Nordquist Selection 450g Blond Organic Filter Ground Coffee", "Blond is a light roasted coffee,
  with a soft and sweet scent. A nuanced fruity taste with grapefruit and citrus aromas in the aftertaste.
@@ -130,10 +136,90 @@ VALUES ("Arvid Nordquist Selection 450g Blond Organic Filter Ground Coffee", "Bl
 VALUES ("Jacobs Krönung Filter Ground Coffee 500g", "The secret of Jacobs Krönung coffee is in specially selected coffee beans from Latin America and Asia.
  The beans are roasted in a way that results in a coffee with rich taste and best aroma. Premium roasted coffee beans and 
  Jacobs best selling coffee blend. Roast level 3.",5.90,1,"Jacobs-Krönung-kahvi-500g.jpg",1);
- 
+
+
+  INSERT INTO product (productname, description, price, cost, picture, category_id)
+VALUES ("Kaffa Roastery Tauko Coffee Beans 250g","Kaffa Roastery Tauko is a light-roasted medium-bodied, 
+nicely sour and suitably fat filter coffee blend. Have a break, have a Tauko.
+
+The orchestra is led by a flowery and fruity, lightly sour Rwanda. Round and sweet Guatemala is responsible for balance and synergy.
+ The trio complements Colombia, which gives the flavor profile the power of traditional coffee. Roast level 2."
+,8.50,1,"Kaffa_Roastery_Tauko.jpg",1);
+
+ INSERT INTO product (productname, description, price, cost, picture, category_id)
+VALUES ("Kaffa Roastery Go'kväll Coffee Beans 250g","Kaffa Roastery Go’kväll is a really sweet and full-bodied medium roasted coffee coffee with a nutty tint.
+ Thanks to its low acidity, Go’kväll is perfect for coffee moments when it gets dark in the evening. Roast level 3."
+,9.50,1,"Kaffa_Roastery_Gokväll.jpg",1);
+
+ INSERT INTO product (productname, description, price, cost, picture, category_id)
+VALUES ("Johan & Nyström Bourbon Jungle 500 g Coffee Beans","With their Bourbon Jungle blend, Johan & Nyström has wanted to offer real dark coffee with high-quality beans,
+ which, despite its dark roasting, still has a larger share of the fine aromas of coffee. The coffee has a roundness but also a little sweetness and acidity.
+  The aftertaste is long and strong. Roast level 3."
+,14.50,1,"Johan&Nyström_Bourbon_Jungle.jpg",1);
+
+ INSERT INTO product (productname, description, price, cost, picture, category_id)
+VALUES ("Dick Johnson - Vitun Hyvä Kahvi (Fucking Good Coffee) 100g","What's better than having a good sump, coffee or tsufee in the morning? Dick Johnson solved the
+ matter by making coffee, which is meant to be a good Colombian bean. With the exception of coffee beans, coffee is roasted, ground and bagged here in Finland.
+
+It is really ethical coffee: the manufacturer buys the coffee directly from the farmer,
+ so the farmer gets the biggest part of the cake and is able to grow the best possible Papua in our Finnish cups. Roast level 3."
+,9.90,1,"vitunhyvakahvi.jpg",1);
+
+ INSERT INTO product (productname, description, price, cost, picture, category_id)
+VALUES ("Caffè Paskà 500g Coffee Beans","Nicola Pasqale did not guess what he was doing when he named his export product Paskà.
+ In Finland, Caffè Paskà might be a hilarious name if you are finnish. However the coffee, despite its name is drinkable. For a lover of espresso espresso, this authentic
+  Neapolitan is the right choice. Roast level 3."
+,14.90,1,"CaffePaska.jpg",1);
+
+  INSERT INTO product (productname, description, price, cost, picture, category_id)
+VALUES ("Nescafé Kulta Instant Coffee 100g", "The subtle roasting of the coffee guarantees a rich and balanced taste with a fruity undertone.
+ The secret of coffee lies in the ten times finer ground arabica beans,
+ from which the flavors and aromas are clearly released.
+The sophisticated aroma of natural, pleasant, full-bodied and soft coffee is now even better - resulting in the perfect daily coffee moment. Roast level 1."
+,4.15,1,"Nescafé-Kulta-100g.jpg",1);
+
+  INSERT INTO product (productname, description, price, cost, picture, category_id)
+VALUES ("Little's Chocolate Caramel Flavoured Coffee Instant Coffee 50 g", "In the words of Forrest Gump:
+ Life is like a box of chocolates; you never know what you will get. Fortunately, Little's chocolate candy
+ With instant coffee, there is no need to guess, a delicious chocolate and caramel-flavored instant coffee always appears in the cup with just a few spoon-blending movements.
+ Little's instant coffees do not contain added sugar, they are lactose-free and gluten-free and are suitable for vegetarians.
+Roast level 1."
+,5.90,1,"Little_Chocolate_Caramel_Flavoured_Coffee.jpg",1);
+
+ INSERT INTO product (productname, description, price, cost, picture, category_id)
+VALUES ("Little's French Vanilla Flavoured Instant Coffee 50 g", "Little’s French Vanilla-flavored instant coffee is made from high-quality
+ Arabica coffee beans and flavored with sophisticated Madagascar Bourbon vanilla.
+
+Little's instant coffees do not contain added sugar, they are lactose-free and gluten-free and are suitable for vegetarians.
+Roast level 1."
+,5.90,1,"Littles_French_Vanilla.jpg",1);
+
+INSERT INTO product (productname, description, price, cost, picture, category_id)
+VALUES ("Nescafé Dolce Gusto Cappuccino ,16 Coffee Capsules","Coffee can be like art. Explore a whole new world, and let coffee charm you.
+ NESCAFÉ Dolce Gusto offers elegant design, modern technology
+ and high-quality drinks. You make your favorite drinks quickly, easily and effortlessly."
+,5.50,1,"nescafé-dolce-gusto-cappuccino-kahvikapseli.jpg",1);
+
+INSERT INTO product (productname, description, price, cost, picture, category_id)
+VALUES ("Nescafé Dolce Gusto Cappuccino ,16 Coffee Capsules","Coffee can be like art. Explore a whole new world, and let coffee charm you.
+ NESCAFÉ Dolce Gusto offers elegant design, modern technology
+ and high-quality drinks. You make your favorite drinks quickly, easily and effortlessly. Cappuccino style capsules"
+,5.90,1,"nescafé-dolce-gusto-cappuccino-kahvikapseli.jpg",1);
+
+INSERT INTO product (productname, description, price, cost, picture, category_id)
+VALUES ("Nescafé Dolce Gusto Americano ,16 Coffee Capsules","Coffee can be like art. Explore a whole new world, and let coffee charm you.
+ NESCAFÉ Dolce Gusto offers elegant design, modern technology
+ and high-quality drinks. You make your favorite drinks quickly, easily and effortlessly. Americano style coffee capsules."
+,5.90,1,"nescafé-dolce-gusto-americano-kahvikapseli.jpg",1);
+
+INSERT INTO product (productname, description, price, cost, picture, category_id)
+VALUES ("Nescafé Dolce Gusto Choccochino ,16 Coffee Capsules","Nescafé Dolce Gusto Chococino capsules will delight you with delicious hot cocoa
+ with a soft creamy taste."
+,5.90,1,"nescafé-dolce-gusto-choco-kahvikapseli.jpg",1);
+
 /*Kahvinkeittimet*/
 INSERT INTO product (productname, description, price, cost, picture, category_id)
-VALUES ("Moccamaster KBG962AO Coffee Maker 10 cups, 1.25 l","The Moccamaster KBG962 AO coffee machine represents guaranteed Moccamaster quality and style. 
+VALUES ("Moccamaster KBG962AO Coffeemaker 10 cups, 1.25 l","The Moccamaster KBG962 AO coffee machine represents guaranteed Moccamaster quality and style. 
 This premium model combines complete comfort, timelessly stylish design and reliability.The Moccamaster KBG962 AO coffee machine brews 10 cups of coffee 
 (1.25 l) in just six minutes. The aroma lid mixes during coffee filtration to ensure an optimal taste experience.",279.00,1,"Moccamaster-KBG962AO-Coffee-Maker.jpg",3);
 
@@ -142,8 +228,39 @@ VALUES ("OBH Nordica Vivace kahvinkeitin 2327","Make delicious coffee with the O
 12 cups at a time and has an automatic switch-off and a removable filter holder.",64.95,1,"obh-nordica-vivace-kahvinkeitin-2327.jpg",3);
 
 INSERT INTO product (productname, description, price, cost, picture, category_id)
-VALUES ("Smeg 50 s Style Coffee Maker DCF02WHEU (White)","The good-looking Smeg 50 s Style coffee machine has a large volume, function for keeping your coffee hot, 
+VALUES ("Smeg 50 s Style Coffeemaker DCF02WHEU (White)","The good-looking Smeg 50 s Style coffee machine has a large volume, function for keeping your coffee hot, 
 an automatic switch-off and a convenient LED display.",219.00,1,"smeg-50-s-style-kahvinkeitin-dcf02wheu-valkoinen.jpg",3);
+
+INSERT INTO product (productname, description, price, cost, picture, category_id)
+VALUES ("Press pan Bodum Bistro Nouveau, 3 Cups","Bistro Nouveau is a traditional French coffeemaker that is easy to use.
+A press pan is the simplest and best way to make excellent coffee. Use coarsely ground coffee beans and 92-96 degree water for the best results.",22.95,1,
+"Bistro_Nouvea_FrenchPress.jpg",3);
+
+INSERT INTO product (productname, description, price, cost, picture, category_id)
+VALUES ("Espro Press P5 32 oz Coffee press pan with coffee filter 1 l","
+The unique Espro Press stands out substantially in favor of the traditional press pan. The completely redesigned filter system produces a significantly cleaner 
+and less precipitated beverage, as well as stopping the extraction process as soon as the filter piston is pressed down. The result is a very high quality drink
+ from the first cup to the last sip, without the bitter and clearly over-extracted taste typical of the rest. The extra-tight patented double filter also keeps 
+ coffee grounds and tea leaves out of the drink.",89.95,1,
+"Espro_Press_P5.jpg",3);
+
+INSERT INTO product (productname, description, price, cost, picture, category_id)
+VALUES ("La Pavoni Professional Lusso PLH Espresso Coffeemaker","La Pavoni Professional Lusso is a truly traditional Italian lever arm
+ a working Espresso machine, the first version of which was launched in 1961. With La Pavoni Professional you make the perfect espresso from start to finish
+  and milk coffee drinks. For the Coffee Madlads. True commitment to the art of coffee making!",929.00,1,
+"La_Pavoni_Professional.jpg",3);
+
+INSERT INTO product (productname, description, price, cost, picture, category_id)
+VALUES ("Dolce Gusto MiniMe Capsule Coffee maker (Black/Grey) Coffeemaker","Produce delicious hot and cold coffee drinks with the Dolce Gusto MiniMe capsule coffeemaker.
+ The stylish capsule cooker is quick to use. You can adjust the strength and flavour of the coffee with a capsule after your own taste.",69.95,1,
+"dolce-gusto-minime-kapselikeitin-mustaharmaa.jpg",3);
+
+INSERT INTO product (productname, description, price, cost, picture, category_id)
+VALUES ("Coffeemaker Makita LXT / CXT DCM501Z, 18V","Make tasty construction site coffee with the conveniently included battery-powered Makita coffee machine. The kettle has a 240 ml
+ water tank and the coffee is filtered into the mug that comes with the kettle. The machine brews 1 dl of coffee per 1 Ah of battery and the power switches off 
+ automatically when the water runs out. Mug and measuring spoon included. The device is a body version without a battery and charger, 
+ and you can use 18V batteries from Makita's CXT and LXT battery series.",119.00,1,
+"MAKITADCM501Z_1.jpg",3);
 
 /*Suodatinpaperit*/
 INSERT INTO product (productname, description, price, cost, picture, category_id)

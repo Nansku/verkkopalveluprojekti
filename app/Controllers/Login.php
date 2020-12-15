@@ -115,6 +115,9 @@ class Login extends BaseController {
                 echo view('template/header', $data);
                 echo view('login', $data);
                 echo view('template/footer');
+                echo '<script language="javascript">';
+                echo 'alert("Email or Password is Incorrect")';
+                echo '</script>';
             }
         }
     }
@@ -175,6 +178,9 @@ class Login extends BaseController {
             echo view('template/header', $data);
             echo view('my_page', $data);
             echo view('template/footer');
+            echo '<script language="javascript">';
+            echo 'alert("Old password required")';
+            echo '</script>';
         }else {
             // Validation for login edit
             if (!$this->validate([

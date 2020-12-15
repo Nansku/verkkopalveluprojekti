@@ -28,23 +28,23 @@
                      </div>
                      <div class="form-group">
                         <label>Name</label>
-                        <input class="form-control" name="name" placeholder="Empty" maxlength="100">
+                        <input class="form-control" name="name" placeholder="Change Name" maxlength="100">
                      </div>
                      <div class="form-group">
                         <label>Address</label>
-                        <input class="form-control" name="address" placeholder="Empty" maxlength="100">
+                        <input class="form-control" name="address" placeholder="Change Address" maxlength="100">
                      </div>
                      <div class="form-group">
                         <label>Postal code</label>
-                        <input class="form-control" name="postalnumber" placeholder="Empty" maxlength="5">
+                        <input class="form-control" name="postalnumber" placeholder="Change Postal Number" maxlength="5">
                      </div>
                      <div class="form-group">
                         <label>City</label>
-                        <input class="form-control" name="city" placeholder="Empty" maxlength="50">
+                        <input class="form-control" name="city" placeholder="Change City" maxlength="50">
                      </div>
                      <div class="form-group">
                         <label>Phone</label>
-                        <input class="form-control" name="phonenumber" placeholder="Empty" maxlength="10">
+                        <input class="form-control" name="phonenumber" placeholder="Change Phonenumber" maxlength="10">
                      </div>
                      <button class="btn btn-coffee">Update</button>
                   </form>
