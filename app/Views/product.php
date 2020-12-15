@@ -17,6 +17,7 @@
             </div>
         </div>
     </div>
+    <hr class="ProdHr">
     <div id="design" class="text col-12">
         <h3>More products:</h3>
         <div class="row d-flex justify-content-center">

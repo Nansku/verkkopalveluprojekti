@@ -221,8 +221,8 @@ footer a{
 }
 
 footer i{
-  padding-left: 0.5em;
-  padding-right: 0.5em;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 /* Temporary */
@@ -340,10 +340,20 @@ a:hover p{
   padding-bottom: 1em;
 }
 
+/* Our Story */
+
 .story hr{
   margin-top: 1em;
   margin-bottom: 1em;
   border-top: 2px  solid #BF9E87;
+}
+
+.ProdHr{
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border-top: 2px  solid #BF9E87;
+  margin-left: 20em;
+  margin-right: 20em;
 }
 
 /* all hail the CEO! */
