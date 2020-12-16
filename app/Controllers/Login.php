@@ -153,7 +153,7 @@ class Login extends BaseController {
         // $info['email'] = $data['email'];}
         if ($data['address'] != null){
         $info['address'] = $data['address'];}
-        if ($data['address'] != null){
+        if ($data['postalnumber'] != null){
         $info['postalnumber'] = $data['postalnumber'];}
         if ($data['city'] != null){
         $info['city'] = $data['city'];}
